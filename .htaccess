@@ -11,6 +11,9 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^api/(.*)$ api.php?endpoint=$1 [QSA,L]
 
+  # 2. Rewrite index.tsx to compiled JS bundle on Apache/LiteSpeed
+  RewriteRule ^index\.tsx$ assets/index-Cis-VCxW.js [L]
+
   # 2. If dist/ folder is present and user accesses root, prefer dist/index.html
   RewriteCond %{REQUEST_URI} !^/dist/
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/dist/index.html -f
