@@ -1,0 +1,10 @@
+{
+  "name": "NaturistFinder",
+  "description": "A comprehensive guide and map for finding naturist beaches, campsites, and resorts globally.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$USER/public_html/tools/naturistfinder/
+    - /bin/cp -R dist/* $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp -R dist/assets $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp api.php $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp .htaccess $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp .env.example $DEPLOYPATH 2>/dev/null || true
