@@ -210,7 +210,7 @@ const App: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-bold text-stone-800">Hvor vil du hen?</h3>
                   <div className="flex flex-wrap justify-center gap-2 pt-2 px-4">
-                    {['Korsika', 'Kroatien', 'Spanien', 'Frankrig', 'Danmark', 'Gran Canaria', 'Kreta', 'Grækenland', 'Tyskland', 'Italien', 'Portugal', 'Dubai'].map(tag => (
+                    {['Frankrig', 'Menorca', 'Mallorca', 'Korsika', 'Spanien', 'Kroatien', 'Danmark', 'Gran Canaria', 'Kreta', 'Grækenland', 'Tyskland', 'Dubai'].map(tag => (
                       <button 
                         key={tag}
                         onClick={() => handleSearch(tag)}

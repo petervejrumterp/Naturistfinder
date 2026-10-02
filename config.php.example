@@ -1,0 +1,10 @@
+<?php
+/**
+ * NaturistFinder Valgfri Konfiguration
+ * 
+ * Hvis du ønsker at aktivere AI-søgning via Google Gemini på dit cPanel webhotel
+ * til at finde vilkårlige byer og steder i hele verden, kan du omdøbe denne fil
+ * til 'config.php' og indsætte din Gemini API-nøgle herunder:
+ */
+
+define('GEMINI_API_KEY', '');
