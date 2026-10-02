@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
+import { searchCuratedDatabase, ALL_SUGGESTIONS } from "./curatedDestinations";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -448,11 +449,10 @@ app.get("/api/suggestions", async (req, res) => {
   }
 
   // Check curated matches first
-  const curatedKeys = ["Chora Sfakion", "Kreta", "Korsika", "Danmark", "Kroatien", "Gran Canaria", "Dubai", "Spanien", "Frankrig", "Grækenland", "Tyskland", "Italien"];
-  const matches = curatedKeys.filter(k => k.toLowerCase().includes(query));
+  const matches = ALL_SUGGESTIONS.filter(k => k.toLowerCase().includes(query));
 
   if (matches.length >= 3 || !ai) {
-    return res.json(matches);
+    return res.json(matches.slice(0, 6));
   }
 
   try {
@@ -473,7 +473,7 @@ app.get("/api/suggestions", async (req, res) => {
     return res.json(combined);
   } catch (err) {
     console.warn("Suggestions AI fallback:", err);
-    return res.json(matches);
+    return res.json(matches.slice(0, 6));
   }
 });
 
@@ -484,21 +484,18 @@ app.post("/api/search", async (req, res) => {
     return res.status(400).json({ error: "Søgeterm er påkrævet" });
   }
 
-  const normalized = query.toLowerCase();
-
-  // Check if we have curated data for common queries (e.g. "korsika", "sfakion", "danmark", etc.)
-  for (const [key, data] of Object.entries(CURATED_DESTINATIONS)) {
-    if (normalized.includes(key) || key.includes(normalized)) {
-      return res.json({
-        locations: data.locations,
-        summary: data.summary,
-        sources: []
-      });
-    }
+  // Check comprehensive curated database first (instant match)
+  const curated = searchCuratedDatabase(query);
+  if (curated && curated.locations.length > 0) {
+    return res.json(curated);
   }
 
   if (!ai) {
-    return res.status(500).json({ error: "Gemini API nøgle mangler på serveren." });
+    return res.json({
+      locations: [],
+      summary: `Vi kunne ikke finde specifikke naturiststeder i "${query}". Prøv et andet land eller område.`,
+      sources: []
+    });
   }
 
   const prompt = `Du er en ekspert i naturiststeder og rejseguide.
