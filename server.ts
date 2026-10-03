@@ -484,13 +484,18 @@ app.post("/api/search", async (req, res) => {
     return res.status(400).json({ error: "Søgeterm er påkrævet" });
   }
 
+  const includeAI = Boolean(req.body.includeAI);
+
   // Check comprehensive curated database first (instant match)
   const curated = searchCuratedDatabase(query);
-  if (curated && curated.locations.length > 0) {
+  if (curated && curated.locations.length > 0 && !includeAI) {
     return res.json(curated);
   }
 
   if (!ai) {
+    if (curated && curated.locations.length > 0) {
+      return res.json(curated);
+    }
     return res.json({
       locations: [],
       summary: `Vi kunne ikke finde specifikke naturiststeder i "${query}". Prøv et andet land eller område.`,
@@ -499,7 +504,7 @@ app.post("/api/search", async (req, res) => {
   }
 
   const prompt = `Du er en ekspert i naturiststeder og rejseguide.
-Find og beskriv 4-6 specifikke naturiststeder (strande, resorts, campingpladser) i eller omkring: "${query}".
+Find og beskriv 8-15 specifikke naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: "${query}".
 
 Vigtige regler:
 1. For resorts og campingpladser: Angiv det officielle website (hjemmeside) URL hvis kendt (f.eks. https://www.vritomartis.gr/).
@@ -572,14 +577,14 @@ Vigtige regler:
     const parsedLocations = Array.isArray(rawLocations) ? rawLocations : [];
 
     // Resolve images asynchronously for resorts and camping places
-    const locations = await Promise.all(
+    const aiLocations = await Promise.all(
       parsedLocations.map(async (loc, idx) => {
         let image = loc.image;
         if (loc.type === 'resort' || loc.type === 'campsite') {
           image = await resolveResortImage(loc);
         }
         return {
-          id: loc.id || `loc-${Date.now()}-${idx}`,
+          id: loc.id || `loc-ai-${Date.now()}-${idx}`,
           name: loc.name,
           type: loc.type,
           description: loc.description,
@@ -593,9 +598,20 @@ Vigtige regler:
       })
     );
 
+    // Merge with curated locations if available
+    const combinedLocations = curated?.locations ? [...curated.locations] : [];
+    const seenNames = new Set(combinedLocations.map(l => l.name.toLowerCase()));
+
+    for (const aiLoc of aiLocations) {
+      if (!seenNames.has(aiLoc.name.toLowerCase())) {
+        combinedLocations.push(aiLoc);
+        seenNames.add(aiLoc.name.toLowerCase());
+      }
+    }
+
     return res.json({
-      locations,
-      summary: `Fandt ${locations.length} naturist-destinationer for "${query}".`,
+      locations: combinedLocations,
+      summary: `Fandt ${combinedLocations.length} naturist-destinationer for "${query}" (inkl. AI udvidet søgning).`,
       sources: []
     });
   } catch (err: any) {

@@ -4,7 +4,7 @@ import {
   Search, MapPin, Loader2, Compass, Waves, 
   Map as MapIcon, List, Info, ExternalLink, 
   ShieldCheck, X, ChevronRight, Navigation, AlertTriangle,
-  CreditCard, Calendar
+  CreditCard, Calendar, Sparkles
 } from 'lucide-react';
 import Map from './components/Map';
 import SearchBar from './components/SearchBar';
@@ -78,6 +78,8 @@ const App: React.FC = () => {
   const [searchResult, setSearchResult] = useState<SearchResult | null>(null);
   const [selectedLocation, setSelectedLocation] = useState<NaturistLocation | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isExpandingAI, setIsExpandingAI] = useState(false);
+  const [currentQuery, setCurrentQuery] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
   const [userPos, setUserPos] = useState<{ lat: number; lng: number } | undefined>(undefined);
   const [viewMode, setViewMode] = useState<'split' | 'map' | 'list'>('split');
@@ -93,18 +95,25 @@ const App: React.FC = () => {
     }
   }, [selectedLocation]);
 
-  const handleSearch = useCallback(async (query: string) => {
+  const handleSearch = useCallback(async (query: string, expandWithAI: boolean = false) => {
     if (!query.trim()) return;
-    setIsLoading(true);
+    setCurrentQuery(query);
+    if (expandWithAI) {
+      setIsExpandingAI(true);
+    } else {
+      setIsLoading(true);
+    }
     setError(null);
     try {
-      const result = await searchNaturistPlaces(query, userPos);
+      const result = await searchNaturistPlaces(query, userPos, expandWithAI);
       if (result.locations.length > 0) {
         setLocations(result.locations);
         setSearchResult(result);
         setSelectedLocation(null);
       } else {
-        setLocations([]);
+        if (!expandWithAI) {
+          setLocations([]);
+        }
         setError(`Vi kunne ikke finde specifikke naturiststeder i "${query}". Prøv at søge på et land eller en større by.`);
       }
     } catch (err: any) {
@@ -112,6 +121,7 @@ const App: React.FC = () => {
       setError(err.message || "Der opstod en fejl under søgningen. Prøv venligst igen.");
     } finally {
       setIsLoading(false);
+      setIsExpandingAI(false);
     }
   }, [userPos]);
 
@@ -234,7 +244,19 @@ const App: React.FC = () => {
                 </div>
               ) : (
                 <div className="space-y-4 pb-10">
-                  <h2 className="text-[10px] font-black text-stone-400 uppercase tracking-[0.2em] px-1">Resultater ({locations.length})</h2>
+                  <div className="flex items-center justify-between px-1 mb-1">
+                    <h2 className="text-[10px] font-black text-stone-400 uppercase tracking-[0.2em]">Resultater ({locations.length})</h2>
+                    {currentQuery && (
+                      <button 
+                        onClick={() => handleSearch(currentQuery, true)}
+                        disabled={isExpandingAI || isLoading}
+                        className="text-[10px] font-bold text-[#ed6a56] hover:underline flex items-center gap-1 transition-opacity disabled:opacity-50"
+                      >
+                        <Sparkles className="h-3 w-3" />
+                        {isExpandingAI ? 'Søger med AI...' : '+ Flere med AI'}
+                      </button>
+                    )}
+                  </div>
                   {locations.map((loc) => (
                     <div 
                       key={loc.id}
@@ -265,6 +287,31 @@ const App: React.FC = () => {
                       </div>
                     </div>
                   ))}
+
+                  {currentQuery && (
+                    <div className="pt-3 pb-2 text-center">
+                      <button
+                        onClick={() => handleSearch(currentQuery, true)}
+                        disabled={isExpandingAI || isLoading}
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#fef0ee] to-[#fff5f4] border border-[#fbd2cc] rounded-2xl text-xs font-bold text-[#ed6a56] hover:bg-[#ed6a56] hover:text-white transition-all shadow-sm active:scale-95 disabled:opacity-50"
+                      >
+                        {isExpandingAI ? (
+                          <>
+                            <Loader2 className="h-4 w-4 animate-spin text-[#ed6a56]" />
+                            Søger efter ekstra skjulte perler med AI...
+                          </>
+                        ) : (
+                          <>
+                            <Sparkles className="h-4 w-4" />
+                            Find endnu flere steder med AI
+                          </>
+                        )}
+                      </button>
+                      <p className="text-[10px] text-stone-400 mt-1.5 italic">
+                        Bruger din tilknyttede Gemini AI-nøgle til at finde lokale vige, klubber og afsides strande
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

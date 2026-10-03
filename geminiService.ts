@@ -51,16 +51,17 @@ export async function getSuggestions(query: string): Promise<string[]> {
 
 export async function searchNaturistPlaces(
   query: string,
-  userLocation?: { lat: number; lng: number }
+  userLocation?: { lat: number; lng: number },
+  forceAI: boolean = false
 ): Promise<SearchResult> {
   const trimmed = query.trim();
-  const cacheKey = `${trimmed.toLowerCase()}_${userLocation ? `${userLocation.lat},${userLocation.lng}` : 'none'}`;
+  const cacheKey = `${trimmed.toLowerCase()}_${userLocation ? `${userLocation.lat},${userLocation.lng}` : 'none'}_${forceAI ? 'ai' : 'std'}`;
 
-  if (searchCache.has(cacheKey)) {
+  if (!forceAI && searchCache.has(cacheKey)) {
     return searchCache.get(cacheKey)!;
   }
 
-  // 1. Check client-side curated database immediately
+  // 1. If not forcing AI, check client-side curated database immediately
   const curatedResult = searchCuratedDatabase(trimmed);
 
   // 2. Attempt API request to backend (PHP or Node)
@@ -72,7 +73,8 @@ export async function searchNaturistPlaces(
       },
       body: JSON.stringify({
         query: trimmed,
-        userPos: userLocation
+        userPos: userLocation,
+        includeAI: forceAI
       })
     });
 

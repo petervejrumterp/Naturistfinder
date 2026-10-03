@@ -486,7 +486,8 @@
         "aléria",
         "riva bella",
         "resort",
-        "spa"
+        "spa",
+        "camping"
       ],
       "description": "Anerkendt 4-stjernet naturistresort i Aléria med thalassoterapi, havkig, direkte adgang til kilometervis af sandstrand, moderne bungalows og restaurant.",
       "lat": 42.1283,
@@ -531,7 +532,8 @@
         "france",
         "chiappa",
         "porto-vecchio",
-        "resort"
+        "resort",
+        "camping"
       ],
       "description": "Spektakulært beliggende naturistresort ved Porto-Vecchio i et fredet naturområde med private strande, klippebugter, bungalows, pools og dykkercenter.",
       "lat": 41.53,
@@ -539,6 +541,27 @@
       "address": "Route du Phare de la Chiappa, 20137 Porto-Vecchio, Korsika, Frankrig",
       "url": "https://www.chiappa.com/",
       "image": "https://www.chiappa.com/wp-content/uploads/vue-panoramique-1.jpg"
+    },
+    {
+      "id": "loc-korsika-ufuru",
+      "name": "Camping U Furu Naturiste (Porto-Vecchio)",
+      "type": "campsite",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "u furu",
+        "porto-vecchio",
+        "camping",
+        "flod",
+        "resort"
+      ],
+      "description": "Enestående frodig naturistcamping i bjergene nær Porto-Vecchio med naturlige ferskvandspools, vandfald i floden, swimmingpool og fredfyldt atmosfære.",
+      "lat": 41.5645,
+      "lng": 9.245,
+      "address": "Route de Muratello, 20137 Porto-Vecchio, Korsika, Frankrig",
+      "url": "https://www.camping-ufuru.com/"
     },
     {
       "id": "loc-korsika-4",
@@ -561,6 +584,46 @@
       "address": "Lieu-dit Bravone, 20230 Linguizzetta, Korsika, Frankrig"
     },
     {
+      "id": "loc-korsika-bodri",
+      "name": "Plage de Bodri (Balagne / L'Île-Rousse)",
+      "type": "beach",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "bodri",
+        "ile rousse",
+        "l'ile-rousse",
+        "balagne",
+        "strand"
+      ],
+      "description": "En af Korsikas smukkeste og mest elskede naturiststrande i Balagne-regionen med kridhvidt finkornet sand og lysende turkisblåt hav.",
+      "lat": 42.6315,
+      "lng": 8.905,
+      "address": "Plage de Bodri, 20220 Corbara, Korsika, Frankrig"
+    },
+    {
+      "id": "loc-korsika-saleccia",
+      "name": "Plage de Saleccia (Désert des Agriates)",
+      "type": "beach",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "saleccia",
+        "desert des agriates",
+        "saint florent",
+        "strand",
+        "vild"
+      ],
+      "description": "Korsikas mest berømte vilde ørkenstrand med 1 km uberørt kridhvidt sand og pinjer. Nås med taxabåd fra Saint-Florent eller 4x4. Populært naturistparadis.",
+      "lat": 42.726,
+      "lng": 9.206,
+      "address": "Désert des Agriates, 20246 Santo-Pietro-di-Tenda, Korsika, Frankrig"
+    },
+    {
       "id": "loc-korsika-5",
       "name": "Plage de Cupabia (Naturistsektion)",
       "type": "beach",
@@ -579,6 +642,63 @@
       "lat": 41.7247,
       "lng": 8.7845,
       "address": "Baie de Cupabia, 20140 Serra-di-Ferro, Korsika, Frankrig"
+    },
+    {
+      "id": "loc-korsika-roccapina",
+      "name": "Plage de Roccapina (Sartène)",
+      "type": "beach",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "roccapina",
+        "sartene",
+        "strand"
+      ],
+      "description": "Spektakulær vild naturstrand bevogtet af den berømte naturstensklippe 'Løven af Roccapina'. Krystalklart vand og diskret naturisme i rolige omgivelser.",
+      "lat": 41.4985,
+      "lng": 8.932,
+      "address": "Roccapina, 20100 Sartène, Korsika, Frankrig"
+    },
+    {
+      "id": "loc-korsika-fango",
+      "name": "Vallée du Fango Klippebassiner (Galéria)",
+      "type": "beach",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "fango",
+        "galeria",
+        "flod",
+        "ferskvand",
+        "bjergpool"
+      ],
+      "description": "Korsikas mest berømte ferskvands-naturistområde i biosfærereservatet. Solopvarmede krystalklare klippepools og små vandfald i granitslugten.",
+      "lat": 42.418,
+      "lng": 8.715,
+      "address": "Vallée du Fango, 20245 Galéria, Korsika, Frankrig"
+    },
+    {
+      "id": "loc-korsika-ghjunchitu",
+      "name": "Plage de Ghjunchitu (Balagne)",
+      "type": "beach",
+      "country": "Frankrig",
+      "region": "Korsika",
+      "keywords": [
+        "korsika",
+        "corsica",
+        "ghjunchitu",
+        "corbara",
+        "balagne",
+        "strand"
+      ],
+      "description": "Skøn nabobugt til Bodri med fint lyst sand og turkist vand. Klippeområderne mod syd og nord er yndede tilbagetrukne naturistområder.",
+      "lat": 42.628,
+      "lng": 8.895,
+      "address": "20220 Corbara, Korsika, Frankrig"
     },
     {
       "id": "loc-esp-veraplaya",
@@ -1070,6 +1190,64 @@
       "image": "https://solbakken-naturist.dk/wp-content/uploads/2020/06/solbakken-oversigt.jpg"
     },
     {
+      "id": "loc-dk-nfj",
+      "name": "NFJ Naturist Camping (Als)",
+      "type": "campsite",
+      "country": "Danmark",
+      "region": "Sønderjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "nfj",
+        "als",
+        "sønderjylland",
+        "jylland",
+        "camping"
+      ],
+      "description": "Hyggelig og fredfyldt dedikeret naturistcampingplads på Als omgivet af marker og skov, med klubhus, legeplads og kort afstand til badestrand.",
+      "lat": 54.985,
+      "lng": 9.875,
+      "address": "Stenkobbel 11, 6440 Augustenborg, Danmark"
+    },
+    {
+      "id": "loc-dk-sandager",
+      "name": "Sandager Næs Naturistafdeling (Fyn)",
+      "type": "campsite",
+      "country": "Danmark",
+      "region": "Fyn",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "sandager næs",
+        "fyn",
+        "lillebælt",
+        "camping"
+      ],
+      "description": "Kendt campingplads ved Lillebælt med en afskærmet, velindrettet naturistsektion med egen swimmingpool, sauna og direkte adgang til kysten.",
+      "lat": 55.335,
+      "lng": 9.882,
+      "address": "Sandager Næsvej 25, 5610 Assens, Fyn, Danmark"
+    },
+    {
+      "id": "loc-dk-skovly",
+      "name": "Skovly Naturistcamping (Vordingborg)",
+      "type": "campsite",
+      "country": "Danmark",
+      "region": "Sjælland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "skovly",
+        "vordingborg",
+        "sjælland",
+        "camping"
+      ],
+      "description": "Rolig og uforstyrret naturistcampingplads beliggende i smukke sydsjællandske skovomgivelser tæt på kysten med sauna og fælleshus.",
+      "lat": 55.035,
+      "lng": 11.952,
+      "address": "Skovhusevej, 4760 Vordingborg, Danmark"
+    },
+    {
       "id": "loc-dk-bellevue",
       "name": "Bellevue Strand (Naturistområde)",
       "type": "beach",
@@ -1109,6 +1287,65 @@
       "address": "Tisvildeleje Strand, 3220 Tisvildeleje, Danmark"
     },
     {
+      "id": "loc-dk-hornbaek",
+      "name": "Hornbæk Naturiststrand",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Nordsjælland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "hornbæk",
+        "hornbaek",
+        "nordsjælland",
+        "strand"
+      ],
+      "description": "Klassisk nordsjællandsk badestrand. Den vestligste del forbi plantagen mod Dronningmølle er en etableret og populær naturiststrand.",
+      "lat": 56.095,
+      "lng": 12.425,
+      "address": "Vestre Stejlebakke, 3100 Hornbæk, Danmark"
+    },
+    {
+      "id": "loc-dk-heatherhill",
+      "name": "Heatherhill Strand (Rågeleje)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Nordsjælland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "heatherhill",
+        "rågeleje",
+        "rageleje",
+        "nordsjælland",
+        "strand"
+      ],
+      "description": "Dramatisk og smukt hedelandskab med store lyngbakker ud til Kattegat. Strandafsnittet under bakkerne tiltrækker mange naturister.",
+      "lat": 56.088,
+      "lng": 12.155,
+      "address": "Heatherhill, 3210 Vejby, Danmark"
+    },
+    {
+      "id": "loc-dk-amager",
+      "name": "Amager Strandpark Syd / Femøren",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "København",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "amager",
+        "københavn",
+        "femøren",
+        "kastrup",
+        "strand"
+      ],
+      "description": "Bynær nøgenbadning på den sydligste mole og stenstrand ved Kastrup Søbad/Femøren, yndet af københavnske solbadere.",
+      "lat": 55.648,
+      "lng": 12.651,
+      "address": "Amager Strand Promenaden, 2300 København S, Danmark"
+    },
+    {
       "id": "loc-dk-boto",
       "name": "Bøtø Strand (Falster)",
       "type": "beach",
@@ -1118,6 +1355,7 @@
         "danmark",
         "denmark",
         "bøtø",
+        "boto",
         "falster",
         "marielyst",
         "strand"
@@ -1126,6 +1364,120 @@
       "lat": 54.6738,
       "lng": 11.9687,
       "address": "Bøtø Ringvej, 4873 Væggerløse, Danmark"
+    },
+    {
+      "id": "loc-dk-ulvshale",
+      "name": "Ulvshale Naturiststrand (Møn)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Møn",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "ulvshale",
+        "møn",
+        "mon",
+        "strand"
+      ],
+      "description": "Fredet naturområde med lavt, lunt badevand og vild sandstrand. Naturistafsnittet mod nord er kendt for fredfyldt ro og fugleliv.",
+      "lat": 55.038,
+      "lng": 12.285,
+      "address": "Ulvshalevej, 4780 Stege, Møn, Danmark"
+    },
+    {
+      "id": "loc-dk-dueodde",
+      "name": "Dueodde Naturiststrand (Bornholm)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Bornholm",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "bornholm",
+        "dueodde",
+        "strand"
+      ],
+      "description": "Bornholms berømte ultrafine sandstrand. Vest for fyret findes en officiel og meget populær naturistsektion gemt mellem de høje klitter.",
+      "lat": 54.989,
+      "lng": 15.068,
+      "address": "Dueodde, 3730 Nexø, Bornholm, Danmark"
+    },
+    {
+      "id": "loc-dk-balka",
+      "name": "Balka Strand Naturistafsnit (Bornholm)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Bornholm",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "balka",
+        "bornholm",
+        "strand"
+      ],
+      "description": "Børnevenlig lækker sandstrand med lunt lavt vand. Den sydlige ende mod Snogebæk er et anerkendt og afslappet naturistområde.",
+      "lat": 55.025,
+      "lng": 15.121,
+      "address": "Balka Strand, 3730 Nexø, Bornholm, Danmark"
+    },
+    {
+      "id": "loc-dk-flyvesandet",
+      "name": "Flyvesandet Naturiststrand (Nordfyn)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Fyn",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "flyvesandet",
+        "nordfyn",
+        "fyn",
+        "strand"
+      ],
+      "description": "Fyns eneste sandklitområde og en af landets bedste naturiststrande med kilometervis af plads, klitter og udsigt til Æbelø.",
+      "lat": 55.618,
+      "lng": 10.305,
+      "address": "Flyvesandsvej, 5450 Otterup, Nordfyn, Danmark"
+    },
+    {
+      "id": "loc-dk-ristinge",
+      "name": "Ristinge Strand (Langeland)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Langeland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "ristinge",
+        "langeland",
+        "fyn",
+        "strand"
+      ],
+      "description": "En af Det Sydfynske Øhavs fineste sandstrande med klitter og kridhvidt sand. Den vestligste del er velbesøgt af naturister.",
+      "lat": 54.745,
+      "lng": 10.612,
+      "address": "Ristingevej, 5932 Humble, Langeland, Danmark"
+    },
+    {
+      "id": "loc-dk-moesgaard",
+      "name": "Moesgård Strand (Aarhus)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Østjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "moesgård",
+        "moesgaard",
+        "aarhus",
+        "århus",
+        "jylland",
+        "strand"
+      ],
+      "description": "Traditionsrig og meget populær naturiststrand i skovkanten syd for Aarhus mod Giber Å, omgivet af smukke bøgeskove.",
+      "lat": 56.091,
+      "lng": 10.252,
+      "address": "Strandskovvej, 8270 Højbjerg, Aarhus, Danmark"
     },
     {
       "id": "loc-dk-skagen",
@@ -1147,22 +1499,66 @@
       "address": "Nordstrandvej, 9990 Skagen, Danmark"
     },
     {
-      "id": "loc-dk-dueodde",
-      "name": "Dueodde Naturiststrand (Bornholm)",
+      "id": "loc-dk-kandestederne",
+      "name": "Kandestederne Strand (Skagen Vestkyst)",
       "type": "beach",
       "country": "Danmark",
-      "region": "Bornholm",
+      "region": "Nordjylland",
       "keywords": [
         "danmark",
         "denmark",
-        "bornholm",
-        "dueodde",
+        "kandestederne",
+        "skagen",
+        "jylland",
+        "vesterhavet",
         "strand"
       ],
-      "description": "Bornholms berømte ultrafine sandstrand. Vest for fyret findes en officiel og meget populær naturistsektion gemt mellem de høje klitter.",
-      "lat": 54.989,
-      "lng": 15.068,
-      "address": "Dueodde, 3730 Nexø, Bornholm, Danmark"
+      "description": "Kæmpe bred vesterhavsstrand neden for Råbjerg Mile med høje klitter og vild Atlanterhavsstemning.",
+      "lat": 57.658,
+      "lng": 10.375,
+      "address": "Kandevejen, 9990 Skagen, Danmark"
+    },
+    {
+      "id": "loc-dk-blokhus",
+      "name": "Blokhus & Rødhus Klitstrand",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Nordjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "blokhus",
+        "rødhus",
+        "nordjylland",
+        "jylland",
+        "vesterhavet",
+        "strand"
+      ],
+      "description": "Bred vesterhavsstrand med fredelige klitrækker. Rødhus-afsnittet mod syd er traditionsrigt populært til uforstyrret nøgenbadning.",
+      "lat": 57.218,
+      "lng": 9.535,
+      "address": "Rødhus Strand, 9490 Pandrup, Danmark"
+    },
+    {
+      "id": "loc-dk-hvidesande",
+      "name": "Hvide Sande & Årgab Strand",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Vestjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "hvide sande",
+        "årgab",
+        "holmsland",
+        "vestjylland",
+        "vesterhavet",
+        "strand"
+      ],
+      "description": "Storslåede klitter mellem Vesterhavet og Ringkøbing Fjord med masser af uforstyrret plads til naturister.",
+      "lat": 55.975,
+      "lng": 8.121,
+      "address": "Sønder Klitvej, 6960 Hvide Sande, Danmark"
     },
     {
       "id": "loc-dk-romo",
@@ -1183,6 +1579,47 @@
       "lat": 55.095,
       "lng": 8.515,
       "address": "Sønderstrand, 6792 Rømø, Danmark"
+    },
+    {
+      "id": "loc-dk-vejers",
+      "name": "Vejers Strand (Sydvestjylland)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Sydvestjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "vejers",
+        "blåvand",
+        "jylland",
+        "vesterhavet",
+        "strand"
+      ],
+      "description": "Bred hvid sandstrand. Den bilfrie sydlige sektion mod Kallesmærsk Hede er et anerkendt fristed for naturister.",
+      "lat": 55.615,
+      "lng": 8.115,
+      "address": "Vejers Havvej, 6853 Vejers Strand, Danmark"
+    },
+    {
+      "id": "loc-dk-vosnaes",
+      "name": "Vosnæs Pynt / Skødstrup (Kalø Vig)",
+      "type": "beach",
+      "country": "Danmark",
+      "region": "Østjylland",
+      "keywords": [
+        "danmark",
+        "denmark",
+        "vosnæs",
+        "skødstrup",
+        "kalø vig",
+        "aarhus",
+        "jylland",
+        "strand"
+      ],
+      "description": "Skjult naturperle på spidsen af Vosnæs Pynt i Kalø Vig, omgivet af herregårdsskov med ro og udsigt over bugten.",
+      "lat": 56.265,
+      "lng": 10.378,
+      "address": "Vosnæsvej, 8541 Skødstrup, Danmark"
     },
     {
       "id": "loc-de-sylt",

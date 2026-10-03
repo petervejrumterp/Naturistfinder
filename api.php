@@ -183,7 +183,9 @@ if ($endpoint === 'search') {
         }
     }
 
-    if (!empty($matched)) {
+    $includeAI = !empty($body['includeAI']) || !empty($_POST['includeAI']);
+
+    if (!empty($matched) && !$includeAI) {
         echo json_encode([
             "locations" => $matched,
             "summary" => "Fandt " . count($matched) . " verificerede naturist-destinationer for \"{$query}\".",
@@ -192,9 +194,9 @@ if ($endpoint === 'search') {
         exit;
     }
 
-    // 2. Fallback to Gemini API if API key is configured
+    // 2. Query Gemini API if API key is configured and either $includeAI requested or no matches found
     if ($apiKey) {
-        $prompt = "Du er en ekspert i naturiststeder og rejseguide. Find 4-10 specifikke naturiststeder (strande, resorts, camping) i/omkring: \"{$query}\". Svar som JSON array med felter: id, name, type (beach, resort, campsite, other), description, lat, lng, address, warning.";
+        $prompt = "Du er en ekspert i naturiststeder og rejseguide. Find 8-15 specifikke naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: \"{$query}\". Svar som et JSON array med objekter indeholdende: id, name, type (beach, resort, campsite, other), description, lat, lng, address.";
         $apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" . urlencode($apiKey);
 
         $payload = [
@@ -216,7 +218,7 @@ if ($endpoint === 'search') {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 12);
         $res = curl_exec($ch);
         $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
@@ -226,14 +228,40 @@ if ($endpoint === 'search') {
             $text = $json['candidates'][0]['content']['parts'][0]['text'] ?? '[]';
             $parsed = json_decode($text, true);
             if (is_array($parsed) && count($parsed) > 0) {
+                // Merge AI places with existing curated places without duplicates
+                $allResults = $matched;
+                $seenNames = [];
+                foreach ($allResults as $m) {
+                    $seenNames[mb_strtolower($m['name'], 'UTF-8')] = true;
+                }
+                foreach ($parsed as $aiLoc) {
+                    $normName = mb_strtolower($aiLoc['name'] ?? '', 'UTF-8');
+                    if ($normName && !isset($seenNames[$normName])) {
+                        if (empty($aiLoc['id'])) {
+                            $aiLoc['id'] = 'loc-ai-' . md5($normName);
+                        }
+                        $allResults[] = $aiLoc;
+                        $seenNames[$normName] = true;
+                    }
+                }
+
                 echo json_encode([
-                    "locations" => $parsed,
-                    "summary" => "Fandt " . count($parsed) . " naturist-destinationer for \"{$query}\".",
+                    "locations" => $allResults,
+                    "summary" => "Fandt " . count($allResults) . " naturist-destinationer for \"{$query}\" (inkl. AI udvidet søgning).",
                     "sources" => []
                 ]);
                 exit;
             }
         }
+    }
+
+    if (!empty($matched)) {
+        echo json_encode([
+            "locations" => $matched,
+            "summary" => "Fandt " . count($matched) . " verificerede naturist-destinationer for \"{$query}\".",
+            "sources" => []
+        ]);
+        exit;
     }
 
     // Polite empty response if not found
