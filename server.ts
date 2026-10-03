@@ -89,15 +89,6 @@ async function resolveResortImage(loc: { name: string; type: string; image?: str
     if (isValid) return loc.image;
   }
 
-  // 4. Try guessing domain based on resort name
-  const stripped = loc.name.toLowerCase().replace(/naturist|resort|hotel|village|camp|camping/g, '').replace(/[^a-z0-9]/g, '');
-  if (stripped.length >= 4) {
-    for (const tld of ['.gr', '.com', '.fr', '.hr', '.es']) {
-      const guessed = await extractOgImageFromWebsite(`https://www.${stripped}${tld}`);
-      if (guessed) return guessed;
-    }
-  }
-
   return undefined;
 }
 
@@ -484,13 +475,8 @@ app.post("/api/search", async (req, res) => {
     return res.status(400).json({ error: "Søgeterm er påkrævet" });
   }
 
-  const includeAI = Boolean(req.body.includeAI);
-
-  // Check comprehensive curated database first (instant match)
+  // Check comprehensive curated database
   const curated = searchCuratedDatabase(query);
-  if (curated && curated.locations.length > 0 && !includeAI) {
-    return res.json(curated);
-  }
 
   if (!ai) {
     if (curated && curated.locations.length > 0) {
@@ -503,8 +489,9 @@ app.post("/api/search", async (req, res) => {
     });
   }
 
-  const prompt = `Du er en ekspert i naturiststeder og rejseguide.
-Find og beskriv 8-15 specifikke naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: "${query}".
+  const prompt = `Du er en førende international ekspert i naturisme, FKK og naturistrejser.
+Find og beskriv 20-30 specifikke, anerkendte og officielle naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: "${query}".
+Giv en bred geografisk dækning af landets kyster og regioner (både kendte resorts, campingpladser og vilde/officielle strande).
 
 Vigtige regler:
 1. For resorts og campingpladser: Angiv det officielle website (hjemmeside) URL hvis kendt (f.eks. https://www.vritomartis.gr/).
@@ -611,11 +598,14 @@ Vigtige regler:
 
     return res.json({
       locations: combinedLocations,
-      summary: `Fandt ${combinedLocations.length} naturist-destinationer for "${query}" (inkl. AI udvidet søgning).`,
+      summary: `Fandt ${combinedLocations.length} naturist-destinationer for "${query}".`,
       sources: []
     });
   } catch (err: any) {
     console.error("Gemini Search Error:", err);
+    if (curated && curated.locations.length > 0) {
+      return res.json(curated);
+    }
     return res.status(500).json({
       error: err?.message || "Der opstod en fejl under søgningen. Prøv venligst igen."
     });

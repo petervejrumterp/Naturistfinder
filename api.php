@@ -149,12 +149,16 @@ if ($endpoint === 'search') {
         $keywords = array_map(function($k) { return mb_strtolower($k, 'UTF-8'); }, $loc['keywords'] ?? []);
 
         $match = ($country === $normalized || $region === $normalized ||
-                  mb_strpos($normalized, $country) !== false || mb_strpos($normalized, $region) !== false ||
-                  mb_strpos($country, $normalized) !== false || mb_strpos($region, $normalized) !== false);
+                  (mb_strlen($country, 'UTF-8') >= 4 && mb_strpos($normalized, $country) !== false) ||
+                  (mb_strlen($region, 'UTF-8') >= 4 && mb_strpos($normalized, $region) !== false) ||
+                  (mb_strlen($normalized, 'UTF-8') >= 4 && mb_strpos($country, $normalized) !== false) ||
+                  (mb_strlen($normalized, 'UTF-8') >= 4 && mb_strpos($region, $normalized) !== false));
 
         if (!$match) {
             foreach ($keywords as $kw) {
-                if ($kw === $normalized || mb_strpos($normalized, $kw) !== false || mb_strpos($kw, $normalized) !== false) {
+                if ($kw === $normalized ||
+                    (mb_strlen($kw, 'UTF-8') >= 4 && mb_strlen($normalized, 'UTF-8') >= 4 &&
+                     (mb_strpos($normalized, $kw) !== false || mb_strpos($kw, $normalized) !== false))) {
                     $match = true;
                     break;
                 }
@@ -183,9 +187,8 @@ if ($endpoint === 'search') {
         }
     }
 
-    $includeAI = !empty($body['includeAI']) || !empty($_POST['includeAI']);
-
-    if (!empty($matched) && !$includeAI) {
+    // 1. If NO Gemini API key is configured, return curated database matches immediately
+    if (empty($apiKey) && !empty($matched)) {
         echo json_encode([
             "locations" => $matched,
             "summary" => "Fandt " . count($matched) . " verificerede naturist-destinationer for \"{$query}\".",
@@ -194,9 +197,15 @@ if ($endpoint === 'search') {
         exit;
     }
 
-    // 2. Query Gemini API if API key is configured and either $includeAI requested or no matches found
+    // 2. Query Gemini API when API key is configured to enrich or discover destinations
     if ($apiKey) {
-        $prompt = "Du er en ekspert i naturiststeder og rejseguide. Find 8-15 specifikke naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: \"{$query}\". Svar som et JSON array med objekter indeholdende: id, name, type (beach, resort, campsite, other), description, lat, lng, address.";
+        $prompt = "Du er en førende international ekspert i naturisme, FKK og naturistrejser.
+Find og returner 20-30 specifikke, officielle og anerkendte naturiststrande, naturistcampingpladser, FKK-områder og naturistresorts i eller omkring: \"{$query}\".
+Giv en bred geografisk dækning af landets kyster og regioner.
+For resorts og campingpladser: angiv officiel hjemmeside i feltet 'url' hvis kendt.
+Hvis destinationen forbyder naturisme ved lov (fx De Forenede Arabiske Emirater), angiv en advarsel i warning-feltet.
+Svar som et rent JSON array med objekter indeholdende: id, name, type (beach, resort, campsite, other), description, lat, lng, address, url, warning.";
+
         $apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" . urlencode($apiKey);
 
         $payload = [
@@ -218,7 +227,7 @@ if ($endpoint === 'search') {
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 12);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 15);
         $res = curl_exec($ch);
         $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
@@ -247,7 +256,7 @@ if ($endpoint === 'search') {
 
                 echo json_encode([
                     "locations" => $allResults,
-                    "summary" => "Fandt " . count($allResults) . " naturist-destinationer for \"{$query}\" (inkl. AI udvidet søgning).",
+                    "summary" => "Fandt " . count($allResults) . " naturist-destinationer for \"{$query}\".",
                     "sources" => []
                 ]);
                 exit;

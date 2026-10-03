@@ -74,7 +74,7 @@ export async function searchNaturistPlaces(
       body: JSON.stringify({
         query: trimmed,
         userPos: userLocation,
-        includeAI: forceAI
+        includeAI: true
       })
     });
 
