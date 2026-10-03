@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
-import { searchCuratedDatabase, ALL_SUGGESTIONS } from "./curatedDestinations";
+import { searchCuratedDatabase, ALL_SUGGESTIONS, ALL_LOCATIONS_DATABASE } from "./curatedDestinations";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -432,6 +432,15 @@ const CURATED_DESTINATIONS: Record<string, {
   }
 };
 
+// API Route: Status
+app.get("/api/status", (req, res) => {
+  return res.json({
+    status: "ok",
+    hasApiKey: Boolean(ai),
+    locationsCount: ALL_LOCATIONS_DATABASE.length
+  });
+});
+
 // API Route: Suggestions
 app.get("/api/suggestions", async (req, res) => {
   const query = (req.query.q as string || "").trim().toLowerCase();
@@ -563,27 +572,28 @@ Vigtige regler:
     const rawLocations = JSON.parse(responseText);
     const parsedLocations = Array.isArray(rawLocations) ? rawLocations : [];
 
-    // Resolve images asynchronously for resorts and camping places
-    const aiLocations = await Promise.all(
-      parsedLocations.map(async (loc, idx) => {
-        let image = loc.image;
-        if (loc.type === 'resort' || loc.type === 'campsite') {
-          image = await resolveResortImage(loc);
+    // Map AI locations with verified resort images in memory
+    const aiLocations = parsedLocations.map((loc, idx) => {
+      let image = loc.image;
+      for (const item of VERIFIED_RESORTS_IMAGE_MAP) {
+        if (item.pattern.test(loc.name)) {
+          image = item.image;
+          break;
         }
-        return {
-          id: loc.id || `loc-ai-${Date.now()}-${idx}`,
-          name: loc.name,
-          type: loc.type,
-          description: loc.description,
-          lat: loc.lat,
-          lng: loc.lng,
-          address: loc.address,
-          url: loc.website,
-          image: image || undefined,
-          warning: loc.warning
-        };
-      })
-    );
+      }
+      return {
+        id: loc.id || `loc-ai-${Date.now()}-${idx}`,
+        name: loc.name,
+        type: loc.type,
+        description: loc.description,
+        lat: loc.lat,
+        lng: loc.lng,
+        address: loc.address,
+        url: loc.website || loc.url,
+        image: image || undefined,
+        warning: loc.warning
+      };
+    });
 
     // Merge with curated locations if available
     const combinedLocations = curated?.locations ? [...curated.locations] : [];

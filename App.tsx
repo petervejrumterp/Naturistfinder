@@ -4,11 +4,18 @@ import {
   Search, MapPin, Loader2, Compass, Waves, 
   Map as MapIcon, List, Info, ExternalLink, 
   ShieldCheck, X, ChevronRight, Navigation, AlertTriangle,
-  CreditCard, Calendar, Sparkles
+  CreditCard, Calendar, Sparkles, Key, Check, Globe
 } from 'lucide-react';
 import Map from './components/Map';
 import SearchBar from './components/SearchBar';
-import { searchNaturistPlaces, getApiUrl } from './geminiService';
+import { 
+  searchNaturistPlaces, 
+  getApiUrl, 
+  getSavedApiKey, 
+  saveApiKey, 
+  checkApiKeyStatus, 
+  testGeminiApiKey 
+} from './geminiService';
 import { NaturistLocation, SearchResult } from './types';
 
 const ImageWithFallback: React.FC<{ src?: string; alt: string; type: string }> = ({ src, alt, type }) => {
@@ -83,6 +90,36 @@ const App: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [userPos, setUserPos] = useState<{ lat: number; lng: number } | undefined>(undefined);
   const [viewMode, setViewMode] = useState<'split' | 'map' | 'list'>('split');
+  
+  // API Key management state
+  const [isApiKeyModalOpen, setIsApiKeyModalOpen] = useState(false);
+  const [apiKeyInput, setApiKeyInput] = useState(getSavedApiKey());
+  const [hasActiveKey, setHasActiveKey] = useState(Boolean(getSavedApiKey()));
+  const [testResult, setTestResult] = useState<{ loading: boolean; success?: boolean; message?: string } | null>(null);
+
+  useEffect(() => {
+    checkApiKeyStatus().then(status => {
+      setHasActiveKey(status.hasBackendKey || status.hasClientKey);
+    });
+  }, []);
+
+  const handleSaveApiKey = async () => {
+    setTestResult({ loading: true });
+    const trimmed = apiKeyInput.trim();
+    if (!trimmed) {
+      saveApiKey('');
+      setHasActiveKey(false);
+      setTestResult({ loading: false, success: true, message: 'Nøgle fjernet. Søgemaskinen bruger nu den indbyggede verificerede database.' });
+      return;
+    }
+
+    const test = await testGeminiApiKey(trimmed);
+    setTestResult({ loading: false, success: test.success, message: test.message });
+    if (test.success) {
+      saveApiKey(trimmed);
+      setHasActiveKey(true);
+    }
+  };
   
   const listRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
@@ -187,7 +224,25 @@ const App: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-2">
-           <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-bold text-[#ed6a56] bg-[#fef0ee] px-3 py-1.5 rounded-full border border-[#fef0ee]">
+          <button 
+            onClick={() => {
+              setApiKeyInput(getSavedApiKey());
+              setTestResult(null);
+              setIsApiKeyModalOpen(true);
+            }}
+            className={`flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border transition-all ${
+              hasActiveKey 
+                ? 'text-emerald-700 bg-emerald-50 border-emerald-200 hover:bg-emerald-100 shadow-sm' 
+                : 'text-stone-600 bg-stone-100 border-stone-200 hover:border-amber-400 hover:text-amber-700'
+            }`}
+            title="Klik for at konfigurere Google Gemini AI-nøgle til hele verden"
+          >
+            <span className={`w-2 h-2 rounded-full ${hasActiveKey ? 'bg-emerald-500 animate-pulse' : 'bg-stone-400'}`}></span>
+            <Sparkles className={`h-3.5 w-3.5 ${hasActiveKey ? 'text-emerald-600' : 'text-amber-500'}`} />
+            <span className="hidden sm:inline">{hasActiveKey ? 'AI Aktiv (Hele verden)' : 'Aktiver AI'}</span>
+          </button>
+
+          <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-bold text-[#ed6a56] bg-[#fef0ee] px-3 py-1.5 rounded-full border border-[#fef0ee]">
             <ShieldCheck className="h-3.5 w-3.5" />
             VERIFICERET
           </div>
@@ -425,6 +480,106 @@ const App: React.FC = () => {
           </div>
         )}
       </main>
+
+      {/* AI Key Configuration Modal */}
+      {isApiKeyModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-stone-100 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 bg-amber-50 rounded-2xl text-amber-600 border border-amber-100">
+                  <Sparkles className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-stone-900">AI-søgning i hele verden</h3>
+                  <p className="text-xs text-stone-500">Find naturiststeder i ethvert land og by</p>
+                </div>
+              </div>
+              <button 
+                onClick={() => setIsApiKeyModalOpen(false)}
+                className="p-2 text-stone-400 hover:text-stone-700 hover:bg-stone-100 rounded-full transition-all"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            <div className="bg-stone-50 p-4 rounded-2xl text-xs text-stone-600 space-y-2 border border-stone-200/60 leading-relaxed">
+              <p>
+                Når du tilknytter en gratis Google Gemini API-nøgle, kan NaturistFinder søge i alle lande (f.eks. Tyskland, Kroatien, Østrig, Norge, Brasilien osv.) og finde snesevis af strande og campingpladser.
+              </p>
+              <div className="pt-1">
+                <a 
+                  href="https://aistudio.google.com/apikey" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 font-bold text-[#ed6a56] hover:underline"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" /> Hent gratis API-nøgle hos Google AI Studio
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-stone-700 block">
+                Google Gemini API-nøgle
+              </label>
+              <input 
+                type="password"
+                placeholder="AIzaSy..."
+                value={apiKeyInput}
+                onChange={(e) => setApiKeyInput(e.target.value)}
+                className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-xl text-sm font-mono text-stone-800 focus:outline-none focus:ring-2 focus:ring-[#ed6a56] focus:bg-white transition-all"
+              />
+              <p className="text-[11px] text-stone-400 italic">
+                Nøglen gemmes sikkert i din browser og synkroniseres automatisk med søgemaskinen.
+              </p>
+            </div>
+
+            {testResult && (
+              <div className={`p-3.5 rounded-xl text-xs font-semibold flex items-start gap-2.5 ${
+                testResult.loading 
+                  ? 'bg-stone-100 text-stone-600' 
+                  : testResult.success 
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' 
+                    : 'bg-red-50 text-red-700 border border-red-200'
+              }`}>
+                {testResult.loading ? (
+                  <Loader2 className="h-4 w-4 animate-spin shrink-0 mt-0.5" />
+                ) : testResult.success ? (
+                  <Check className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+                ) : (
+                  <AlertTriangle className="h-4 w-4 text-red-600 shrink-0 mt-0.5" />
+                )}
+                <span>{testResult.loading ? 'Tester nøgle mod Google AI...' : testResult.message}</span>
+              </div>
+            )}
+
+            <div className="flex items-center gap-2 pt-2">
+              <button 
+                onClick={handleSaveApiKey}
+                disabled={testResult?.loading}
+                className="flex-1 py-3 bg-[#ed6a56] text-white rounded-xl text-sm font-bold hover:bg-[#d85845] transition-all shadow-md active:scale-95 disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                {testResult?.loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
+                Gem & Test Nøgle
+              </button>
+              {apiKeyInput && (
+                <button 
+                  onClick={() => {
+                    setApiKeyInput('');
+                    saveApiKey('');
+                    setHasActiveKey(false);
+                    setTestResult({ loading: false, success: true, message: 'Nøgle fjernet.' });
+                  }}
+                  className="px-4 py-3 bg-stone-100 text-stone-600 rounded-xl text-sm font-bold hover:bg-stone-200 transition-all"
+                >
+                  Ryd
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

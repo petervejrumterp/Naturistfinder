@@ -17,17 +17,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-// 1. Load API Key from config.php, environment, or .env file
+// 1. Load API Key from config.php, environment, incoming request, or .env file
 $apiKey = '';
 if (file_exists(__DIR__ . '/config.php')) {
-    include_once __DIR__ . '/config.php';
+    @include_once __DIR__ . '/config.php';
     if (defined('GEMINI_API_KEY')) $apiKey = GEMINI_API_KEY;
+    elseif (defined('API_KEY')) $apiKey = API_KEY;
+    elseif (isset($GEMINI_API_KEY) && !empty($GEMINI_API_KEY)) $apiKey = $GEMINI_API_KEY;
+    elseif (isset($apiKey) && !empty($apiKey)) $apiKey = $apiKey;
+    elseif (isset($api_key) && !empty($api_key)) $apiKey = $api_key;
+    
+    // Fallback: regex search config.php content if variables were defined differently
+    if (!$apiKey) {
+        $cfgContent = @file_get_contents(__DIR__ . '/config.php');
+        if ($cfgContent && preg_match('/AIzaSy[A-Za-z0-9_-]{33}/', $cfgContent, $m)) {
+            $apiKey = $m[0];
+        }
+    }
 }
 if (!$apiKey) {
-    $apiKey = getenv('GEMINI_API_KEY') ?: getenv('API_KEY');
+    $apiKey = getenv('GEMINI_API_KEY') ?: (getenv('API_KEY') ?: ($_ENV['GEMINI_API_KEY'] ?? ($_SERVER['GEMINI_API_KEY'] ?? '')));
+}
+if (!$apiKey && !empty($_SERVER['HTTP_X_GEMINI_KEY'])) {
+    $apiKey = trim($_SERVER['HTTP_X_GEMINI_KEY']);
 }
 if (!$apiKey && file_exists(__DIR__ . '/.env')) {
-    $envLines = file(__DIR__ . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $envLines = @file(__DIR__ . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
     foreach ($envLines as $line) {
         if (strpos(trim($line), '#') === 0) continue;
         if (strpos($line, '=') !== false) {
@@ -61,6 +76,20 @@ if (!$endpoint) {
     if (strpos($uri, 'api/suggestions') !== false) $endpoint = 'suggestions';
     elseif (strpos($uri, 'api/search') !== false) $endpoint = 'search';
     elseif (strpos($uri, 'api/image-proxy') !== false) $endpoint = 'image-proxy';
+    elseif (strpos($uri, 'api/status') !== false) $endpoint = 'status';
+}
+
+// -------------------------------------------------------------------------
+// ROUTE: Status & Diagnostics
+// -------------------------------------------------------------------------
+if ($endpoint === 'status') {
+    echo json_encode([
+        "status" => "ok",
+        "hasApiKey" => !empty($apiKey),
+        "locationsCount" => count($curatedLocations),
+        "phpVersion" => phpversion()
+    ]);
+    exit;
 }
 
 // -------------------------------------------------------------------------
@@ -129,6 +158,10 @@ if ($endpoint === 'search') {
     $rawInput = file_get_contents('php://input');
     $body = json_decode($rawInput, true) ?: [];
     $query = trim($body['query'] ?? ($_POST['query'] ?? ''));
+
+    if (!$apiKey && !empty($body['apiKey'])) {
+        $apiKey = trim($body['apiKey']);
+    }
 
     if (!$query) {
         http_response_code(400);
@@ -228,8 +261,18 @@ Svar som et rent JSON array med objekter indeholdende: id, name, type (beach, re
         curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         $res = curl_exec($ch);
         $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        // Model fallback: try gemini-1.5-flash if 2.5 returns non-200
+        if ($code !== 200 || empty($res)) {
+            $fallbackUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" . urlencode($apiKey);
+            curl_setopt($ch, CURLOPT_URL, $fallbackUrl);
+            $res = curl_exec($ch);
+            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        }
         curl_close($ch);
 
         if ($code === 200 && $res) {

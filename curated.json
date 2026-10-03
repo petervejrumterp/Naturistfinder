@@ -1458,6 +1458,202 @@
       "address": "Park Šuma Osejava, 21300 Makarska, Kroatien"
     },
     {
+      "id": "loc-cro-baldarin",
+      "name": "FKK Camping Baldarin (Punta Križa, Cres)",
+      "type": "campsite",
+      "country": "Kroatien",
+      "region": "Kvarner / Øen Cres",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "baldarin",
+        "cres",
+        "punta kriza",
+        "camping"
+      ],
+      "description": "En af Adriaterhavets mest fredfyldte og vilde naturistcampingpladser på sydspidsen af øen Cres, omgivet af tætte egeskove og krystalklart turkist hav.",
+      "lat": 44.619,
+      "lng": 14.505,
+      "address": "Punta Križa 66, 51554 Nerezine, Cres, Kroatien",
+      "url": "https://www.camp-baldarin.com/"
+    },
+    {
+      "id": "loc-cro-ulika",
+      "name": "FKK Camping Ulika (Poreč, Istrien)",
+      "type": "campsite",
+      "country": "Kroatien",
+      "region": "Istrien",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "ulika",
+        "porec",
+        "poreč",
+        "istrien",
+        "camping"
+      ],
+      "description": "4-stjernet familievenlig naturistcampingplads nord for Poreč med swimmingpool, mobile homes, restauranter og 2,5 km sten- og klippestrand med Blåt Flag.",
+      "lat": 45.262,
+      "lng": 13.585,
+      "address": "Červar Porat, 52440 Poreč, Istrien, Kroatien",
+      "url": "https://www.plavalaguna.com/en/camping/ulika"
+    },
+    {
+      "id": "loc-cro-kanegra",
+      "name": "FKK Camping Kanegra (Umag, Istrien)",
+      "type": "campsite",
+      "country": "Kroatien",
+      "region": "Istrien",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "kanegra",
+        "umag",
+        "istrien",
+        "camping"
+      ],
+      "description": "Beliggende i Piran-bugten tæt på den slovenske grænse, omgivet af grønne pinjetræer og en smuk rullestensstrand med roligt badevand.",
+      "lat": 45.485,
+      "lng": 13.562,
+      "address": "Kanegra 2, 52470 Umag, Istrien, Kroatien"
+    },
+    {
+      "id": "loc-cro-sahara",
+      "name": "Sahara Beach & Stolac (Lopar, Øen Rab)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Kvarner / Øen Rab",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "sahara",
+        "lopar",
+        "rab",
+        "strand"
+      ],
+      "description": "En af Kroatiens sjældne ægte sandstrande. En bred, fredet halvmåneformet bugt omgivet af lave klipper, hvor naturisme har været dyrket i årtier.",
+      "lat": 44.838,
+      "lng": 14.748,
+      "address": "Lopar, 51281 Rab, Kroatien"
+    },
+    {
+      "id": "loc-cro-paklina",
+      "name": "FKK Beach Paklina (Bol, Øen Brač)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Dalmatien / Øen Brač",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "paklina",
+        "bol",
+        "brac",
+        "brač",
+        "strand"
+      ],
+      "description": "Ligger lige vest for det berømte gyldne horn Zlatni Rat. Afsondrede små rullestensbugter i skyggen af pinjeskove med fantastisk badevand.",
+      "lat": 43.255,
+      "lng": 16.621,
+      "address": "Bol, 21420 Brač, Kroatien"
+    },
+    {
+      "id": "loc-cro-jerolim",
+      "name": "FKK Beach Jerolim (Pakleni Øerne, Hvar)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Dalmatien / Hvar",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "jerolim",
+        "hvar",
+        "pakleni",
+        "strand"
+      ],
+      "description": "En lille fredet ø ud for byen Hvar, kåret af CNN som en af verdens førende naturiststrande med krystalklart vand og hyggelig ø-bar.",
+      "lat": 43.161,
+      "lng": 16.435,
+      "address": "Sveti Jerolim, 21450 Hvar, Kroatien"
+    },
+    {
+      "id": "loc-cro-stipanska",
+      "name": "FKK Beach Stipanska / Marinkovac (Hvar)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Dalmatien / Hvar",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "stipanska",
+        "hvar",
+        "marinkovac",
+        "strand"
+      ],
+      "description": "Klassisk naturistø i Pakleni-skærgården med glatte klippeplateauer og turkist vand kun 10 minutters bådtur fra Hvar havn.",
+      "lat": 43.155,
+      "lng": 16.425,
+      "address": "Marinkovac, 21450 Hvar, Kroatien"
+    },
+    {
+      "id": "loc-cro-proizd",
+      "name": "Bili Boci FKK Beach (Øen Proizd, Korčula)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Dalmatien / Korčula",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "proizd",
+        "korcula",
+        "korčula",
+        "vela luka",
+        "strand"
+      ],
+      "description": "Kridhvide skrånende klipper og turkist hav kåret som Kroatiens smukkeste strand. Den nordlige sektion er dedikeret til naturister.",
+      "lat": 42.985,
+      "lng": 16.612,
+      "address": "Proizd, 20270 Vela Luka, Korčula, Kroatien"
+    },
+    {
+      "id": "loc-cro-vrulja",
+      "name": "FKK Beach Vrulja (Brela / Makarska)",
+      "type": "beach",
+      "country": "Kroatien",
+      "region": "Dalmatien",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "vrulja",
+        "brela",
+        "makarska",
+        "strand"
+      ],
+      "description": "Skjult bugt for foden af monumentale Biokovo-bjerge, hvor underjordiske ferskvandskilder springer ud i havet. Betagende vild natur.",
+      "lat": 43.398,
+      "lng": 16.885,
+      "address": "21322 Brela, Makarska Riviera, Kroatien"
+    },
+    {
+      "id": "loc-cro-istra",
+      "name": "Istra Naturist Camping (Funtana, Vrsar)",
+      "type": "campsite",
+      "country": "Kroatien",
+      "region": "Istrien",
+      "keywords": [
+        "kroatien",
+        "croatia",
+        "istra",
+        "funtana",
+        "vrsar",
+        "istrien",
+        "camping"
+      ],
+      "description": "Rolig og idyllisk naturistcampingplads beliggende på en skovklædt halvø med udsigt til Vrsars skærgård og Limfjorden.",
+      "lat": 45.178,
+      "lng": 13.602,
+      "address": "Grgeti 35, 52452 Funtana, Istrien, Kroatien"
+    },
+    {
       "id": "loc-gre-vritomartis",
       "name": "Vritomartis Naturist Resort (Chora Sfakion, Kreta)",
       "type": "resort",
@@ -2073,6 +2269,311 @@
       "lat": 54.455,
       "lng": 12.57,
       "address": "Bernsteinweg, 18375 Prerow, Østersøen, Tyskland"
+    },
+    {
+      "id": "loc-de-schaabe",
+      "name": "FKK-Strand Schaabe (Rügen / Østersøen)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Mecklenburg-Vorpommern / Rügen",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "schaabe",
+        "rügen",
+        "rugen",
+        "ostsee",
+        "østersøen",
+        "fkk",
+        "strand"
+      ],
+      "description": "12 km lang uberørt sandstrand mellem Juliusruh og Glowe på Rügen. En af Tysklands mest storslåede kyststrækninger med udstrakte FKK-sektioner i klitterne.",
+      "lat": 54.582,
+      "lng": 13.385,
+      "address": "Schaabe, 18556 Glowe, Rügen, Tyskland"
+    },
+    {
+      "id": "loc-de-usedom",
+      "name": "FKK-Strand Ahlbeck & Bansin (Usedom / Østersøen)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Mecklenburg-Vorpommern / Usedom",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "usedom",
+        "ahlbeck",
+        "bansin",
+        "ostsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Bred, finkornet sandstrand ved kejserbadene på Usedom med historiske kursteder og store, velbesøgte officielle FKK-afsnit.",
+      "lat": 53.942,
+      "lng": 14.195,
+      "address": "Strandpromenade, 17419 Ahlbeck, Usedom, Tyskland"
+    },
+    {
+      "id": "loc-de-wannsee",
+      "name": "Strandbad Wannsee FKK (Berlin)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Berlin",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "berlin",
+        "wannsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Europas største indlandsstrandbad ved en sø. Den traditionsrige FKK-sektion ved søens bred har tiltrukket berlinere i over 100 år.",
+      "lat": 52.438,
+      "lng": 13.178,
+      "address": "Wannseebadweg 25, 14129 Berlin, Tyskland"
+    },
+    {
+      "id": "loc-de-mueggelsee",
+      "name": "Müggelsee FKK-Strand (Berlin)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Berlin",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "berlin",
+        "müggelsee",
+        "mueggelsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Berlins største sø med en elsket og livlig officiel FKK-strand i fyrreskoven ved Rahnsdorf.",
+      "lat": 52.445,
+      "lng": 13.675,
+      "address": "Fürstenwalder Damm 838, 12589 Berlin, Tyskland"
+    },
+    {
+      "id": "loc-de-englischergarten",
+      "name": "Englischer Garten & Eisbach FKK (München)",
+      "type": "other",
+      "country": "Tyskland",
+      "region": "Bayern / München",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "münchen",
+        "munich",
+        "bayern",
+        "englischer garten",
+        "fkk"
+      ],
+      "description": "Verdensberømt naturistområde i hjertet af München. På Schönfeldwiese og langs Eisbach-floden har nøgensolbadning været en stolt lokal tradition siden 1960'erne.",
+      "lat": 48.151,
+      "lng": 11.589,
+      "address": "Schönfeldwiese, Englischer Garten, 80538 München, Tyskland"
+    },
+    {
+      "id": "loc-de-fuehlinger",
+      "name": "FKK-Strand Fühlinger See (Köln)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Nordrhein-Westfalen / Köln",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "köln",
+        "koeln",
+        "fühlinger see",
+        "fkk",
+        "sø"
+      ],
+      "description": "Stort rekreativt søkompleks i Köln med en officiel, velbesøgt FKK-ø og strand omgivet af grønne plæner og træer.",
+      "lat": 50.985,
+      "lng": 6.925,
+      "address": "Oranjehofstraße, 50769 Köln, Tyskland"
+    },
+    {
+      "id": "loc-de-warnemuende",
+      "name": "FKK-Strand Warnemünde (Rostock / Østersøen)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Mecklenburg-Vorpommern",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "warnemünde",
+        "warnemuende",
+        "rostock",
+        "ostsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Bredeste sandstrand ved den tyske Østersøkyst (op til 100 m bred). Store officielle FKK-sektioner vest for fyrtårnet mod Diedrichshagen.",
+      "lat": 54.178,
+      "lng": 12.062,
+      "address": "Strandweg, 18119 Warnemünde, Tyskland"
+    },
+    {
+      "id": "loc-de-zingst",
+      "name": "FKK-Strand Zingst (Fischland-Darss-Zingst)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Mecklenburg-Vorpommern",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "zingst",
+        "darss",
+        "ostsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Klassisk hvid Østersøstrand med klitter og kystskove i Nationalpark Vorpommersche Boddenlandschaft med populære FKK-overgange.",
+      "lat": 54.438,
+      "lng": 12.695,
+      "address": "Seestraße, 18374 Zingst, Tyskland"
+    },
+    {
+      "id": "loc-de-amrum",
+      "name": "Kniepsand FKK-Strand (Øen Amrum / Nordsøen)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Slesvig-Holsten / Vadehavet",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "amrum",
+        "kniepsand",
+        "nordsee",
+        "nordsøen",
+        "fkk",
+        "strand"
+      ],
+      "description": "En 10 kvadratkilometer kæmpestor vandrende sandbanke ud mod Nordsøen. Fuldstændig frihed og kilometervis af plads til naturister.",
+      "lat": 54.648,
+      "lng": 8.325,
+      "address": "Kniepsand, 25946 Norddorf auf Amrum, Tyskland"
+    },
+    {
+      "id": "loc-de-rosenfelder",
+      "name": "FKK-Camping Rosenfelder Strand (Grube / Østersøen)",
+      "type": "campsite",
+      "country": "Tyskland",
+      "region": "Slesvig-Holsten",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "rosenfelder strand",
+        "ostsee",
+        "camping",
+        "fkk"
+      ],
+      "description": "En af Tysklands førende 5-stjernede naturistcampingpladser direkte ved Østersøen med privat naturiststrand, sauna, restaurant og moderne faciliteter.",
+      "lat": 54.262,
+      "lng": 11.085,
+      "address": "Rosenfelder Strand 1, 23749 Grube, Tyskland",
+      "url": "https://www.rosenfelder-strand.de/"
+    },
+    {
+      "id": "loc-de-timmendorf",
+      "name": "FKK-Strand Timmendorfer Strand / Niendorf",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Slesvig-Holsten / Lübeck Bugt",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "timmendorfer strand",
+        "niendorf",
+        "ostsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "Populært og livligt FKK-afsnit med strandkurve i den berømte badeby Timmendorfer Strand ved Østersøen.",
+      "lat": 53.998,
+      "lng": 10.812,
+      "address": "Strandpromenade, 23669 Timmendorfer Strand, Tyskland"
+    },
+    {
+      "id": "loc-de-stpeter",
+      "name": "FKK-Strand St. Peter-Ording (Nordsøen)",
+      "type": "beach",
+      "country": "Tyskland",
+      "region": "Slesvig-Holsten",
+      "keywords": [
+        "tyskland",
+        "germany",
+        "st peter ording",
+        "spo",
+        "nordsee",
+        "fkk",
+        "strand"
+      ],
+      "description": "12 km lang og op til 2 km bred sandstrand med de berømte pælehuse (Pfahlbauten). Den sydlige sektion i Böhl har en stor FKK-zone.",
+      "lat": 54.312,
+      "lng": 8.585,
+      "address": "Badestelle Ording / Böhl, 25826 St. Peter-Ording, Tyskland"
+    },
+    {
+      "id": "loc-at-sabotnik",
+      "name": "FKK Camping Sabotnik (Keutschacher See, Kärnten)",
+      "type": "campsite",
+      "country": "Østrig",
+      "region": "Kärnten",
+      "keywords": [
+        "østrig",
+        "austria",
+        "sabotnik",
+        "keutschach",
+        "kärnten",
+        "camping",
+        "fkk"
+      ],
+      "description": "Østrigs mest traditionsrige naturistcampingplads beliggende direkte ved den varme Keutschacher See med privat søbadestrand, sauna og bjergluft.",
+      "lat": 46.592,
+      "lng": 14.168,
+      "address": "Dobeinitz 31, 9074 Keutschach am See, Kärnten, Østrig",
+      "url": "https://www.fkk-camping-sabotnik.at/"
+    },
+    {
+      "id": "loc-at-ranna",
+      "name": "FKK Camping Ranna (Mühlviertel / Donau)",
+      "type": "campsite",
+      "country": "Østrig",
+      "region": "Oberösterreich",
+      "keywords": [
+        "østrig",
+        "austria",
+        "ranna",
+        "mühlviertel",
+        "camping",
+        "fkk"
+      ],
+      "description": "Rolig naturistcampingplads ved Ranna-søen i naturskønne Oberösterreich med opvarmet pool, sauna og vandrestier i skovene.",
+      "lat": 48.498,
+      "lng": 13.785,
+      "address": "Kramesau 8, 4085 Neustift im Mühlkreis, Østrig"
+    },
+    {
+      "id": "loc-at-donauinsel",
+      "name": "Donauinsel FKK Lobau (Wien)",
+      "type": "beach",
+      "country": "Østrig",
+      "region": "Wien",
+      "keywords": [
+        "østrig",
+        "austria",
+        "wien",
+        "vienna",
+        "donauinsel",
+        "lobau",
+        "fkk",
+        "strand"
+      ],
+      "description": "Wiens kæmpemæssige officielle FKK-område på Donauøen og i Lobau-flodskoven, hvor titusindvis af wienere bader i Donaufloden om sommeren.",
+      "lat": 48.168,
+      "lng": 16.485,
+      "address": "Donauinsel Kilometer 7-10, 1220 Wien, Østrig"
     },
     {
       "id": "loc-dubai-warning",
