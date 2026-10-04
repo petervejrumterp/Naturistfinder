@@ -1,0 +1,242 @@
+{
+  "costa rica": {
+    "locations": [
+      {
+        "id": "cr-001",
+        "name": "Hidden Beach Resort (Clothing Optional Community)",
+        "type": "resort",
+        "description": "Et privat og afsondret resort dedikeret til naturisme i Guanacaste-regionen, der tilbyder en afslappet atmosfære tæt på kysten.",
+        "lat": 10.3687,
+        "lng": -85.5522,
+        "address": "Guanacaste, Costa Rica",
+        "url": "https://www.hiddenbeach.com"
+      },
+      {
+        "id": "cr-002",
+        "name": "Playa Matapalo (Uofficiel FKK-sektion)",
+        "type": "beach",
+        "description": "En meget øde og naturlig strand på Osa-halvøen, hvor naturister ofte finder private steder langs den lange kystlinje.",
+        "lat": 9.2486,
+        "lng": -83.8752,
+        "address": "Osa Peninsula, Costa Rica"
+      },
+      {
+        "id": "cr-003",
+        "name": "Naturist Friendly Eco-Lodge, Nosara",
+        "type": "resort",
+        "description": "En eco-lodge der er meget åben for naturistiske gæster og tilbyder en privat pool og have-områder til solbadning uden tøj.",
+        "lat": 9.9702,
+        "lng": -85.6515,
+        "address": "Nosara, Guanacaste, Costa Rica"
+      },
+      {
+        "id": "cr-004",
+        "name": "Playa Hermosa (Sydlige punkt)",
+        "type": "beach",
+        "description": "Strækninger ved Playa Hermosa nær Santa Teresa er kendt for at have afsidesliggende lommer, hvor naturisme tolereres af de lokale.",
+        "lat": 9.6582,
+        "lng": -85.0683,
+        "address": "Santa Teresa, Puntarenas, Costa Rica"
+      },
+      {
+        "id": "cr-005",
+        "name": "Playa Caletas",
+        "type": "beach",
+        "description": "En meget rolig strand omgivet af naturreservater, hvor det er muligt at opholde sig uforstyrret som naturist.",
+        "lat": 9.6105,
+        "lng": -85.1235,
+        "address": "Puntarenas, Costa Rica"
+      }
+    ],
+    "summary": "Fandt 5 naturist-destinationer for \"Costa Rica\".",
+    "sources": []
+  },
+  "letland": {
+    "locations": [
+      {
+        "id": "LV-001",
+        "name": "Vecāķi Naturist Beach",
+        "type": "beach",
+        "description": "En af de mest populære og uofficielt anerkendte naturiststrande nær Riga. Området er kendt for sin fine sandstrand og fyrreskov.",
+        "lat": 57.0812,
+        "lng": 24.1378,
+        "address": "Vecāķi, Riga, Latvia"
+      },
+      {
+        "id": "LV-002",
+        "name": "Saulkrasti Naturist Area",
+        "type": "beach",
+        "description": "En langstrakt og rolig strandstrækning nord for Riga, hvor naturister ofte samles i de mere afsidesliggende klitter.",
+        "lat": 57.2524,
+        "lng": 24.4172,
+        "address": "Saulkrasti, Saulkrasti Municipality, Latvia"
+      },
+      {
+        "id": "LV-003",
+        "name": "Liepāja South Beach (FKK)",
+        "type": "beach",
+        "description": "En vidstrakt, hvid sandstrand i den sydlige del af Liepāja, hvor naturister benytter de mindre befærdede områder bag klitterne.",
+        "lat": 56.5056,
+        "lng": 20.9934,
+        "address": "Liepāja, Latvia"
+      },
+      {
+        "id": "LV-004",
+        "name": "Ventspils Naturist Zone",
+        "type": "beach",
+        "description": "En officiel blå flag strand sektion dedikeret til naturister, velholdt og med god adgang til faciliteter.",
+        "lat": 57.3875,
+        "lng": 21.5422,
+        "address": "Ventspils, Latvia"
+      },
+      {
+        "id": "LV-005",
+        "name": "Pāvilosta Coastal Area",
+        "type": "beach",
+        "description": "En vild og uspoleret strand ved Østersøen, populær blandt naturister der foretrækker natur og fred frem for faciliteter.",
+        "lat": 56.8875,
+        "lng": 21.1822,
+        "address": "Pāvilosta, Latvia"
+      },
+      {
+        "id": "LV-006",
+        "name": "Jūrmala Naturist Spot",
+        "type": "beach",
+        "description": "Et af de mest kendte badeområder i Letland, hvor en dedikeret sektion mellem Majori og Dubulti ofte tiltrækker naturister.",
+        "lat": 56.9744,
+        "lng": 23.8055,
+        "address": "Jūrmala, Latvia"
+      },
+      {
+        "id": "LV-007",
+        "name": "Engure Beach Naturist Zone",
+        "type": "beach",
+        "description": "En rolig strækning ved kysten med stenet strand, der tilbyder stor privatliv for naturister.",
+        "lat": 57.1655,
+        "lng": 23.2185,
+        "address": "Engure, Engure Municipality, Latvia"
+      },
+      {
+        "id": "LV-008",
+        "name": "Salacgrīva Beach",
+        "type": "beach",
+        "description": "Beliggende tæt på den estiske grænse, tilbyder denne strand fredelige områder til solbadning uden tekstil.",
+        "lat": 57.7562,
+        "lng": 24.3644,
+        "address": "Salacgrīva, Latvia"
+      },
+      {
+        "id": "LV-009",
+        "name": "Kolkasrags (Cape Kolka) Area",
+        "type": "beach",
+        "description": "Hvor Østersøen møder Rigabugten. Området er vildt og meget privat, ideelt for naturister der søger isolation.",
+        "lat": 57.7553,
+        "lng": 22.5975,
+        "address": "Kolkasrags, Dundaga Municipality, Latvia"
+      },
+      {
+        "id": "LV-010",
+        "name": "Camping Jūras Krasti",
+        "type": "campsite",
+        "description": "En campingplads nær havet med en afslappet atmosfære, hvor naturisme tolereres i de afsidesliggende hjørner.",
+        "lat": 57.2144,
+        "lng": 24.3855,
+        "address": "Saulkrasti, Latvia",
+        "url": "https://juraskrasti.lv"
+      },
+      {
+        "id": "LV-011",
+        "name": "Camping Abragciems",
+        "type": "campsite",
+        "description": "Campingplads direkte ved kysten med god plads og naturistvenlige zoner mod stranden.",
+        "lat": 57.1722,
+        "lng": 23.2356,
+        "address": "Engures novads, Latvia",
+        "url": "https://abragciems.lv"
+      },
+      {
+        "id": "LV-012",
+        "name": "Bernāti Beach",
+        "type": "beach",
+        "description": "Høje klitter og hvidt sand gør dette til en favorit for naturister syd for Liepāja.",
+        "lat": 56.3688,
+        "lng": 21.0375,
+        "address": "Bernāti, Nīca Municipality, Latvia"
+      },
+      {
+        "id": "LV-013",
+        "name": "Roja Coastal Beach",
+        "type": "beach",
+        "description": "En familievenlig kystby, hvor man kan finde afskærmede steder til naturisme vest for havnen.",
+        "lat": 57.5085,
+        "lng": 22.8055,
+        "address": "Roja, Latvia"
+      },
+      {
+        "id": "LV-014",
+        "name": "Mērsrags Beach",
+        "type": "beach",
+        "description": "En langstrakt kystlinje med masser af privatliv i den nordlige del af kommunen.",
+        "lat": 57.3322,
+        "lng": 23.1255,
+        "address": "Mērsrags, Latvia"
+      },
+      {
+        "id": "LV-015",
+        "name": "Ainaži Beach",
+        "type": "beach",
+        "description": "Grænseområde ved Estland med en rolig og flad sandstrand, der er velegnet til naturisme.",
+        "lat": 57.8633,
+        "lng": 24.3633,
+        "address": "Ainaži, Latvia"
+      },
+      {
+        "id": "LV-016",
+        "name": "Pape Nature Park Beach",
+        "type": "beach",
+        "description": "En vild naturstrand inde i en naturpark. Meget privat og øde.",
+        "lat": 56.1755,
+        "lng": 21.0355,
+        "address": "Pape, Rucava Municipality, Latvia"
+      },
+      {
+        "id": "LV-017",
+        "name": "Lielirbe Beach",
+        "type": "beach",
+        "description": "Et isoleret sted langs kysten mellem Ventspils og Kolka, populært blandt erfarne naturister.",
+        "lat": 57.6533,
+        "lng": 22.2533,
+        "address": "Lielirbe, Ventspils Municipality, Latvia"
+      },
+      {
+        "id": "LV-018",
+        "name": "Bērzciems Beach",
+        "type": "beach",
+        "description": "Rolig landsbykyststrækning med gode muligheder for naturisme i klitterne.",
+        "lat": 57.2155,
+        "lng": 23.1422,
+        "address": "Bērzciems, Engure Municipality, Latvia"
+      },
+      {
+        "id": "LV-019",
+        "name": "Ulmale-Labrags Beach",
+        "type": "beach",
+        "description": "Strand med skrænter, der giver fremragende læ og privatliv for solbadere uden tøj.",
+        "lat": 56.9322,
+        "lng": 21.2222,
+        "address": "Ulmale, Pāvilosta Municipality, Latvia"
+      },
+      {
+        "id": "LV-020",
+        "name": "Skulte Beach",
+        "type": "beach",
+        "description": "Mindre kendt strand i Vidzeme-regionen, hvor naturister uforstyrret kan bade.",
+        "lat": 57.3055,
+        "lng": 24.4233,
+        "address": "Skulte, Saulkrasti Municipality, Latvia"
+      }
+    ],
+    "summary": "Fandt 20 naturist-destinationer for \"Letland\".",
+    "sources": []
+  }
+}

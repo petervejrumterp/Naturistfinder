@@ -72,31 +72,56 @@ const Map: React.FC<MapProps> = ({ locations, selectedLocation, onMarkerClick, c
     markersLayerRef.current.clearLayers();
     const bounds = L.latLngBounds([]);
 
-    locations.forEach(loc => {
-      const marker = L.marker([loc.lat, loc.lng], {
-        icon: loc.warning ? warningIcon : defaultIcon
-      }).on('click', () => onMarkerClick(loc));
-      
-      const popupContent = `
-        <div class="p-2">
-          <b class="text-stone-900">${loc.name}</b><br>
-          <span class="text-xs text-stone-500">${loc.type === 'beach' ? 'Strand' : 'Sted'}</span>
-          ${loc.warning ? `<div class="mt-2 p-1.5 bg-red-50 text-red-600 text-[10px] font-bold rounded border border-red-100">⚠️ ADVARSEL</div>` : ''}
-        </div>
-      `;
-      marker.bindPopup(popupContent);
-      markersLayerRef.current?.addLayer(marker);
-      bounds.extend([loc.lat, loc.lng]);
-    });
+    const validLocations = locations.filter(loc => 
+      loc && 
+      typeof loc.lat === 'number' && 
+      !isNaN(loc.lat) && 
+      typeof loc.lng === 'number' && 
+      !isNaN(loc.lng) &&
+      loc.lat >= -90 && loc.lat <= 90 &&
+      loc.lng >= -180 && loc.lng <= 180
+    );
 
-    if (locations.length > 0) {
-      mapRef.current.fitBounds(bounds, { padding: [50, 50], maxZoom: 12 });
+    try {
+      validLocations.forEach(loc => {
+        const marker = L.marker([loc.lat, loc.lng], {
+          icon: loc.warning ? warningIcon : defaultIcon
+        }).on('click', () => onMarkerClick(loc));
+        
+        const popupContent = `
+          <div class="p-2">
+            <b class="text-stone-900">${loc.name || 'Destination'}</b><br>
+            <span class="text-xs text-stone-500">${loc.type === 'beach' ? 'Strand' : loc.type === 'resort' ? 'Resort' : loc.type === 'campsite' ? 'Camping' : 'Sted'}</span>
+            ${loc.warning ? `<div class="mt-2 p-1.5 bg-red-50 text-red-600 text-[10px] font-bold rounded border border-red-100">⚠️ ADVARSEL</div>` : ''}
+          </div>
+        `;
+        marker.bindPopup(popupContent);
+        markersLayerRef.current?.addLayer(marker);
+        bounds.extend([loc.lat, loc.lng]);
+      });
+
+      if (validLocations.length > 0 && bounds.isValid()) {
+        mapRef.current.fitBounds(bounds, { padding: [50, 50], maxZoom: 12 });
+      }
+    } catch (err) {
+      console.warn("Leaflet markers/bounds error caught safely:", err);
     }
   }, [locations]);
 
   useEffect(() => {
-    if (selectedLocation && mapRef.current) {
-      mapRef.current.flyTo([selectedLocation.lat, selectedLocation.lng], 13, { duration: 1.5 });
+    try {
+      if (
+        selectedLocation && 
+        mapRef.current && 
+        typeof selectedLocation.lat === 'number' && 
+        !isNaN(selectedLocation.lat) && 
+        typeof selectedLocation.lng === 'number' && 
+        !isNaN(selectedLocation.lng)
+      ) {
+        mapRef.current.flyTo([selectedLocation.lat, selectedLocation.lng], 13, { duration: 1.5 });
+      }
+    } catch (err) {
+      console.warn("Leaflet flyTo error caught safely:", err);
     }
   }, [selectedLocation]);
 

@@ -1614,6 +1614,1414 @@ export const ALL_LOCATIONS_DATABASE: ExtendedNaturistLocation[] = [
     address: "Donauinsel Kilometer 7-10, 1220 Wien, Østrig"
   },
   {
+    "id": "loc-nl-zandvoort",
+    "name": "Naaktstrand Zandvoort",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Nordholland / Amsterdam",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "netherlands",
+      "dutch",
+      "zandvoort",
+      "amsterdam",
+      "strand",
+      "naaktstrand"
+    ],
+    "description": "Hollands mest ikoniske naturiststrand beliggende lige nord for Zandvoort by. Kæmpe brede klitter, fint sand og en afslappet atmosfære kun 30 min. med tog fra Amsterdam.",
+    "lat": 52.3662,
+    "lng": 4.5331,
+    "address": "Boulevard Barnaart (Palen 68-71), 2041 JA Zandvoort, Holland"
+  },
+  {
+    "id": "loc-nl-bloemendaal",
+    "name": "Naaktstrand Bloemendaal aan Zee",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Nordholland / Amsterdam",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "netherlands",
+      "bloemendaal",
+      "haarlem",
+      "amsterdam",
+      "strand"
+    ],
+    "description": "Populær og livlig naturiststrand nord for Bloemendaal. Smukke fredede klitter i Zuid-Kennemerland nationalpark og fremragende badevand.",
+    "lat": 52.4168,
+    "lng": 4.5367,
+    "address": "Zeeweg, 2051 EC Overveen / Bloemendaal, Holland"
+  },
+  {
+    "id": "loc-nl-flevonatuur",
+    "name": "Naturistencamping & Resort Flevo-Natuur",
+    "type": "resort",
+    "country": "Holland",
+    "region": "Flevoland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "flevo-natuur",
+      "zeewolde",
+      "flevoland",
+      "resort",
+      "camping"
+    ],
+    "description": "Hollands suverænt største og mest kendte 5-stjernede naturist-feriested. Omfattende wellness, indendørs og udendørs opvarmede pools, saunaer, restauranter, hytter og camping midt i skoven.",
+    "lat": 52.2858,
+    "lng": 5.4372,
+    "address": "Zeewolderdijk 25, 3898 LM Zeewolde, Holland",
+    "url": "https://www.flevonatuur.nl/"
+  },
+  {
+    "id": "loc-nl-scheveningen",
+    "name": "Naaktstrand Scheveningen (Zwarte Pad)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Sydholland / Haag",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "scheveningen",
+      "den haag",
+      "haag",
+      "zwarte pad",
+      "strand"
+    ],
+    "description": "Officiel og anerkendt naturiststrand ved Zwarte Pad i den nordlige del af Scheveningen nær Haag. Let adgang med sporvogn og hyggelige strandpavilloner i nærheden.",
+    "lat": 52.122,
+    "lng": 4.298,
+    "address": "Zwarte Pad Strandpæl 45, 2586 Den Haag, Holland"
+  },
+  {
+    "id": "loc-nl-kijkduin",
+    "name": "Naaktstrand Kijkduin",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Sydholland / Haag",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "kijkduin",
+      "den haag",
+      "haag",
+      "strand"
+    ],
+    "description": "Bred, fredelig naturiststrand syd for Kijkduin fyrtårn og klitområde mod Monster. Ideel til lange vandreture i sandet.",
+    "lat": 52.0621,
+    "lng": 4.2155,
+    "address": "Strandslag 2, 2554 Den Haag, Holland"
+  },
+  {
+    "id": "loc-nl-texel",
+    "name": "Naaktstrand Texel (Paal 9 & Paal 27)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Vadehavsøerne / Texel",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "texel",
+      "vadehavet",
+      "øerne",
+      "den hoorn",
+      "strand"
+    ],
+    "description": "På ferieøen Texel findes to store officielle naturistområder ved Paal 9 i syd og Paal 27 i nord. Vilde kystklitter, frisk vesterhavsluft og total ro.",
+    "lat": 53.0234,
+    "lng": 4.718,
+    "address": "Hoornderslag Paal 9, 1797 RT Den Hoorn, Texel, Holland"
+  },
+  {
+    "id": "loc-nl-terschelling",
+    "name": "Naaktstrand Terschelling (West aan Zee)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Vadehavsøerne / Terschelling",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "terschelling",
+      "vadehavet",
+      "strand"
+    ],
+    "description": "Kilometerlang sandstrand på Terschelling med dedikerede naturistzoner mellem pæl 8 og 12 i det beskyttede klitlandskab.",
+    "lat": 53.402,
+    "lng": 5.275,
+    "address": "Badweg West, 8881 Terschelling, Holland"
+  },
+  {
+    "id": "loc-nl-callantsoog",
+    "name": "Naaktstrand Callantsoog (Groote Keeten)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Nordholland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "callantsoog",
+      "groote keeten",
+      "strand"
+    ],
+    "description": "En af Hollands ældste og mest elskede naturiststrande syd for Callantsoog ved strandopgang Kiefteglop. Høje hvide klitter og rent badevand.",
+    "lat": 52.852,
+    "lng": 4.701,
+    "address": "Kiefteglop, 1759 Callantsoog, Holland"
+  },
+  {
+    "id": "loc-nl-domburg",
+    "name": "Naaktstrand Domburg (Zeeland)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Zeeland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "domburg",
+      "zeeland",
+      "walcheren",
+      "strand"
+    ],
+    "description": "Klassisk badeby i Zeeland med en officiel naturiststrand mod øst mod Oostkapelle. Kendt for sit særlige lys, pælerækker i vandet og brede sandbanker.",
+    "lat": 51.5658,
+    "lng": 3.4862,
+    "address": "Badweg Strandslag 60, 4357 Domburg, Holland"
+  },
+  {
+    "id": "loc-nl-bergen",
+    "name": "Naaktstrand Bergen aan Zee",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Nordholland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "bergen aan zee",
+      "alkmaar",
+      "strand"
+    ],
+    "description": "Uspoleret naturiststrand nord for Bergen aan Zee, omgivet af de imponerende Schoorlse Duinen, Hollands højeste og bredeste klitområde.",
+    "lat": 52.6685,
+    "lng": 4.6312,
+    "address": "Parkweg, 1865 Bergen aan Zee, Holland"
+  },
+  {
+    "id": "loc-nl-renesse",
+    "name": "Naaktstrand Renesse (Schouwen-Duiveland)",
+    "type": "beach",
+    "country": "Holland",
+    "region": "Zeeland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "renesse",
+      "schouwen",
+      "zeeland",
+      "strand"
+    ],
+    "description": "Meget bred og populær naturiststrand på Schouwen-Duiveland. Her ses ofte sæler der soler sig på sandbankerne ud for kysten.",
+    "lat": 51.7234,
+    "lng": 3.6789,
+    "address": "Hoogenboomlaan, 4325 Renesse, Holland"
+  },
+  {
+    "id": "loc-nl-terspegelt",
+    "name": "Naturistencamping TerSpegelt (FKK-Park)",
+    "type": "campsite",
+    "country": "Holland",
+    "region": "Noord-Brabant",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "terspegelt",
+      "eersel",
+      "brabant",
+      "camping"
+    ],
+    "description": "Eksklusiv og naturskøn naturistcampingplads i det sydlige Holland nær den belgiske grænse med søbadning, skovstier og høj komfort.",
+    "lat": 51.3414,
+    "lng": 5.2597,
+    "address": "Postelseweg 88, 5521 RD Eersel, Holland",
+    "url": "https://www.terspegelt.nl/"
+  },
+  {
+    "id": "loc-nl-reenert",
+    "name": "Naturistenterrein De Reenert",
+    "type": "campsite",
+    "country": "Holland",
+    "region": "Limburg",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "de reenert",
+      "overloon",
+      "limburg",
+      "camping"
+    ],
+    "description": "Fredelig naturistplads i skovrige omgivelser i Limburg nær Overloon med opvarmet swimmingpool, sauna og socialt klubhus.",
+    "lat": 51.6806,
+    "lng": 6.0125,
+    "address": "Reenertweg 1, 5825 CC Overloon, Holland",
+    "url": "https://www.dereenert.nl/"
+  },
+  {
+    "id": "loc-nl-betuwe",
+    "name": "Naturistenterrein De Betuwe",
+    "type": "campsite",
+    "country": "Holland",
+    "region": "Gelderland",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "betuwe",
+      "kesteren",
+      "gelderland",
+      "camping"
+    ],
+    "description": "Idyllisk naturistplads midt i frugtplantagerne i Betuwe-regionen med badesø, sauna og masser af cykelruter.",
+    "lat": 51.932,
+    "lng": 5.568,
+    "address": "Boveneindsestraat 27, 4041 EJ Kesteren, Gelderland, Holland"
+  },
+  {
+    "id": "loc-nl-peelrand",
+    "name": "Naturistencamping De Peelrand",
+    "type": "campsite",
+    "country": "Holland",
+    "region": "Noord-Brabant",
+    "keywords": [
+      "holland",
+      "nederlandene",
+      "peelrand",
+      "gemert",
+      "brabant",
+      "camping"
+    ],
+    "description": "Vellidt og familievenlig campingplads for naturister i Brabant med swimmingpool, petanque og rolige grønne standpladser.",
+    "lat": 51.5321,
+    "lng": 5.7891,
+    "address": "Peelstraat 10, 5427 Gemert, Holland",
+    "url": "https://www.depeelrand.nl/"
+  },
+  {
+    "id": "loc-uk-brighton",
+    "name": "Brighton Naturist Beach",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / East Sussex",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "united kingdom",
+      "brighton",
+      "sussex",
+      "strand"
+    ],
+    "description": "Storbritanniens første og mest berømte officielle naturiststrand, åbnet i 1980. Karakteristisk rullestensstrand med en fantastisk, tolerant atmosfære for enden af Madeira Drive.",
+    "lat": 50.8142,
+    "lng": -0.1189,
+    "address": "Madeira Drive, Brighton BN2 1EN, Storbritannien"
+  },
+  {
+    "id": "loc-uk-studland",
+    "name": "Studland Bay Naturist Beach (Knoll Beach, Dorset)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / Dorset",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "studland",
+      "dorset",
+      "knoll beach",
+      "strand"
+    ],
+    "description": "National Trust-drevet, prisbelønnet sandstrand på Jurassic Coast i Dorset. Over 1 km hvidt sand og klitter med udsigt til Isle of Wight og Old Harry Rocks.",
+    "lat": 50.655,
+    "lng": -1.948,
+    "address": "Knoll Beach, Ferry Road, Studland, Dorset BH19 3AQ, Storbritannien"
+  },
+  {
+    "id": "loc-uk-holkham",
+    "name": "Holkham Beach Naturist Area (Norfolk)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / Norfolk",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "holkham",
+      "norfolk",
+      "strand"
+    ],
+    "description": "En af Storbritanniens smukkeste og mest vidtstrakte sandstrande. Den vestlige sektion mod Wells er en uofficiel men anerkendt og elsket naturiststrand omkranset af fyrreskov.",
+    "lat": 52.972,
+    "lng": 0.781,
+    "address": "Lady Anne's Drive, Holkham, Wells-next-the-Sea, Norfolk NR23 1RN, Storbritannien"
+  },
+  {
+    "id": "loc-uk-fairlight",
+    "name": "Fairlight Glen Naturist Beach (Hastings)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / East Sussex",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "fairlight",
+      "hastings",
+      "covehurst",
+      "strand"
+    ],
+    "description": "Spektakulær og afsidesliggende bugt i Covehurst Bay for foden af sandstensklipperne i Hastings Country Park. Nås ad en smuk skovsti ned gennem kløften.",
+    "lat": 50.868,
+    "lng": 0.635,
+    "address": "Fairlight Cove, Hastings TN35 4AH, Storbritannien"
+  },
+  {
+    "id": "loc-uk-morfa-dyffryn",
+    "name": "Morfa Dyffryn Naturist Beach (Wales)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "Wales / Gwynedd",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "wales",
+      "morfa dyffryn",
+      "barmouth",
+      "strand"
+    ],
+    "description": "Officiel naturiststrand i Wales strækkende sig over flere kilometer med massive sandklitter og storslået udsigt til Snowdonia-bjergene over Cardigan Bay.",
+    "lat": 52.791,
+    "lng": -4.125,
+    "address": "Dyffryn Ardudwy, Barmouth LL44 2EG, Wales, Storbritannien"
+  },
+  {
+    "id": "loc-uk-littlehampton",
+    "name": "Littlehampton West Beach (West Sussex)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / West Sussex",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "littlehampton",
+      "sussex",
+      "strand"
+    ],
+    "description": "Fredet naturreservat med sjældne vegetationsklitter og en langstrakt sand- og rullestensstrand med et traditionsrigt naturistområde mod vest.",
+    "lat": 50.803,
+    "lng": -0.551,
+    "address": "West Beach, Littlehampton, West Sussex BN17 5DL, Storbritannien"
+  },
+  {
+    "id": "loc-uk-southbourne",
+    "name": "Southbourne Naturist Beach (Bournemouth)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / Dorset",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "bournemouth",
+      "southbourne",
+      "strand"
+    ],
+    "description": "Skjult perle øst for Bournemouth ved foden af kystskrænterne. Fint sand og roligere atmosfære end Bournemouths travle hovedstrand.",
+    "lat": 50.718,
+    "lng": -1.792,
+    "address": "Southbourne Overcliff Drive, Bournemouth BH6 3NR, Storbritannien"
+  },
+  {
+    "id": "loc-uk-corton",
+    "name": "Corton Naturist Beach (Suffolk)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / Suffolk",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "corton",
+      "suffolk",
+      "lowestoft",
+      "strand"
+    ],
+    "description": "Officiel naturiststrand nord for Lowestoft i Suffolk. Fredeligt sandstrøg under kystklinterne med god plads til solbadning.",
+    "lat": 52.518,
+    "lng": 1.752,
+    "address": "Old Corton Road, Lowestoft, Suffolk NR32 5HR, Storbritannien"
+  },
+  {
+    "id": "loc-uk-spurn",
+    "name": "Spurn Head Naturist Beach (Yorkshire)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "England / East Yorkshire",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "spurn",
+      "yorkshire",
+      "strand"
+    ],
+    "description": "Vild og fascinerende naturiststrand på den smalle Spurn Head-tange, hvor Nordsøen møder Humber-flodmundingen. Fantastisk fugleliv.",
+    "lat": 53.582,
+    "lng": 0.119,
+    "address": "Spurn Point, Kilnsea, East Yorkshire HU12 0UH, Storbritannien"
+  },
+  {
+    "id": "loc-uk-clover",
+    "name": "Clover Spa and Hotel (Birmingham)",
+    "type": "resort",
+    "country": "Storbritannien",
+    "region": "England / West Midlands",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "clover spa",
+      "birmingham",
+      "hotel",
+      "resort"
+    ],
+    "description": "Storbritanniens mest kendte tøjvalg- og naturisthotel med helårsåbent spa, saunaer, boblebade og komfortable værelser nær Birmingham.",
+    "lat": 52.548,
+    "lng": -1.836,
+    "address": "759 Chester Road, Erdington, Birmingham B24 0ED, Storbritannien",
+    "url": "https://www.cloverhotel.co.uk/"
+  },
+  {
+    "id": "loc-uk-rhossili",
+    "name": "Rhossili Bay Naturist Area (Gower, Wales)",
+    "type": "beach",
+    "country": "Storbritannien",
+    "region": "Wales / Swansea",
+    "keywords": [
+      "england",
+      "storbritannien",
+      "uk",
+      "wales",
+      "rhossili",
+      "gower",
+      "strand"
+    ],
+    "description": "Kåret til en af verdens bedste strande. Den nordlige ende mod Llangennith og Burry Holms har i årtier været et yndet tilholdssted for naturister.",
+    "lat": 51.572,
+    "lng": -4.298,
+    "address": "Rhossili Bay, Gower Peninsula, Swansea SA3 1PR, Wales, Storbritannien"
+  },
+  {
+    "id": "loc-bg-irakli",
+    "name": "Irakli Naturist Beach (Obzor / Emona)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Burgas",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "irakli",
+      "obzor",
+      "sortehavet",
+      "black sea",
+      "strand"
+    ],
+    "description": "Bulgariens mest legendariske vilde naturiststrand. Kilometerlang uspoleret gylden kyststrækning omgivet af frodige skove og krystalklart Sortehav uden store hoteller.",
+    "lat": 42.753,
+    "lng": 27.892,
+    "address": "Irakli Nature Reserve, 8250 Obzor / Emona, Bulgarien"
+  },
+  {
+    "id": "loc-bg-silistar",
+    "name": "Silistar Beach (Strandzha Naturpark)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Sinemorets",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "silistar",
+      "sinemorets",
+      "strandzha",
+      "strand"
+    ],
+    "description": "En fredet naturperle tæt på den tyrkiske grænse. Hesteskoformet bugt omgivet af klipper med et dedikeret naturistområde i den sydlige ende.",
+    "lat": 42.023,
+    "lng": 28.009,
+    "address": "Silistar Protected Area, 8279 Sinemorets, Bulgarien"
+  },
+  {
+    "id": "loc-bg-coral",
+    "name": "Coral Beach (Koral / Lozenets)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Burgas",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "coral",
+      "koral",
+      "lozenets",
+      "burgas",
+      "strand"
+    ],
+    "description": "En af de sidste vilde strande på den sydlige sortehavskyst. Brede klitter, fint sand og en afslappet naturist- og campingkultur.",
+    "lat": 42.221,
+    "lng": 27.801,
+    "address": "Koral Beach, 8277 Lozenets, Burgas, Bulgarien"
+  },
+  {
+    "id": "loc-bg-krapets",
+    "name": "Krapets Naturist Beach",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Dobrich",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "krapets",
+      "dobrich",
+      "nordkysten",
+      "strand"
+    ],
+    "description": "Endeløse sandstrande på Bulgariens rolige nordkyst nær grænsen til Rumænien. Total fred og ro væk fra masseturismen.",
+    "lat": 43.628,
+    "lng": 28.572,
+    "address": "Krapets Kyst, 9684 Dobrich, Bulgarien"
+  },
+  {
+    "id": "loc-bg-smokinya",
+    "name": "Smokinya Naturist Beach (Sozopol)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Sozopol",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "smokinya",
+      "sozopol",
+      "burgas",
+      "strand"
+    ],
+    "description": "Populær bugt syd for den historiske by Sozopol. I enderne af stranden er der tradition for naturisme og frit solbad.",
+    "lat": 42.392,
+    "lng": 27.708,
+    "address": "Camping Smokinya, 8130 Sozopol, Bulgarien"
+  },
+  {
+    "id": "loc-bg-albena",
+    "name": "Albena - Kranevo Naturist Strand",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Varna",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "albena",
+      "kranevo",
+      "varna",
+      "strand"
+    ],
+    "description": "Den vilde kyststrækning der forbinder badebyerne Albena og Kranevo. Brede sandbanker og god plads til naturister.",
+    "lat": 43.348,
+    "lng": 28.075,
+    "address": "Kyststien mellem Albena og Kranevo, 9620 Balchik, Bulgarien"
+  },
+  {
+    "id": "loc-bg-bolata",
+    "name": "Bolata Bay (Kaliakra)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Kavarna",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "bolata",
+      "kaliakra",
+      "kavarna",
+      "strand"
+    ],
+    "description": "Spektakulær rød kalkstenskløft der munder ud i en cirkulær badevig i Kaliakra naturreservat med krystalklart vand.",
+    "lat": 43.386,
+    "lng": 28.469,
+    "address": "Bolata Cove, Kaliakra Reserve, 9650 Kavarna, Bulgarien"
+  },
+  {
+    "id": "loc-bg-veleka",
+    "name": "Veleka River Mouth Beach (Sinemorets)",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Sinemorets",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "veleka",
+      "sinemorets",
+      "flodmunding",
+      "strand"
+    ],
+    "description": "Dramatisk sandtange hvor Veleka-floden løber ud i Sortehavet. Mulighed for at bade i både ferskvand og hav, meget populær blandt naturister.",
+    "lat": 42.064,
+    "lng": 27.978,
+    "address": "Sinemorets Nordstrand, 8279 Sinemorets, Bulgarien"
+  },
+  {
+    "id": "loc-bg-shkorpilovtsi",
+    "name": "Shkorpilovtsi Naturist Strand",
+    "type": "beach",
+    "country": "Bulgarien",
+    "region": "Sortehavet / Varna",
+    "keywords": [
+      "bulgarien",
+      "bulgaria",
+      "shkorpilovtsi",
+      "varna",
+      "strand"
+    ],
+    "description": "Bulgariens længste uafbrudte sandstrand (over 12 km). Store områder er helt ubebyggede og ideelle til uforstyrret nøgenbadning.",
+    "lat": 42.961,
+    "lng": 27.902,
+    "address": "Shkorpilovtsi Kyst, 9112 Varna-regionen, Bulgarien"
+  },
+  {
+    "id": "loc-th-advisory",
+    "name": "Thailand Naturisme - Vigtig Sikkerhedsvejledning",
+    "type": "other",
+    "country": "Thailand",
+    "region": "Hele Thailand",
+    "keywords": [
+      "thailand",
+      "bangkok",
+      "phuket",
+      "koh samui",
+      "pattaya",
+      "siam"
+    ],
+    "description": "Thailand er et traditionelt og kulturelt konservativt land, hvor enhver form for offentlig nøgenhed er strengt ulovligt under thailandsk straffelov (Section 388). Der findes ingen offentlige naturiststrande i Thailand, og nøgenbadning på offentlige strande medfører anholdelse og bøder. Naturisme kan KUN praktiseres på private, lukkede resorts bag afskærmede mure.",
+    "lat": 13.7563,
+    "lng": 100.5018,
+    "address": "Kongeriget Thailand",
+    "warning": "LOV OM OFFENTLIG ANSTÆNDIGHED: Offentlig nøgenhed er ulovligt i Thailand. Naturisme er kun tilladt på privatejede, lukkede resorts."
+  },
+  {
+    "id": "loc-th-oriental",
+    "name": "Oriental Village Resort (Phuket)",
+    "type": "resort",
+    "country": "Thailand",
+    "region": "Phuket / Kathu",
+    "keywords": [
+      "thailand",
+      "phuket",
+      "oriental village",
+      "kathu",
+      "resort",
+      "hotel"
+    ],
+    "description": "Thailands mest kendte private naturistresort, beliggende i en frodig tropisk have med afskærmet poolområde, villaer og fuld diskretion for internationale naturistgæster.",
+    "lat": 7.8804,
+    "lng": 98.2981,
+    "address": "123/45 Moo 5, Kathu, Phuket 83120, Thailand",
+    "url": "https://www.orientalvillagephuket.com/"
+  },
+  {
+    "id": "loc-th-peaceblue",
+    "name": "Peace Blue Naiharn Resort (Phuket)",
+    "type": "resort",
+    "country": "Thailand",
+    "region": "Phuket / Rawai",
+    "keywords": [
+      "thailand",
+      "phuket",
+      "peace blue",
+      "naiharn",
+      "rawai",
+      "resort"
+    ],
+    "description": "Voksen-resort i det sydlige Phuket nær Naiharn, som tilbyder afskærmede private tagterrasser og villaer med tøjvalg og ro.",
+    "lat": 7.788,
+    "lng": 98.318,
+    "address": "Naiharn Beach, Rawai, Phuket 83130, Thailand"
+  },
+  {
+    "id": "loc-th-eden",
+    "name": "Eden Naturist Resort & Villas (Koh Samui)",
+    "type": "resort",
+    "country": "Thailand",
+    "region": "Surat Thani / Koh Samui",
+    "keywords": [
+      "thailand",
+      "koh samui",
+      "samui",
+      "eden",
+      "bophut",
+      "resort"
+    ],
+    "description": "Eksklusivt privat resort på øen Koh Samui med privat lukket have og pool, hvor gæster kan nyde solen uden tøj i private rammer.",
+    "lat": 9.5121,
+    "lng": 100.0139,
+    "address": "Bophut, Koh Samui, Surat Thani 84320, Thailand",
+    "url": "https://www.edenbeachbungalows.com/"
+  },
+  {
+    "id": "loc-th-barefoot",
+    "name": "Barefoot Sanctuary (Koh Phangan)",
+    "type": "resort",
+    "country": "Thailand",
+    "region": "Surat Thani / Koh Phangan",
+    "keywords": [
+      "thailand",
+      "koh phangan",
+      "phangan",
+      "barefoot",
+      "resort"
+    ],
+    "description": "Privat tilbagetrukket retreat på Koh Phangan med fokus på yoga, natur og afskærmet tøjvalg i pagt med den tropiske natur.",
+    "lat": 9.761,
+    "lng": 99.988,
+    "address": "Haad Tien Bay, Koh Phangan, Surat Thani 84280, Thailand"
+  },
+  {
+    "id": "loc-se-agesta",
+    "name": "Ågesta Naturistbad (Stockholm)",
+    "type": "beach",
+    "country": "Sverige",
+    "region": "Stockholm / Farsta",
+    "keywords": [
+      "sverige",
+      "sweden",
+      "stockholm",
+      "ågesta",
+      "agesta",
+      "bad",
+      "strand"
+    ],
+    "description": "Sveriges ældste og mest kendte officielle naturistbad beliggende ved Magelungen-søen i det sydlige Stockholm. Sandstrand, store græsplæner, badebroer og kiosk.",
+    "lat": 59.227,
+    "lng": 18.089,
+    "address": "Ågestavägen, 123 52 Farsta, Stockholm, Sverige"
+  },
+  {
+    "id": "loc-se-skanor",
+    "name": "Skanör FKK Strand (Skåne)",
+    "type": "beach",
+    "country": "Sverige",
+    "region": "Skåne / Vellinge",
+    "keywords": [
+      "sverige",
+      "sweden",
+      "skanör",
+      "falsterbo",
+      "skåne",
+      "strand"
+    ],
+    "description": "Vidunderlig hvid sandstrand nord for Skanör lystbådehavn og Flommen naturreservat med klassiske svenske badehuse og klart sundvand.",
+    "lat": 55.421,
+    "lng": 12.825,
+    "address": "Skanör Havn / Flommen, 239 30 Skanör, Skåne, Sverige"
+  },
+  {
+    "id": "loc-se-sandhammaren",
+    "name": "Sandhammaren Naturiststrand (Österlen, Skåne)",
+    "type": "beach",
+    "country": "Sverige",
+    "region": "Skåne / Österlen",
+    "keywords": [
+      "sverige",
+      "sweden",
+      "sandhammaren",
+      "österlen",
+      "skåne",
+      "strand"
+    ],
+    "description": "Sveriges svar på Skagen med kilometervis af kridhvidt puddersand og store klitter. Naturistafsnittet ligger vest for fyrtårnet mod Hagestad.",
+    "lat": 55.385,
+    "lng": 14.195,
+    "address": "Sandhammarens Fyr, 271 77 Löderup, Skåne, Sverige"
+  },
+  {
+    "id": "loc-se-rorum",
+    "name": "Rörum Strand / Knäbäckshusen (Skåne)",
+    "type": "beach",
+    "country": "Sverige",
+    "region": "Skåne / Simrishamn",
+    "keywords": [
+      "sverige",
+      "sweden",
+      "rörum",
+      "knäbäckshusen",
+      "österlen",
+      "strand"
+    ],
+    "description": "Magisk skovstrand hvor træerne vokser helt ned til vandkanten. Den nordlige ende mod Stenshuvud nationalpark er kendt for naturisme.",
+    "lat": 55.672,
+    "lng": 14.281,
+    "address": "Knäbäckshusen, 272 95 Simrishamn, Skåne, Sverige"
+  },
+  {
+    "id": "loc-se-mellbystrand",
+    "name": "Mellbystrand FKK Zone (Halland)",
+    "type": "beach",
+    "country": "Sverige",
+    "region": "Halland / Laholm",
+    "keywords": [
+      "sverige",
+      "sweden",
+      "mellbystrand",
+      "halland",
+      "laholm",
+      "strand"
+    ],
+    "description": "Sveriges længste sandstrand i Laholmsbukten. Det sydlige afsnit mod Skummeslövsstrand er officielt udlagt til naturisme.",
+    "lat": 56.498,
+    "lng": 12.935,
+    "address": "Mellbystrand Syd, 312 60 Laholm, Halland, Sverige"
+  },
+  {
+    "id": "loc-no-huk",
+    "name": "Huk Naturiststrand (Bygdøy, Oslo)",
+    "type": "beach",
+    "country": "Norge",
+    "region": "Oslo / Bygdøy",
+    "keywords": [
+      "norge",
+      "norway",
+      "oslo",
+      "huk",
+      "bygdøy",
+      "strand"
+    ],
+    "description": "Norges mest kendte og velbesøgte officielle naturiststrand, beliggende på spidsen af Bygdøy-halvøen kun få minutter fra Oslo centrum med udsigt over Oslofjorden.",
+    "lat": 59.897,
+    "lng": 10.678,
+    "address": "Bygdøynesveien, 0287 Oslo, Norge"
+  },
+  {
+    "id": "loc-no-kollevag",
+    "name": "Kollevåg Friluftsområde (Askøy ved Bergen)",
+    "type": "beach",
+    "country": "Norge",
+    "region": "Vestland / Bergen",
+    "keywords": [
+      "norge",
+      "norway",
+      "bergen",
+      "kollevåg",
+      "askøy",
+      "strand"
+    ],
+    "description": "Smukt vestnorsk fjordbadeområde med en afskærmet naturiststrand i Vestresand med græsplæner, fjelde og badevand.",
+    "lat": 60.442,
+    "lng": 5.148,
+    "address": "Vestresand, 5310 Hauglandshella, Askøy ved Bergen, Norge"
+  },
+  {
+    "id": "loc-fi-pihlajasaari",
+    "name": "Pihlajasaari Naturiststrand (Helsinki)",
+    "type": "beach",
+    "country": "Finland",
+    "region": "Uusimaa / Helsinki",
+    "keywords": [
+      "finland",
+      "helsinki",
+      "pihlajasaari",
+      "strand"
+    ],
+    "description": "Populær skærgårdsø 10 minutters bådtur fra Helsinki med to separate naturiststrande (for mænd og kvinder) og klipper mod Finske Bugt.",
+    "lat": 60.141,
+    "lng": 24.919,
+    "address": "Pihlajasaari, 00150 Helsinki, Finland"
+  },
+  {
+    "id": "loc-be-bredene",
+    "name": "Bredene Naaktstrand",
+    "type": "beach",
+    "country": "Belgien",
+    "region": "Flandern / Nordsøen",
+    "keywords": [
+      "belgien",
+      "belgium",
+      "bredene",
+      "oostende",
+      "strand",
+      "naaktstrand"
+    ],
+    "description": "Belgiens eneste officielle naturiststrand ved Nordsøen. Beliggende ved strandpost 6 i Bredene med klitter og rent sand uden højhuse.",
+    "lat": 51.248,
+    "lng": 2.969,
+    "address": "Duinenstraat Strandpost 6, 8450 Bredene, Belgien"
+  },
+  {
+    "id": "loc-ch-rivebleue",
+    "name": "Plage Naturiste Rive-Bleue (Genèvesøen)",
+    "type": "beach",
+    "country": "Schweiz",
+    "region": "Valais / Genèvesøen",
+    "keywords": [
+      "schweiz",
+      "switzerland",
+      "rive-bleue",
+      "le bouveret",
+      "genèvesøen",
+      "strand"
+    ],
+    "description": "Smukt naturistområde ved Rhône-flodens udmunding i Genèvesøen med panoramaudsigt til de schweiziske alper.",
+    "lat": 46.388,
+    "lng": 6.862,
+    "address": "Route de la Plage, 1897 Le Bouveret, Schweiz"
+  },
+  {
+    "id": "loc-at-rutarlido",
+    "name": "FKK Camping & Feriendorf Rutar Lido",
+    "type": "resort",
+    "country": "Østrig",
+    "region": "Kärnten",
+    "keywords": [
+      "østrig",
+      "austria",
+      "rutar lido",
+      "kärnten",
+      "eberndorf",
+      "resort",
+      "camping"
+    ],
+    "description": "Østrigs mest luksuriøse FKK-feriested med indendørs og udendørs opvarmede pools, badesø, restaurant og wellness omgivet af bjerge.",
+    "lat": 46.582,
+    "lng": 14.538,
+    "address": "Pribelsdorf 1, 9141 Eberndorf, Kärnten, Østrig",
+    "url": "https://www.rutar.com/"
+  },
+  {
+    "id": "loc-pl-debki",
+    "name": "Dębki FKK Strand (Østersøen, Polen)",
+    "type": "beach",
+    "country": "Polen",
+    "region": "Pommern / Østersøen",
+    "keywords": [
+      "polen",
+      "poland",
+      "debki",
+      "dębki",
+      "østersøen",
+      "strand"
+    ],
+    "description": "Polens mest berømte naturiststrand, beliggende vest for Piaśnica-flodmundingen ved indgang 19-26. Kridhvidt puddersand og høje fyrreklitter.",
+    "lat": 54.832,
+    "lng": 18.068,
+    "address": "Wejście 19-26, 84-110 Dębki, Polen"
+  },
+  {
+    "id": "loc-pl-chalupy",
+    "name": "Chałupy FKK Strand (Hel-halvøen, Polen)",
+    "type": "beach",
+    "country": "Polen",
+    "region": "Pommern / Hel",
+    "keywords": [
+      "polen",
+      "poland",
+      "chalupy",
+      "chałupy",
+      "hel",
+      "strand"
+    ],
+    "description": "Historisk polsk naturiststrand udødeliggjort i polsk musikkultur, beliggende på den smalle Hel-landtange med åbent hav på den ene side.",
+    "lat": 54.761,
+    "lng": 18.498,
+    "address": "Mierzeja Helska, 84-120 Chałupy, Polen"
+  },
+  {
+    "id": "loc-cz-lhota",
+    "name": "Jezero Lhota FKK (Prag)",
+    "type": "beach",
+    "country": "Tjekkiet",
+    "region": "Centralbøhmen / Prag",
+    "keywords": [
+      "tjekkiet",
+      "czech",
+      "prag",
+      "lhota",
+      "sø",
+      "strand"
+    ],
+    "description": "Krystalklar badesø omkranset af fyrreskov 30 min. nordøst for Prag med en stor og traditionsrig officiel FKK-sektion.",
+    "lat": 50.245,
+    "lng": 14.668,
+    "address": "Jezero Lhota, 250 84 Lhota u Brandýsa, Tjekkiet"
+  },
+  {
+    "id": "loc-hu-delegyhaza",
+    "name": "Délegyháza Naturist Camping & Badesø",
+    "type": "campsite",
+    "country": "Ungarn",
+    "region": "Pest / Budapest",
+    "keywords": [
+      "ungarn",
+      "hungary",
+      "budapest",
+      "delegyhaza",
+      "délegyháza",
+      "camping"
+    ],
+    "description": "Ungarns største og ældste naturistcenter ved en række rene badesøer syd for Budapest med camping, hytter og sauna.",
+    "lat": 47.235,
+    "lng": 19.068,
+    "address": "Nomád part 4, 2337 Délegyháza, Ungarn"
+  },
+  {
+    "id": "loc-tr-patara",
+    "name": "Patara Beach Naturist Sektion",
+    "type": "beach",
+    "country": "Tyrkiet",
+    "region": "Antalya / Gelemiş",
+    "keywords": [
+      "tyrkiet",
+      "turkey",
+      "patara",
+      "antalya",
+      "kaş",
+      "strand"
+    ],
+    "description": "En af Middelhavets længste sandstrande (18 km) og fredet nationalpark. Den sydlige afsides ende nær klipperne er et kendt naturiststed.",
+    "lat": 36.258,
+    "lng": 29.281,
+    "address": "Patara Kyst, 07975 Gelemiş, Kaş, Antalya, Tyrkiet"
+  },
+  {
+    "id": "loc-tr-cirali",
+    "name": "Çıralı FKK Strand (Antalya)",
+    "type": "beach",
+    "country": "Tyrkiet",
+    "region": "Antalya / Kemer",
+    "keywords": [
+      "tyrkiet",
+      "turkey",
+      "cirali",
+      "çıralı",
+      "olympos",
+      "antalya",
+      "strand"
+    ],
+    "description": "Uspoleret bugt mellem appelsinlunde og dramatiske bjerge nær Olympos-ruinerne. Den nordlige kyststrækning benyttes af naturister.",
+    "lat": 36.418,
+    "lng": 30.481,
+    "address": "Çıralı Sahili, 07980 Kemer, Antalya, Tyrkiet"
+  },
+  {
+    "id": "loc-cy-pissouri",
+    "name": "Pissouri Bay Naturist Beach",
+    "type": "beach",
+    "country": "Cypern",
+    "region": "Limassol",
+    "keywords": [
+      "cypern",
+      "cyprus",
+      "pissouri",
+      "limassol",
+      "strand"
+    ],
+    "description": "Cyperns mest populære uofficielle naturiststrand, beliggende for foden af de hvide kalkklinter øst for Pissouri-bugten.",
+    "lat": 34.664,
+    "lng": 32.721,
+    "address": "Pissouri Bay Klintestrand, 4607 Limassol, Cypern"
+  },
+  {
+    "id": "loc-mt-ghajn",
+    "name": "Għajn Tuffieħa Naturist Cove (Malta)",
+    "type": "beach",
+    "country": "Malta",
+    "region": "Mellieħa",
+    "keywords": [
+      "malta",
+      "ghajn tuffieha",
+      "riviera",
+      "mellieha",
+      "strand"
+    ],
+    "description": "Afkrogene bag klinterne ved Riviera Martinique (Għajn Tuffieħa) på Maltas nordvestkyst med krystalklart turkist vand.",
+    "lat": 35.928,
+    "lng": 14.341,
+    "address": "Għajn Tuffieħa Bay, Mellieħa, Malta"
+  },
+  {
+    "id": "loc-us-haulover",
+    "name": "Haulover Beach (Miami, Florida)",
+    "type": "beach",
+    "country": "USA",
+    "region": "Florida / Miami",
+    "keywords": [
+      "usa",
+      "florida",
+      "miami",
+      "haulover",
+      "strand"
+    ],
+    "description": "USA's mest berømte og mest besøgte officielle naturiststrand med over 1 million årlige gæster, varmt Atlanterhav og livreddere.",
+    "lat": 25.908,
+    "lng": -80.121,
+    "address": "10800 Collins Ave, Miami Beach, FL 33154, USA"
+  },
+  {
+    "id": "loc-us-blacks",
+    "name": "Black's Beach (San Diego, Californien)",
+    "type": "beach",
+    "country": "USA",
+    "region": "Californien / San Diego",
+    "keywords": [
+      "usa",
+      "californien",
+      "san diego",
+      "la jolla",
+      "blacks beach",
+      "strand"
+    ],
+    "description": "Legendarisk naturiststrand under de 100 meter høje Torrey Pines-sandstensklipper i La Jolla med fantastiske stillehavsbølger.",
+    "lat": 32.889,
+    "lng": -117.252,
+    "address": "Torrey Pines, La Jolla, San Diego, CA 92037, USA"
+  },
+  {
+    "id": "loc-us-hippie",
+    "name": "Hippie Hollow Park (Austin, Texas)",
+    "type": "beach",
+    "country": "USA",
+    "region": "Texas / Austin",
+    "keywords": [
+      "usa",
+      "texas",
+      "austin",
+      "hippie hollow",
+      "lake travis"
+    ],
+    "description": "Den eneste lovlige tøjvalg-park i Texas, beliggende på kalkstensklipperne ved Lake Travis med svømning og solbadning.",
+    "lat": 30.418,
+    "lng": -97.892,
+    "address": "7000 Comanche Trail, Austin, TX 78732, USA"
+  },
+  {
+    "id": "loc-us-gunnison",
+    "name": "Gunnison Beach (Sandy Hook, New Jersey)",
+    "type": "beach",
+    "country": "USA",
+    "region": "New Jersey / New York",
+    "keywords": [
+      "usa",
+      "new jersey",
+      "new york",
+      "gunnison",
+      "sandy hook",
+      "strand"
+    ],
+    "description": "New York-områdets officielle naturiststrand på Sandy Hook-halvøen med udsigt til Manhattans skyline i det fjerne.",
+    "lat": 40.458,
+    "lng": -73.998,
+    "address": "Sandy Hook, Gateway National Rec Area, Highlands, NJ 07732, USA"
+  },
+  {
+    "id": "loc-mx-zipolite",
+    "name": "Playa Zipolite (Oaxaca, Mexico)",
+    "type": "beach",
+    "country": "Mexico",
+    "region": "Oaxaca / Stillehavet",
+    "keywords": [
+      "mexico",
+      "zipolite",
+      "oaxaca",
+      "stillehavet",
+      "strand"
+    ],
+    "description": "Mexicos første og eneste officielle tøjvalg-strand. Gyldent sand, bohemeagtige strandhytter og afslappet stemning.",
+    "lat": 15.682,
+    "lng": -96.518,
+    "address": "Playa Zipolite, 70904 San Pedro Pochutla, Oaxaca, Mexico"
+  },
+  {
+    "id": "loc-gr-redbeach",
+    "name": "Red Beach / Kokkini Ammos (Matala, Kreta)",
+    "type": "beach",
+    "country": "Grækenland",
+    "region": "Kreta / Heraklion",
+    "keywords": [
+      "grækenland",
+      "greece",
+      "kreta",
+      "matala",
+      "red beach",
+      "kokkini ammos",
+      "strand"
+    ],
+    "description": "Verdenskendt rød sandstrand syd for Matala på Kreta, elsket af naturister siden hippietiden i 1960'erne. Nås ad en vandresti over bjerget.",
+    "lat": 34.988,
+    "lng": 24.748,
+    "address": "Matala Kyststi, 70200 Kreta, Grækenland"
+  },
+  {
+    "id": "loc-gr-plakias",
+    "name": "Plakias Souda FKK Beach (Kreta)",
+    "type": "beach",
+    "country": "Grækenland",
+    "region": "Kreta / Rethymno",
+    "keywords": [
+      "grækenland",
+      "greece",
+      "kreta",
+      "plakias",
+      "rethymno",
+      "souda",
+      "strand"
+    ],
+    "description": "Den østlige ende af Plakias-bugten foran de lodrette klippevægge er en af Kretas ældste og mest populære naturiststrande.",
+    "lat": 35.188,
+    "lng": 24.368,
+    "address": "Plakias Kyst, 74060 Kreta, Grækenland"
+  },
+  {
+    "id": "loc-gr-mykonos",
+    "name": "Super Paradise Naturist Cove (Mykonos)",
+    "type": "beach",
+    "country": "Grækenland",
+    "region": "Kykladerne / Mykonos",
+    "keywords": [
+      "grækenland",
+      "greece",
+      "mykonos",
+      "super paradise",
+      "strand"
+    ],
+    "description": "Den højre klippeside af Super Paradise på Mykonos har i årtier været en verdenskendt naturistoase med krystalklart vand.",
+    "lat": 37.412,
+    "lng": 25.368,
+    "address": "Super Paradise Beach, 84600 Mykonos, Grækenland"
+  },
+  {
+    "id": "loc-gr-faliraki",
+    "name": "Faliraki Naturist Beach (Rhodos)",
+    "type": "beach",
+    "country": "Grækenland",
+    "region": "Dodekaneserne / Rhodos",
+    "keywords": [
+      "grækenland",
+      "greece",
+      "rhodos",
+      "faliraki",
+      "strand"
+    ],
+    "description": "Rhodos' eneste officielle naturiststrand beliggende i en afskærmet bugt syd for Faliraki med liggestole, parasoller og strandbar.",
+    "lat": 36.328,
+    "lng": 28.212,
+    "address": "Faliraki Sydstrand, 85105 Rhodos, Grækenland"
+  },
+  {
+    "id": "loc-it-capocotta",
+    "name": "Spiaggia di Capocotta (Rom / Ostia)",
+    "type": "beach",
+    "country": "Italien",
+    "region": "Lazio / Rom",
+    "keywords": [
+      "italien",
+      "italy",
+      "rom",
+      "rome",
+      "capocotta",
+      "ostia",
+      "lazio",
+      "strand"
+    ],
+    "description": "Roms mest berømte officielle naturiststrand ved klitreservatet langs Via Litoranea. Brede klitter, middelhavsmakki og afslappet atmosfære.",
+    "lat": 41.678,
+    "lng": 12.368,
+    "address": "Via Litoranea km 8, 00122 Ostia / Rom, Italien"
+  },
+  {
+    "id": "loc-it-guvano",
+    "name": "Spiaggia di Guvano (Cinque Terre)",
+    "type": "beach",
+    "country": "Italien",
+    "region": "Ligurien / Cinque Terre",
+    "keywords": [
+      "italien",
+      "italy",
+      "cinque terre",
+      "guvano",
+      "corniglia",
+      "ligurien",
+      "strand"
+    ],
+    "description": "Myteomspundet hemmelig naturistbugt mellem Corniglia og Vernazza i Cinque Terre med krystalklart vand og lodrette klipper.",
+    "lat": 44.128,
+    "lng": 9.718,
+    "address": "Guvano Cove, 19018 Corniglia, Ligurien, Italien"
+  },
+  {
+    "id": "loc-it-bibbona",
+    "name": "Spiaggia delle Nereidi (Marina di Bibbona, Toscana)",
+    "type": "beach",
+    "country": "Italien",
+    "region": "Toscana / Livorno",
+    "keywords": [
+      "italien",
+      "italy",
+      "toscana",
+      "tuscany",
+      "bibbona",
+      "livorno",
+      "strand"
+    ],
+    "description": "Toscanas mest kendte officielle naturiststrand strækkende sig gennem fyrreskoven og de fredede klitter syd for Marina di Bibbona.",
+    "lat": 43.248,
+    "lng": 10.518,
+    "address": "Tombolo di Cecina / Bibbona, 57020 Livorno, Toscana, Italien"
+  },
+  {
+    "id": "loc-it-pizzogreco",
+    "name": "Pizzo Greco Naturist Camping (Calabrien)",
+    "type": "resort",
+    "country": "Italien",
+    "region": "Calabrien / Isola di Capo Rizzuto",
+    "keywords": [
+      "italien",
+      "italy",
+      "calabrien",
+      "pizzo greco",
+      "camping",
+      "resort"
+    ],
+    "description": "Italiens førende rendyrkede naturistresort ved Det Ioniske Hav i Calabrien med privat strand, pool, restaurant og hytter i middelhavsnatur.",
+    "lat": 38.988,
+    "lng": 17.068,
+    "address": "Località Fratte, 88841 Isola di Capo Rizzuto, Calabrien, Italien",
+    "url": "https://www.pizzogreco.com/"
+  },
+  {
+    "id": "loc-it-portoferro",
+    "name": "Porto Ferro Naturist Beach (Sardinien)",
+    "type": "beach",
+    "country": "Italien",
+    "region": "Sardinien / Alghero",
+    "keywords": [
+      "italien",
+      "italy",
+      "sardinien",
+      "sardinia",
+      "porto ferro",
+      "alghero",
+      "strand"
+    ],
+    "description": "Sardiniens første officielt anerkendte naturiststrand ved en stor rødgylden sandbugt omgivet af fyrreskov og spanske vagttårne.",
+    "lat": 40.678,
+    "lng": 8.208,
+    "address": "Baia di Porto Ferro, 07041 Alghero, Sardinien, Italien"
+  },
+  {
     id: "loc-dubai-warning",
     name: "Dubai & De Forenede Arabiske Emirater",
     type: "other",
@@ -1729,6 +3137,20 @@ export function searchCuratedDatabase(query: string): SearchResult | null {
 
 // Suggestions provider for search bar
 export const ALL_SUGGESTIONS = [
+  "Holland",
+  "Nederlandene",
+  "Zandvoort",
+  "Bloemendaal",
+  "Zeeland",
+  "England",
+  "Storbritannien",
+  "Brighton",
+  "Dorset",
+  "Bulgarien",
+  "Irakli",
+  "Thailand",
+  "Phuket",
+  "Koh Samui",
   "Portugal",
   "Algarve",
   "Costa da Caparica",
@@ -1762,5 +3184,10 @@ export const ALL_SUGGESTIONS = [
   "Korfu",
   "Italien",
   "Tyskland",
+  "Sverige",
+  "Norge",
+  "Østrig",
+  "Belgien",
+  "USA",
   "Dubai"
 ];

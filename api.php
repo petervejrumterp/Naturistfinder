@@ -171,6 +171,19 @@ if ($endpoint === 'search') {
 
     $normalized = mb_strtolower($query, 'UTF-8');
 
+    // 0. Check persistent search cache first for instant repeat queries
+    $cacheFile = __DIR__ . '/search_cache.json';
+    if (file_exists($cacheFile)) {
+        $cacheContent = @file_get_contents($cacheFile);
+        if ($cacheContent) {
+            $cachedMap = json_decode($cacheContent, true);
+            if (!empty($cachedMap[$normalized]['locations'])) {
+                echo json_encode($cachedMap[$normalized]);
+                exit;
+            }
+        }
+    }
+
     // 1. Match from Curated Database by Country, Region, Keywords, Name
     $matched = [];
     $seenIds = [];
@@ -297,11 +310,24 @@ Svar som et rent JSON array med objekter indeholdende: id, name, type (beach, re
                     }
                 }
 
-                echo json_encode([
+                $finalResult = [
                     "locations" => $allResults,
                     "summary" => "Fandt " . count($allResults) . " naturist-destinationer for \"{$query}\".",
                     "sources" => []
-                ]);
+                ];
+
+                // Save to persistent search cache on server
+                $cacheData = [];
+                if (file_exists($cacheFile)) {
+                    $cRaw = @file_get_contents($cacheFile);
+                    if ($cRaw) {
+                        $cacheData = json_decode($cRaw, true) ?: [];
+                    }
+                }
+                $cacheData[$normalized] = $finalResult;
+                @file_put_contents($cacheFile, json_encode($cacheData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE), LOCK_EX);
+
+                echo json_encode($finalResult);
                 exit;
             }
         }

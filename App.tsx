@@ -315,7 +315,7 @@ const App: React.FC = () => {
                   {locations.map((loc) => (
                     <div 
                       key={loc.id}
-                      ref={el => listRefs.current[loc.id] = el}
+                      ref={el => { listRefs.current[loc.id] = el; }}
                       onClick={() => setSelectedLocation(loc)}
                       className={`group cursor-pointer bg-white border rounded-[2rem] overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 ${selectedLocation?.id === loc.id ? 'border-[#ed6a56] ring-4 ring-[#fef0ee] bg-[#fef0ee]/10' : 'border-stone-100 shadow-sm'} ${loc.warning ? 'border-red-300 bg-red-50/10' : ''}`}
                     >

@@ -120,17 +120,21 @@ Svar som et rent JSON array med objekter indeholdende felterne: id, name, type (
         const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
         const parsed = JSON.parse(text);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed.map((loc: any, idx: number) => ({
-            id: loc.id || `loc-ai-client-${Date.now()}-${idx}`,
-            name: loc.name,
-            type: loc.type || 'beach',
-            description: loc.description,
-            lat: loc.lat,
-            lng: loc.lng,
-            address: loc.address,
-            url: loc.url,
-            warning: loc.warning
-          }));
+          return parsed.map((loc: any, idx: number) => {
+            const latNum = typeof loc.lat === 'number' ? loc.lat : parseFloat(loc.lat);
+            const lngNum = typeof loc.lng === 'number' ? loc.lng : parseFloat(loc.lng);
+            return {
+              id: loc.id || `loc-ai-client-${Date.now()}-${idx}`,
+              name: loc.name,
+              type: loc.type || 'beach',
+              description: loc.description,
+              lat: Number.isFinite(latNum) ? latNum : 0,
+              lng: Number.isFinite(lngNum) ? lngNum : 0,
+              address: loc.address,
+              url: loc.url,
+              warning: loc.warning
+            };
+          });
         }
       }
     } catch (err) {
@@ -144,6 +148,25 @@ Svar som et rent JSON array med objekter indeholdende felterne: id, name, type (
 // Cache for search suggestions and results on client
 const suggestionCache = new Map<string, string[]>();
 const searchCache = new Map<string, SearchResult>();
+
+function getLocalStoredSearch(key: string): SearchResult | null {
+  try {
+    const raw = localStorage.getItem(`naturist_search_${key}`);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && Array.isArray(parsed.locations) && parsed.locations.length > 0) {
+        return parsed;
+      }
+    }
+  } catch {}
+  return null;
+}
+
+function setLocalStoredSearch(key: string, data: SearchResult) {
+  try {
+    localStorage.setItem(`naturist_search_${key}`, JSON.stringify(data));
+  } catch {}
+}
 
 export async function getSuggestions(query: string): Promise<string[]> {
   const trimmed = query.trim().toLowerCase();
@@ -186,8 +209,15 @@ export async function searchNaturistPlaces(
   const clientKey = getSavedApiKey();
   const cacheKey = `${trimmed.toLowerCase()}_${userLocation ? `${userLocation.lat},${userLocation.lng}` : 'none'}_${forceAI ? 'ai' : 'std'}`;
 
-  if (!forceAI && searchCache.has(cacheKey)) {
-    return searchCache.get(cacheKey)!;
+  if (!forceAI) {
+    if (searchCache.has(cacheKey)) {
+      return searchCache.get(cacheKey)!;
+    }
+    const stored = getLocalStoredSearch(cacheKey);
+    if (stored && stored.locations.length > 0) {
+      searchCache.set(cacheKey, stored);
+      return stored;
+    }
   }
 
   // 1. Check client-side curated database immediately
@@ -221,6 +251,7 @@ export async function searchNaturistPlaces(
         // If backend returned a comprehensive AI result (> 10 locations), use it directly!
         if (data.locations.length > 10) {
           searchCache.set(cacheKey, data);
+          setLocalStoredSearch(cacheKey, data);
           return data;
         }
       }
@@ -254,6 +285,7 @@ export async function searchNaturistPlaces(
           sources: []
         };
         searchCache.set(cacheKey, result);
+        setLocalStoredSearch(cacheKey, result);
         return result;
       }
     } catch (clientErr) {
@@ -264,12 +296,14 @@ export async function searchNaturistPlaces(
   // 4. Return backend data if available
   if (backendData && backendData.locations.length > 0) {
     searchCache.set(cacheKey, backendData);
+    setLocalStoredSearch(cacheKey, backendData);
     return backendData;
   }
 
   // 5. Fall back to curated database matches
   if (curatedResult && curatedResult.locations.length > 0) {
     searchCache.set(cacheKey, curatedResult);
+    setLocalStoredSearch(cacheKey, curatedResult);
     return curatedResult;
   }
 

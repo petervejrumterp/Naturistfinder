@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
@@ -477,6 +478,27 @@ app.get("/api/suggestions", async (req, res) => {
   }
 });
 
+// Persistent search cache to store newly discovered destinations permanently
+const SEARCH_CACHE_FILE = path.join(__dirname, 'search_cache.json');
+let searchCacheStore: Record<string, any> = {};
+try {
+  if (fs.existsSync(SEARCH_CACHE_FILE)) {
+    searchCacheStore = JSON.parse(fs.readFileSync(SEARCH_CACHE_FILE, 'utf-8'));
+  }
+} catch (e) {
+  searchCacheStore = {};
+}
+
+function persistSearchResult(query: string, result: any) {
+  try {
+    const key = query.trim().toLowerCase();
+    searchCacheStore[key] = result;
+    fs.writeFileSync(SEARCH_CACHE_FILE, JSON.stringify(searchCacheStore, null, 2), 'utf-8');
+  } catch (err) {
+    console.warn("Could not save to persistent cache:", err);
+  }
+}
+
 // API Route: Search Places
 app.post("/api/search", async (req, res) => {
   const query = (req.body.query as string || "").trim();
@@ -484,7 +506,14 @@ app.post("/api/search", async (req, res) => {
     return res.status(400).json({ error: "Søgeterm er påkrævet" });
   }
 
-  // Check comprehensive curated database
+  const normQuery = query.toLowerCase();
+
+  // 1. Check persistent search cache for previously discovered countries/cities
+  if (searchCacheStore[normQuery] && Array.isArray(searchCacheStore[normQuery].locations) && searchCacheStore[normQuery].locations.length > 0) {
+    return res.json(searchCacheStore[normQuery]);
+  }
+
+  // 2. Check comprehensive curated database
   const curated = searchCuratedDatabase(query);
 
   if (!ai) {
@@ -581,13 +610,15 @@ Vigtige regler:
           break;
         }
       }
+      const latNum = typeof loc.lat === 'number' ? loc.lat : parseFloat(loc.lat);
+      const lngNum = typeof loc.lng === 'number' ? loc.lng : parseFloat(loc.lng);
       return {
         id: loc.id || `loc-ai-${Date.now()}-${idx}`,
         name: loc.name,
         type: loc.type,
         description: loc.description,
-        lat: loc.lat,
-        lng: loc.lng,
+        lat: Number.isFinite(latNum) ? latNum : 0,
+        lng: Number.isFinite(lngNum) ? lngNum : 0,
         address: loc.address,
         url: loc.website || loc.url,
         image: image || undefined,
@@ -606,11 +637,18 @@ Vigtige regler:
       }
     }
 
-    return res.json({
+    const finalResult = {
       locations: combinedLocations,
       summary: `Fandt ${combinedLocations.length} naturist-destinationer for "${query}".`,
       sources: []
-    });
+    };
+
+    // Save to persistent cache so subsequent searches are instant
+    if (combinedLocations.length > 0) {
+      persistSearchResult(query, finalResult);
+    }
+
+    return res.json(finalResult);
   } catch (err: any) {
     console.error("Gemini Search Error:", err);
     if (curated && curated.locations.length > 0) {
