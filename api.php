@@ -170,21 +170,12 @@ if ($endpoint === 'search') {
     }
 
     $normalized = mb_strtolower($query, 'UTF-8');
-
-    // 0. Check persistent search cache first for instant repeat queries
-    $cacheFile = __DIR__ . '/search_cache.json';
-    if (file_exists($cacheFile)) {
-        $cacheContent = @file_get_contents($cacheFile);
-        if ($cacheContent) {
-            $cachedMap = json_decode($cacheContent, true);
-            if (!empty($cachedMap[$normalized]['locations'])) {
-                echo json_encode($cachedMap[$normalized]);
-                exit;
-            }
-        }
+    $cleanNormalized = trim(str_replace('.', '', $normalized));
+    if (in_array($cleanNormalized, ['usa', 'us', 'amerika', 'united states', 'united states of america', 'amerikas forenede stater', 'u s a'])) {
+        $normalized = 'usa';
     }
 
-    // 1. Match from Curated Database by Country, Region, Keywords, Name
+    // 0. Match from Curated Database by Country, Region, Keywords, Name
     $matched = [];
     $seenIds = [];
 
@@ -229,6 +220,29 @@ if ($endpoint === 'search') {
                     $matched[] = $loc;
                     $seenIds[$loc['id']] = true;
                 }
+            }
+        }
+    }
+
+    // If curated database has comprehensive results (20+ verified locations), return immediately
+    if (count($matched) >= 20) {
+        echo json_encode([
+            "locations" => $matched,
+            "summary" => "Fandt " . count($matched) . " verificerede naturist-destinationer for \"{$query}\".",
+            "sources" => []
+        ]);
+        exit;
+    }
+
+    // Check persistent search cache for newly discovered queries
+    $cacheFile = __DIR__ . '/search_cache.json';
+    if (file_exists($cacheFile)) {
+        $cacheContent = @file_get_contents($cacheFile);
+        if ($cacheContent) {
+            $cachedMap = json_decode($cacheContent, true);
+            if (!empty($cachedMap[$normalized]['locations']) && count($cachedMap[$normalized]['locations']) >= count($matched)) {
+                echo json_encode($cachedMap[$normalized]);
+                exit;
             }
         }
     }

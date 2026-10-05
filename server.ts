@@ -506,15 +506,26 @@ app.post("/api/search", async (req, res) => {
     return res.status(400).json({ error: "Søgeterm er påkrævet" });
   }
 
-  const normQuery = query.toLowerCase();
-
-  // 1. Check persistent search cache for previously discovered countries/cities
-  if (searchCacheStore[normQuery] && Array.isArray(searchCacheStore[normQuery].locations) && searchCacheStore[normQuery].locations.length > 0) {
-    return res.json(searchCacheStore[normQuery]);
+  const rawNorm = query.toLowerCase();
+  let normQuery = rawNorm.replace(/\./g, "").trim();
+  if (normQuery === "united states" || normQuery === "united states of america" || normQuery === "amerikas forenede stater" || normQuery === "amerika" || normQuery === "us" || normQuery === "u s a") {
+    normQuery = "usa";
   }
 
-  // 2. Check comprehensive curated database
+  // 1. Check comprehensive curated database first
   const curated = searchCuratedDatabase(query);
+
+  // If curated database already has a comprehensive verified dataset (>= 20 locations), return instantly
+  if (curated && curated.locations.length >= 20) {
+    return res.json(curated);
+  }
+
+  // 2. Check persistent search cache for previously discovered countries/cities
+  if (searchCacheStore[normQuery] && Array.isArray(searchCacheStore[normQuery].locations) && searchCacheStore[normQuery].locations.length > 0) {
+    if (!curated || searchCacheStore[normQuery].locations.length >= curated.locations.length) {
+      return res.json(searchCacheStore[normQuery]);
+    }
+  }
 
   if (!ai) {
     if (curated && curated.locations.length > 0) {

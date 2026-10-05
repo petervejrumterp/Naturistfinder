@@ -238,5 +238,1113 @@
     ],
     "summary": "Fandt 20 naturist-destinationer for \"Letland\".",
     "sources": []
+  },
+  "florida": {
+    "locations": [
+      {
+        "id": "loc-us-haulover",
+        "name": "Haulover Beach (Miami, Florida)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Florida / Miami",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "miami",
+          "haulover",
+          "strand",
+          "beach",
+          "atlanterhavet"
+        ],
+        "description": "USA's mest berømte og mest besøgte officielle naturiststrand med over 1 million årlige gæster. Kridhvidt sand, varmt Atlanterhav, udlejning af liggestole, madboder og livreddere.",
+        "lat": 25.908,
+        "lng": -80.121,
+        "address": "10800 Collins Ave, Miami Beach, FL 33154, USA"
+      },
+      {
+        "id": "loc-us-playalinda",
+        "name": "Playalinda Beach - Boardwalk 13 (Canaveral National Seashore, Florida)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Florida / Titusville",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "playalinda",
+          "canaveral",
+          "titusville",
+          "space coast",
+          "strand",
+          "beach"
+        ],
+        "description": "Spektakulær uberørt naturstrand på Canaveral National Seashore. Området omkring Boardwalk 13 har i årtier været en verdenskendt tøjvalgs-strand med udsigt til NASA's affyringsramper ved Kennedy Space Center.",
+        "lat": 28.665,
+        "lng": -80.627,
+        "address": "Boardwalk 13, Canaveral National Seashore, Titusville, FL 32796, USA"
+      },
+      {
+        "id": "loc-us-blindcreek",
+        "name": "Blind Creek Beach (Fort Pierce, Florida)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Florida / Fort Pierce",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "blind creek",
+          "fort pierce",
+          "hutchinson island",
+          "st lucie",
+          "strand",
+          "beach"
+        ],
+        "description": "Officielt udpeget tøjvalgs-strand på Hutchinson Island ved Atlanterhavet. Brede hvide sandstrande omgivet af vilde klitter og mangroveskove uden store hoteller i sigte.",
+        "lat": 27.355,
+        "lng": -80.244,
+        "address": "5460 S Ocean Dr, Fort Pierce, FL 34949, USA"
+      },
+      {
+        "id": "loc-us-apollo",
+        "name": "Apollo Beach (New Smyrna Beach, Florida)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Florida / New Smyrna Beach",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "apollo beach",
+          "new smyrna beach",
+          "canaveral north",
+          "strand",
+          "beach"
+        ],
+        "description": "Den nordlige ende af Canaveral National Seashore (Boardwalk 5), kendt for fredelig atmosfære, vilde klitter, delfiner tæt på kysten og en langvarig tradition for naturisme.",
+        "lat": 28.932,
+        "lng": -80.828,
+        "address": "Apollo Beach Parking Lot 5, New Smyrna Beach, FL 32169, USA"
+      },
+      {
+        "id": "loc-us-cypresscove",
+        "name": "Cypress Cove Nudist Resort & Spa (Kissimmee / Orlando, Florida)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Florida / Orlando",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "orlando",
+          "kissimmee",
+          "cypress cove",
+          "resort",
+          "hotel",
+          "spa"
+        ],
+        "description": "Et af USA's førende 4-stjernede AANR-akkrediterede familie-naturistresorts. Spænder over 300 hektar med to store pools, sø med sandstrand, vandcykler, tennis, restaurant, spa og 84 hotelværelser samt villaer.",
+        "lat": 28.243,
+        "lng": -81.428,
+        "address": "4425 Pleasant Hill Rd, Kissimmee, FL 34746, USA",
+        "url": "https://www.cypresscoveresort.com/"
+      },
+      {
+        "id": "loc-us-sunsport",
+        "name": "Sunsport Gardens Family Naturist Resort (Loxahatchee, Florida)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Florida / West Palm Beach",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "sunsport",
+          "loxahatchee",
+          "west palm beach",
+          "resort",
+          "camping"
+        ],
+        "description": "Historisk 40-hektar naturistisk paradis nær West Palm Beach. Frodig subtropisk jungle, opvarmet pool, sauna, volleyball og fredelig naturistisk livsstil.",
+        "lat": 26.782,
+        "lng": -80.329,
+        "address": "14125 North Rd, Loxahatchee, FL 33470, USA",
+        "url": "https://www.sunsportgardens.com/"
+      },
+      {
+        "id": "loc-us-caliente",
+        "name": "Caliente Luxury Clothing-Optional Resort (Tampa Bay, Florida)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Florida / Tampa Bay",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "caliente",
+          "tampa",
+          "land o lakes",
+          "resort",
+          "luksus"
+        ],
+        "description": "Eksklusivt resort i caribisk stil med tropiske lagunepools, vandfald, swim-up bar, natklub og luksuslejligheder i Pasco County.",
+        "lat": 28.212,
+        "lng": -82.463,
+        "address": "21240 Gran Via Blvd, Land O' Lakes, FL 34637, USA",
+        "url": "https://www.calienteresorts.com/"
+      },
+      {
+        "id": "loc-us-paradiselakes",
+        "name": "Paradise Lakes Nudist Resort (Lutz / Tampa, Florida)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Florida / Tampa",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "paradise lakes",
+          "tampa",
+          "lutz",
+          "resort"
+        ],
+        "description": "Legendarisk 72-hektar tøjvalgs-resortby med adskillige pools, boblebade, tennis, tiki-bar og restauranter omgivet af søer og palmer.",
+        "lat": 28.188,
+        "lng": -82.462,
+        "address": "2001 Paradise Lakes Blvd, Lutz, FL 33558, USA",
+        "url": "https://www.paradiselakes.com/"
+      },
+      {
+        "id": "loc-us-lakecomo",
+        "name": "Lake Como Family Nudist Resort (Lutz / Pasco County, Florida)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Florida / Pasco County",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "lake como",
+          "lutz",
+          "pasco",
+          "camping",
+          "resort"
+        ],
+        "description": "Grundlagt i 1941 og dermed et af Nordamerikas ældste og mest traditionsrige familie-naturistresorts. Egen ferskvandssø, opvarmet pool, minigolf og hytter.",
+        "lat": 28.204,
+        "lng": -82.441,
+        "address": "20500 Como Dr, Lutz, FL 33558, USA",
+        "url": "https://www.lakecomonaturally.com/"
+      },
+      {
+        "id": "loc-us-edenrv",
+        "name": "Eden RV Resort (Hudson, Florida)",
+        "type": "campsite",
+        "country": "USA",
+        "region": "Florida / Hudson",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "eden rv",
+          "hudson",
+          "pasco",
+          "camping",
+          "resort"
+        ],
+        "description": "Hyggeligt og afslappet tøjvalgs-RV-resort på Floridas naturkyst med swimmingpool, spabad, klubhus og masser af sol.",
+        "lat": 28.361,
+        "lng": -82.632,
+        "address": "13300 Hudson Ave, Hudson, FL 34669, USA",
+        "url": "https://www.edenrvresort.com/"
+      },
+      {
+        "id": "haulover-001",
+        "name": "Haulover Beach Park",
+        "type": "beach",
+        "description": "Den mest berømte og populære officielle naturiststrand i Florida. Stranden har en dedikeret sektion for naturister med livreddere og faciliteter.",
+        "lat": 25.9038,
+        "lng": -80.1215,
+        "address": "10800 Collins Ave, Miami Beach, FL 33154",
+        "url": "https://www.miamidade.gov"
+      },
+      {
+        "id": "canaveral-002",
+        "name": "Canaveral National Seashore",
+        "type": "beach",
+        "description": "Et beskyttet naturområde hvor naturisme tolereres ved Playa Linda Beach i de fjerne sektioner. Smuk og uberørt natur.",
+        "lat": 28.7567,
+        "lng": -80.6433,
+        "address": "1 Playa Linda Rd, Titusville, FL 32796",
+        "url": "https://www.nps.gov/cana"
+      },
+      {
+        "id": "caliente-003",
+        "name": "Caliente Resort & Spa",
+        "type": "resort",
+        "description": "Et luksuriøst naturist-resort tæt på Tampa med pool, spa og restauranter. Kræver medlemskab eller dagspas.",
+        "lat": 28.2435,
+        "lng": -82.4632,
+        "address": "21240 Gathering Oaks Way, Land O' Lakes, FL 34638",
+        "url": "https://www.calienteresorts.com"
+      },
+      {
+        "id": "paradiselakes-004",
+        "name": "Paradise Lakes Resort",
+        "type": "resort",
+        "description": "Et af de største og mest etablerede naturist-resorts i Florida med omfattende faciliteter for voksne.",
+        "lat": 28.2429,
+        "lng": -82.4635,
+        "address": "20125 Paradise Lakes Dr, Lutz, FL 33558",
+        "url": "https://www.paradiselakes.com"
+      },
+      {
+        "id": "lakecomo-005",
+        "name": "Lake Como Club",
+        "type": "resort",
+        "description": "En historisk og meget anerkendt naturist-klub og campingplads beliggende i skovklædte omgivelser i det centrale Florida.",
+        "lat": 29.5663,
+        "lng": -81.7001,
+        "address": "20200 E. Hwy 54, Lutz, FL 33558",
+        "url": "https://www.lakecomoclub.com"
+      },
+      {
+        "id": "barefootranch-006",
+        "name": "Barefoot Ranch",
+        "type": "campsite",
+        "description": "En mere afslappet og landlig naturist-camp med fokus på camping og fællesskab.",
+        "lat": 28.6012,
+        "lng": -81.3812,
+        "address": "4500 Barefoot Rd, Orlando, FL 32801",
+        "url": "https://www.barefootranch.net"
+      },
+      {
+        "id": "sunnyland-007",
+        "name": "Sunnyland Beach",
+        "type": "beach",
+        "description": "En uofficiel, men kendt strand sektion for naturister nær Vero Beach. Vær diskret.",
+        "lat": 27.6582,
+        "lng": -80.3705,
+        "address": "Sunnyland Lane, Vero Beach, FL 32963"
+      },
+      {
+        "id": "honeymoon-008",
+        "name": "Honeymoon Island State Park",
+        "type": "beach",
+        "description": "Stranden er offentlig, men der findes isolerede områder, hvor naturister ofte samles. Officiel tekstilstrand, så vær opmærksom på lokal lovgivning.",
+        "lat": 28.0573,
+        "lng": -82.8258,
+        "address": "1 Causeway Blvd, Dunedin, FL 34698",
+        "warning": "Kun dele af stranden accepteres af lokalbefolkningen; pas på lokale regler mod offentlig nøgenhed."
+      }
+    ],
+    "summary": "Fandt 18 naturist-destinationer for \"Florida\".",
+    "sources": []
+  },
+  "californien": {
+    "locations": [
+      {
+        "id": "loc-us-blacks",
+        "name": "Black's Beach (San Diego, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / San Diego",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "san diego",
+          "la jolla",
+          "blacks beach",
+          "torrey pines",
+          "strand"
+        ],
+        "description": "Legendarisk naturiststrand under de 100 meter høje Torrey Pines-sandstensklipper i La Jolla. Kendt for fantastiske stillehavsbølger, surfkultur og stor frihed.",
+        "lat": 32.889,
+        "lng": -117.252,
+        "address": "Torrey Pines, La Jolla, San Diego, CA 92037, USA"
+      },
+      {
+        "id": "loc-us-bakerbeach",
+        "name": "Baker Beach (San Francisco, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / San Francisco",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "san francisco",
+          "baker beach",
+          "golden gate",
+          "presidio",
+          "strand"
+        ],
+        "description": "Den nordlige ende af Baker Beach (nær Presidio-skrænterne) er verdensberømt for tøjvalg med en ikonisk panoramaudsigt direkte til Golden Gate Bridge og Marin Headlands.",
+        "lat": 37.794,
+        "lng": -122.483,
+        "address": "1504 Pershing Dr, San Francisco, CA 94129, USA"
+      },
+      {
+        "id": "loc-us-marshallsbeach",
+        "name": "Marshall's Beach (San Francisco, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / San Francisco",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "san francisco",
+          "marshalls beach",
+          "golden gate",
+          "strand"
+        ],
+        "description": "Afkrogene direkte under Golden Gate Bridges sydlige pylon. Nås via Batteries to Bluffs Trail. Klipper, vilde bølger og et fantastisk intimt naturistmiljø.",
+        "lat": 37.801,
+        "lng": -122.479,
+        "address": "Batteries to Bluffs Trail, San Francisco, CA 94129, USA"
+      },
+      {
+        "id": "loc-us-sangregorio",
+        "name": "San Gregorio Private Beach (Half Moon Bay, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / San Mateo Coast",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "san gregorio",
+          "half moon bay",
+          "san mateo",
+          "strand"
+        ],
+        "description": "USA's ældste private tøjvalgs-strand (drevet uafbrudt siden 1960'erne). Beliggende i en dramatisk sandstenscanyon med eget historisk klubhus, picnic-borde og direkte adgang til Stillehavet.",
+        "lat": 37.322,
+        "lng": -122.401,
+        "address": "Highway 1 at San Gregorio Rd, San Gregorio, CA 94074, USA",
+        "url": "https://www.sangregoriobeach.com/"
+      },
+      {
+        "id": "loc-us-piratescove",
+        "name": "Pirate's Cove Beach (Marin County, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / Marin County",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "marin county",
+          "muir beach",
+          "pirates cove",
+          "strand"
+        ],
+        "description": "Gemt perle langs Coastal Trail mellem Muir Beach og Tennessee Cove. En dramatisk sten- og sandbugt beskyttet af høje klipper med en lang tøjvalgs-tradition.",
+        "lat": 37.852,
+        "lng": -122.569,
+        "address": "Coastal Trail, Muir Beach, CA 94941, USA"
+      },
+      {
+        "id": "loc-us-redrock",
+        "name": "Red Rock Beach (Stinson Beach / Mt Tamalpais, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / Stinson Beach",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "red rock",
+          "stinson beach",
+          "marin",
+          "hot springs",
+          "strand"
+        ],
+        "description": "Beliggende lige syd for Stinson Beach under Highway 1. Røde klippesider, stillehavsbrænding og naturlige varme svovlkilder i sandet ved lavvande.",
+        "lat": 37.886,
+        "lng": -122.628,
+        "address": "Hwy 1 South of Stinson Beach, CA 94970, USA"
+      },
+      {
+        "id": "loc-us-moremesa",
+        "name": "More Mesa Beach (Santa Barbara, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / Santa Barbara",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "santa barbara",
+          "more mesa",
+          "goleta",
+          "strand"
+        ],
+        "description": "Idyllisk naturiststrand under de gyldne sandstensklipper ved More Mesa-naturreservatet i Santa Barbara. Smukt roligt stillehavsvand og uforstyrret atmosfære.",
+        "lat": 34.417,
+        "lng": -119.789,
+        "address": "Mockingbird Ln / More Mesa, Santa Barbara, CA 93110, USA"
+      },
+      {
+        "id": "loc-us-batesbeach",
+        "name": "Bates Beach (Carpinteria, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / Carpinteria",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "carpinteria",
+          "bates beach",
+          "rincon",
+          "ventura",
+          "strand"
+        ],
+        "description": "Den sydlige ubebyggede ende af Carpinteria State Beach mod Rincon Point. Kendt for behageligt mikroklima, delfiner og et venligt naturistmiljø.",
+        "lat": 34.382,
+        "lng": -119.508,
+        "address": "Bates Rd & Hwy 101, Carpinteria, CA 93013, USA"
+      },
+      {
+        "id": "loc-us-lagunadelsol",
+        "name": "Laguna del Sol Resort (Sacramento / Wilton, Californien)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Californien / Sacramento",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "laguna del sol",
+          "sacramento",
+          "wilton",
+          "resort",
+          "camping"
+        ],
+        "description": "Vestkystens største og mest anerkendte tøjvalgs-resort (250 hektar). Omfatter flere opvarmede olympiske pools, boblebade, tennis, 30-hektar sø med kanoer, hytter og restaurant.",
+        "lat": 38.384,
+        "lng": -121.248,
+        "address": "8683 Rawhide Ln, Wilton, CA 95693, USA",
+        "url": "https://www.lagunadelsol.com/"
+      },
+      {
+        "id": "loc-us-gleneden",
+        "name": "Glen Eden Sun Club (Corona, Californien)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Californien / Inland Empire",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "glen eden",
+          "corona",
+          "riverside",
+          "resort"
+        ],
+        "description": "Smukt beliggende familie-naturistresort i Temescal Valley med udsigt til Santa Ana-bjergene. Pools, tennis, pickleball, RV-pladser og et aktivt foreningsliv.",
+        "lat": 33.742,
+        "lng": -117.478,
+        "address": "25999 Glen Eden Rd, Corona, CA 92883, USA",
+        "url": "https://www.gleneden.com/"
+      },
+      {
+        "id": "loc-us-deanzasprings",
+        "name": "DeAnza Springs Resort (Jacumba Hot Springs, Californien)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Californien / San Diego County",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "deanza springs",
+          "jacumba",
+          "san diego",
+          "ørken",
+          "resort"
+        ],
+        "description": "Kæmpe 500-hektar tøjvalgs-resort i det solrige ørkenhøjland øst for San Diego. Indendørs og udendørs mineralpools, restaurant, motel og RV-park.",
+        "lat": 32.628,
+        "lng": -116.168,
+        "address": "1951 Carrizo Gorge Rd, Jacumba Hot Springs, CA 91934, USA",
+        "url": "https://www.deanzasprings.com/"
+      },
+      {
+        "id": "loc-us-deepcreek",
+        "name": "Deep Creek Hot Springs (San Bernardino National Forest, Californien)",
+        "type": "other",
+        "country": "USA",
+        "region": "Californien / San Bernardino",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "deep creek",
+          "hot springs",
+          "varme kilder",
+          "san bernardino"
+        ],
+        "description": "Eventyrlige naturlige geotermiske kilder i en dramatisk kløft langs Mojave River. Flere varme klippebassiner midt i uspoleret ørkennatur med tøjvalg.",
+        "lat": 34.341,
+        "lng": -117.185,
+        "address": "Pacific Crest Trail / Deep Creek, Apple Valley, CA 92308, USA"
+      },
+      {
+        "id": "loc-us-harbin",
+        "name": "Harbin Hot Springs (Middletown, Californien)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Californien / Lake County",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "harbin",
+          "hot springs",
+          "middletown",
+          "napa",
+          "retreat",
+          "resort"
+        ],
+        "description": "Fredfyldt non-profit retreat og naturlige mineralkilder nord for Napa Valley. Berømt for stilhed, meditativ atmosfære, kropsterapi og tøjvalg ved kilderne.",
+        "lat": 38.788,
+        "lng": -122.656,
+        "address": "18424 Harbin Springs Rd, Middletown, CA 95461, USA",
+        "url": "https://www.harbin.org/"
+      },
+      {
+        "id": "loc-us-wilbur",
+        "name": "Wilbur Hot Springs (Williams, Californien)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Californien / Colusa County",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "wilbur",
+          "hot springs",
+          "williams",
+          "retreat",
+          "resort"
+        ],
+        "description": "Historisk naturligt kursted og 1.800 hektar naturreservat fra 1800-tallet. Rent helbredende mineralvand i japansk-inspirerede 'flumes' med valgfri påklædning.",
+        "lat": 39.038,
+        "lng": -122.421,
+        "address": "3375 Wilbur Springs Rd, Williams, CA 95987, USA",
+        "url": "https://www.wilburhotsprings.com/"
+      },
+      {
+        "id": "loc-us-garrapata",
+        "name": "Garrapata Beach North Cove (Big Sur, Californien)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Californien / Big Sur",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "californien",
+          "california",
+          "garrapata",
+          "big sur",
+          "monterey",
+          "carmel",
+          "strand"
+        ],
+        "description": "De nordlige afskærmede bugter ved Garrapata State Park på den vilde Big Sur-kyst. Omgivet af tårnhøje klippeskrænter, havoddere i tangskovene og vild kystskønhed.",
+        "lat": 36.425,
+        "lng": -121.918,
+        "address": "Highway 1 Mile Marker 63, Carmel-By-The-Sea, CA 93923, USA"
+      },
+      {
+        "id": "blacks-beach-sd",
+        "name": "Black's Beach",
+        "type": "beach",
+        "description": "En af de mest berømte og største naturiststrande i USA, placeret under klipperne i La Jolla.",
+        "lat": 32.8872,
+        "lng": -117.2536,
+        "address": "La Jolla, San Diego, CA 92037"
+      },
+      {
+        "id": "glen-eden-ca",
+        "name": "Glen Eden Sun Club",
+        "type": "resort",
+        "description": "Et veletableret naturistresort med pool, faciliteter og medlemskab i AANR.",
+        "lat": 34.2256,
+        "lng": -117.4878,
+        "address": "25999 Glen Eden Rd, Corona, CA 92883",
+        "url": "https://gleneden.com/"
+      },
+      {
+        "id": "morro-strand-fkk",
+        "name": "Morro Strand (Nord for klippen)",
+        "type": "beach",
+        "description": "Et uofficielt, men meget populært område for naturister ved den centrale kyst.",
+        "lat": 35.3789,
+        "lng": -120.8661,
+        "address": "Morro Bay, CA 93442"
+      },
+      {
+        "id": "san-onofre-beach",
+        "name": "Barefoot Beach (San Onofre)",
+        "type": "beach",
+        "description": "En af de få strande i det sydlige Californien hvor naturisme tolereres i det nordlige afsnit.",
+        "lat": 33.3769,
+        "lng": -117.5683,
+        "address": "San Onofre State Beach, San Clemente, CA 92672"
+      },
+      {
+        "id": "pirates-cove-avila",
+        "name": "Pirates Cove Beach",
+        "type": "beach",
+        "description": "En skjult bugt kendt for sit uofficielle naturistmiljø og smukke klipper.",
+        "lat": 35.1764,
+        "lng": -120.6789,
+        "address": "Avila Beach, CA 93424"
+      },
+      {
+        "id": "sunny-rest-resort",
+        "name": "Sunny Rest Resort",
+        "type": "resort",
+        "description": "Et afslappet naturist-resort med campingmuligheder og fælles faciliteter.",
+        "lat": 33.6845,
+        "lng": -117.3963,
+        "address": "Palomar Mountain, CA 92060",
+        "url": "https://sunnyrest.com/"
+      },
+      {
+        "id": "baker-beach-sf",
+        "name": "Baker Beach",
+        "type": "beach",
+        "description": "Ikonisk strand i San Francisco med udsigt til Golden Gate Bridge, kendt for sit nordlige FKK-område.",
+        "lat": 37.7915,
+        "lng": -122.4835,
+        "address": "Gibson Rd, San Francisco, CA 94129"
+      },
+      {
+        "id": "pt-reyes-beach",
+        "name": "Point Reyes National Seashore (Wildcat Beach)",
+        "type": "beach",
+        "description": "Afskærmet og vild strand, hvor naturister ofte søger hen på de mere isolerede dele.",
+        "lat": 38.0167,
+        "lng": -122.8444,
+        "address": "Point Reyes Station, CA 94956"
+      },
+      {
+        "id": "sand-dollar-big-sur",
+        "name": "Sand Dollar Beach",
+        "type": "beach",
+        "description": "En af de største og smukkeste strande i Big Sur-regionen med plads til naturisme.",
+        "lat": 36.0267,
+        "lng": -121.5161,
+        "address": "Highway 1, Big Sur, CA 93920"
+      },
+      {
+        "id": "laguna-del-sol",
+        "name": "Laguna del Sol",
+        "type": "resort",
+        "description": "Et stort, velholdt naturist-samfund nær Sacramento med sø og sportsfaciliteter.",
+        "lat": 38.3375,
+        "lng": -121.3653,
+        "address": "8683 Florin Rd, Sacramento, CA 95828",
+        "url": "https://lagunadelsol.com/"
+      },
+      {
+        "id": "sycamore-springs",
+        "name": "Sycamore Mineral Springs Resort",
+        "type": "resort",
+        "description": "Tilbyder private varme kilder, hvor beklædningsfrihed er tilladt i de private rum.",
+        "lat": 35.1878,
+        "lng": -120.6672,
+        "address": "1215 Avila Beach Dr, San Luis Obispo, CA 93405",
+        "url": "https://www.sycamoresprings.com/"
+      },
+      {
+        "id": "mueller-beach-jenner",
+        "name": "Mueller Beach",
+        "type": "beach",
+        "description": "Lille bugt i det nordlige Californien populær blandt lokale naturister.",
+        "lat": 38.4556,
+        "lng": -123.1556,
+        "address": "Jenner, CA 95450"
+      },
+      {
+        "id": "hidden-beach-aptos",
+        "name": "Hidden Beach (Santa Cruz)",
+        "type": "beach",
+        "description": "En afsidesliggende strand kendt for at være venlig over for naturister.",
+        "lat": 36.9653,
+        "lng": -121.9167,
+        "address": "Aptos, CA 95003"
+      },
+      {
+        "id": "escondido-malibu",
+        "name": "Escondido Beach (Malibu)",
+        "type": "beach",
+        "description": "Delvist tolereret område i Malibu for dem der søger ensomhed.",
+        "lat": 34.0256,
+        "lng": -118.7845,
+        "address": "Malibu, CA 90265"
+      },
+      {
+        "id": "dunes-beach-hmb",
+        "name": "Dunes Beach",
+        "type": "beach",
+        "description": "Strækning syd for Half Moon Bay hvor naturister ofte findes bag klitterne.",
+        "lat": 37.4722,
+        "lng": -122.4289,
+        "address": "Half Moon Bay, CA 94019"
+      }
+    ],
+    "summary": "Fandt 30 naturist-destinationer for \"Californien\".",
+    "sources": []
+  },
+  "hawaii": {
+    "locations": [
+      {
+        "id": "loc-us-littlebeach",
+        "name": "Little Beach / Puʻu Ōlaʻi (Makena State Park, Maui, Hawaii)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Hawaii / Maui",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "maui",
+          "makena",
+          "little beach",
+          "puu olai",
+          "strand",
+          "stillehavet"
+        ],
+        "description": "Hawaiis mest legendariske naturiststrand, beliggende bag lavaklippen ved Makena Big Beach på det sydlige Maui. Gyldent sand, turkist vand, snorkling med havskildpadder og afslappet aloha-stemning.",
+        "lat": 20.634,
+        "lng": -156.449,
+        "address": "Makena State Park, Kihei, Maui, HI 96753, USA"
+      },
+      {
+        "id": "loc-us-kehena",
+        "name": "Kehena Black Sand Beach (Puna, Big Island, Hawaii)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Hawaii / Big Island",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "big island",
+          "kehena",
+          "puna",
+          "black sand",
+          "sort sand",
+          "strand"
+        ],
+        "description": "Spektakulær sort vulkansandstrand omkranset af jerntræer og kokospalmer på Big Islands frodige Puna-kyst. Spinner-delfiner svømmer ofte helt ind i bugten.",
+        "lat": 19.395,
+        "lng": -154.929,
+        "address": "Kalapana-Kapoho Beach Rd (Hwy 137), Pāhoa, HI 96778, USA"
+      },
+      {
+        "id": "loc-us-secretbeachkauai",
+        "name": "Secret Beach / Kauapea Beach (Kilauea, Kauai, Hawaii)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Hawaii / Kauai",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "kauai",
+          "secret beach",
+          "kauapea",
+          "kilauea",
+          "strand"
+        ],
+        "description": "Næsten 1 kilometer lang dramatisk sandstrand under de røde klipper på Kauais nordkyst. Udsigt til Kilauea-fyrtårnet, små vandfald og afsides naturistzoner.",
+        "lat": 22.217,
+        "lng": -159.412,
+        "address": "Secret Beach Rd, Kilauea, Kauai, HI 96754, USA"
+      },
+      {
+        "id": "loc-us-kalani",
+        "name": "Kalani Oceanside Retreat (Big Island, Hawaii)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Hawaii / Big Island",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "big island",
+          "kalani",
+          "retreat",
+          "resort",
+          "spa"
+        ],
+        "description": "120-hektar eco-retreat ved Stillehavskysten på Big Island. Tilbyder tøjvalg ved sin 25-meter pool, boblebade og sauna samt yoga og wellness.",
+        "lat": 19.378,
+        "lng": -154.912,
+        "address": "12-6860 Kalapana-Kapoho Beach Rd, Pāhoa, HI 96778, USA",
+        "url": "https://www.kalani.com/"
+      },
+      {
+        "id": "beach-hi-001",
+        "name": "Little Beach, Maui",
+        "type": "beach",
+        "description": "Den mest berømte uofficielle naturiststrand på Hawaii, beliggende i Makena State Park. Kendt for søndags-trommecirkler.",
+        "lat": 20.6275,
+        "lng": -156.4479,
+        "address": "Makena Road, Kihei, HI 96753, USA",
+        "warning": "Naturisme er juridisk set en gråzone på offentlige strande på Hawaii; vær diskret og respekter lokale retningslinjer."
+      },
+      {
+        "id": "beach-hi-002",
+        "name": "Kehena Beach, Big Island",
+        "type": "beach",
+        "description": "En sort sandstrand kendt for sin afslappede og frisindede atmosfære. Populær blandt lokale naturister.",
+        "lat": 19.3621,
+        "lng": -154.9125,
+        "address": "Highway 137, Pahoa, HI 96778, USA",
+        "warning": "Strømforhold kan være meget farlige her. Udvis forsigtighed."
+      },
+      {
+        "id": "beach-hi-003",
+        "name": "Shipman Beach (Haena Beach), Big Island",
+        "type": "beach",
+        "description": "En afsondret strand nås via en længere vandretur, hvilket gør den til et fristed for naturister.",
+        "lat": 19.6641,
+        "lng": -154.9815,
+        "address": "Puna District, Big Island, HI, USA"
+      },
+      {
+        "id": "beach-hi-004",
+        "name": "Kaupo Beach, Oahu",
+        "type": "beach",
+        "description": "En mindre kendt strand på østsiden af Oahu, hvor naturister ofte søger hen på de mere afsidesliggende dele.",
+        "lat": 21.3256,
+        "lng": -157.6534,
+        "address": "Kalanianaole Hwy, Waimanalo, HI 96795, USA"
+      },
+      {
+        "id": "beach-hi-005",
+        "name": "Polihale State Park, Kauai",
+        "type": "beach",
+        "description": "En enorm og isoleret strandstrækning, hvor naturister kan finde privatliv langt fra menneskemængderne.",
+        "lat": 22.0833,
+        "lng": -159.7333,
+        "address": "Lower Mana Road, Waimea, HI 96796, USA"
+      }
+    ],
+    "summary": "Fandt 9 naturist-destinationer for \"Hawaii\".",
+    "sources": []
+  },
+  "texas": {
+    "locations": [
+      {
+        "id": "loc-us-hippie",
+        "name": "Hippie Hollow Park (Austin, Texas)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Texas / Austin",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "texas",
+          "austin",
+          "hippie hollow",
+          "lake travis",
+          "sø"
+        ],
+        "description": "Den eneste lovlige tøjvalgs-park i Texas, beliggende på kalkstensklipperne ved Lake Travis. Populært sted for svømning, solbadning og socialt samvær.",
+        "lat": 30.418,
+        "lng": -97.892,
+        "address": "7000 Comanche Trail, Austin, TX 78732, USA"
+      },
+      {
+        "id": "loc-us-starranch",
+        "name": "Star Ranch Nudist Resort (McDade / Austin, Texas)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Texas / Austin",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "texas",
+          "star ranch",
+          "austin",
+          "mcdade",
+          "resort",
+          "camping"
+        ],
+        "description": "Texas' ældste og mest kendte AANR-resort på 145 naturskønne hektar. Stor opvarmet swimmingpool, spabad, tennisbaner, klubhus og telt-/hytteudlejning.",
+        "lat": 30.292,
+        "lng": -97.234,
+        "address": "244 Star Ranch Dr, McDade, TX 78650, USA",
+        "url": "https://www.starranch.net/"
+      },
+      {
+        "id": "loc-us-bluebonnet",
+        "name": "Bluebonnet Nudist Park (Decatur / Dallas-Fort Worth, Texas)",
+        "type": "campsite",
+        "country": "USA",
+        "region": "Texas / Dallas-Fort Worth",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "texas",
+          "dallas",
+          "fort worth",
+          "decatur",
+          "bluebonnet",
+          "resort",
+          "camping"
+        ],
+        "description": "Gæstfri og fredelig familie-naturistpark nord for Fort Worth. Både indendørs opvarmet pool og udendørs pool, vandrestier og hyggelige hytter.",
+        "lat": 33.242,
+        "lng": -97.585,
+        "address": "4110 FM 2264, Decatur, TX 76234, USA",
+        "url": "https://www.bluebonnetpark.com/"
+      },
+      {
+        "id": "tx-oak-forest",
+        "name": "Oak Forest Naturist Park",
+        "type": "campsite",
+        "description": "En veletableret naturistklub nær Austin med pool, campingmuligheder og fællesskabsfaciliteter.",
+        "lat": 30.2915,
+        "lng": -97.5583,
+        "address": "15301 FM 812, Del Valle, TX 78617, USA",
+        "url": "https://www.oakforest.org/"
+      },
+      {
+        "id": "tx-hi-hopes",
+        "name": "Hi-Hopes Naturist Park",
+        "type": "campsite",
+        "description": "Privat naturistområde tæt på Houston med swimmingpool, volleyballbane og camping faciliteter.",
+        "lat": 30.0815,
+        "lng": -95.6912,
+        "address": "26002 Roberts Rd, Hockley, TX 77447, USA",
+        "url": "https://www.hihopes.com/"
+      },
+      {
+        "id": "tx-sunnyside",
+        "name": "Sunnyside Naturist Club",
+        "type": "campsite",
+        "description": "Naturistfacilitet nær Dallas-Fort Worth området, der tilbyder en afslappet atmosfære for medlemmer.",
+        "lat": 32.7482,
+        "lng": -96.7972,
+        "address": "Dallas, TX, USA",
+        "url": "https://sunnysidenaturist.com/"
+      },
+      {
+        "id": "tx-bolin-creek",
+        "name": "Bolin Creek Naturist Park",
+        "type": "campsite",
+        "description": "En mere afsidesliggende naturist-campingplads centralt placeret for Central Texas beboere.",
+        "lat": 30.3421,
+        "lng": -97.6892,
+        "address": "Austin, TX, USA"
+      },
+      {
+        "id": "tx-hippie-hollow",
+        "name": "Hippie Hollow Park",
+        "type": "beach",
+        "description": "Den eneste lovlige tøjvalgfrie offentlige park i Texas, placeret ved Lake Travis.",
+        "lat": 30.4042,
+        "lng": -97.8925,
+        "address": "7000 Comanche Trail, Austin, TX 78732, USA",
+        "warning": "Kun for voksne over 18 år. Ingen badelivreddere til stede."
+      },
+      {
+        "id": "tx-hidden-valley",
+        "name": "Hidden Valley Naturist Club",
+        "type": "campsite",
+        "description": "Privat ejet naturistområde med fokus på natur, vandreture og socialt samvær.",
+        "lat": 30.5123,
+        "lng": -98.0512,
+        "address": "Leander, TX, USA"
+      },
+      {
+        "id": "tx-pine-grove",
+        "name": "Pine Grove Naturist Resort",
+        "type": "resort",
+        "description": "Eksklusivt naturistresort tæt på Houston med moderne faciliteter og omfattende naturarealer.",
+        "lat": 30.1234,
+        "lng": -95.4321,
+        "address": "Conroe, TX, USA"
+      },
+      {
+        "id": "tx-spi-beach",
+        "name": "South Padre Island - Afsidesliggende områder",
+        "type": "beach",
+        "description": "De nordlige, afsidesliggende strækninger af øen bliver ofte brugt af nudister, selvom det ikke er officielt dedikeret.",
+        "lat": 26.1158,
+        "lng": -97.1652,
+        "address": "South Padre Island, TX 78597, USA",
+        "warning": "Ingen officiel status. Vær diskret og følg lokal lovgivning om offentlig blufærdighed."
+      },
+      {
+        "id": "tx-naturist-ranch",
+        "name": "Texas Naturist Ranch",
+        "type": "campsite",
+        "description": "Stor ranch-ejendom der tillader naturisme for medlemmer i et meget privat miljø.",
+        "lat": 31.5512,
+        "lng": -99.4512,
+        "address": "Central Texas, USA"
+      }
+    ],
+    "summary": "Fandt 12 naturist-destinationer for \"Texas\".",
+    "sources": []
   }
 }
