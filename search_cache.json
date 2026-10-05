@@ -2532,5 +2532,831 @@
     "query": "Jamaica",
     "isRecent": true,
     "ageDays": 0
+  },
+  "negril": {
+    "locations": [
+      {
+        "id": "loc-jm-hedonism",
+        "name": "Hedonism II Resort (Negril)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "hedonism",
+          "hedonism ii",
+          "resort",
+          "bloody bay",
+          "caribien",
+          "caribbean",
+          "all-inclusive"
+        ],
+        "description": "Verdens måske mest berømte 'clothing-optional' all-inclusive resort beliggende på spidsen af Bloody Bay i Negril. Har en dedikeret nøgenstrand med swim-up bar, boblebade og fri tøjvalgs-atmosfære døgnet rundt.",
+        "lat": 18.3361,
+        "lng": -78.3378,
+        "address": "Norman Manley Blvd, Negril, Westmoreland, Jamaica",
+        "url": "https://www.hedonism.com",
+        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-grandlido",
+        "name": "Grand Lido Negril Au-Naturel Resort",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Hanover",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "grand lido",
+          "au naturel",
+          "luksus",
+          "resort",
+          "butler",
+          "caribien"
+        ],
+        "description": "Eksklusivt 5-stjernet boutique-resort kun for voksne naturister. Byder på 26 oceanfront suiter med butler, privat tøjvalgspool med havudsigt og en rolig, afskærmet naturiststrandbugt.",
+        "lat": 18.3325,
+        "lng": -78.3342,
+        "address": "Norman Manley Blvd, Negril, Hanover, Jamaica",
+        "url": "https://www.grandlido.com",
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-couplessweptaway",
+        "name": "Couples Swept Away – Au Naturel Beach (Negril)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "seven mile beach",
+          "couples swept away",
+          "resort",
+          "strand",
+          "au naturel"
+        ],
+        "description": "Beliggende direkte på den berømte Seven Mile Beach i Negril. Resortet tilbyder en diskret afskærmet naturistsektion med blødt hvidt sand, liggestole og krystalklart caribisk badevand.",
+        "lat": 18.2985,
+        "lng": -78.3421,
+        "address": "Norman Manley Blvd, Long Bay, Negril, Jamaica",
+        "url": "https://couples.com/resorts/couples-swept-away"
+      },
+      {
+        "id": "loc-jm-couplesnegril",
+        "name": "Couples Negril – Au Naturel Beach Section",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Hanover",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "bloody bay",
+          "couples negril",
+          "resort",
+          "au naturel"
+        ],
+        "description": "Placeret i den rolige Bloody Bay med en afskærmet 'Au Naturel' strandzone for resortets gæster udstyret med parasoller, solsenge og udsigt over bugten.",
+        "lat": 18.3312,
+        "lng": -78.333,
+        "address": "Norman Manley Blvd, Bloody Bay, Negril, Jamaica",
+        "url": "https://couples.com/resorts/couples-negril"
+      },
+      {
+        "id": "loc-jm-bloodybay",
+        "name": "Bloody Bay Naturist Strandsektion (Negril)",
+        "type": "beach",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "bloody bay",
+          "strand",
+          "bade",
+          "caribien"
+        ],
+        "description": "Bloody Bay er kendt for sit lave, rolige turkise vand og bløde sand. Strækningen ved og omkring Hedonism II og Grand Lido er anerkendt for en uformel og venlig tøjvalgs-badekultur.",
+        "lat": 18.3345,
+        "lng": -78.3355,
+        "address": "Bloody Bay, Norman Manley Blvd, Negril, Jamaica"
+      },
+      {
+        "id": "loc-jm-watsonsbeach",
+        "name": "Watsons Beach & Secret Coves (Negril West End)",
+        "type": "beach",
+        "country": "Jamaica",
+        "region": "Westmoreland / Negril",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "west end",
+          "watsons beach",
+          "klippebugt"
+        ],
+        "description": "Fredelige klipper og afsides bugter syd for Negril fyr, hvor naturister og eventyrere finder uforstyrret nøgenbadning i det klare hav.",
+        "lat": 18.258,
+        "lng": -78.359,
+        "address": "West End Road, Negril, Jamaica",
+        "warning": "Ingen faste badefaciliteter; udvis almindelig diskretion i forhold til lokale beboere."
+      },
+      {
+        "id": "hedonism-ii-negril",
+        "name": "Hedonism II",
+        "type": "resort",
+        "description": "Verdenskendt naturistresort i Negril med en dedikeret privat naturiststrand og afslappet atmosfære.",
+        "lat": 18.3392,
+        "lng": -78.3435,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://www.hedonism.com"
+      },
+      {
+        "id": "bloody-bay-fkk",
+        "name": "Bloody Bay (Naturist område)",
+        "type": "beach",
+        "description": "En rolig del af stranden nær resorts, hvor naturisme tolereres i begrænsede zoner.",
+        "lat": 18.3415,
+        "lng": -78.3458,
+        "address": "Bloody Bay, Negril, Jamaica",
+        "warning": "Naturisme er kun tilladt på private resort-strande; vær opmærksom på lokale regler uden for resorts."
+      },
+      {
+        "id": "couples-swept-away",
+        "name": "Couples Swept Away (Naturist sektion)",
+        "type": "resort",
+        "description": "Luksuriøst resort med diskrete områder for naturister.",
+        "lat": 18.2831,
+        "lng": -78.3512,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://couples.com"
+      },
+      {
+        "id": "booby-cay-island",
+        "name": "Booby Cay",
+        "type": "beach",
+        "description": "Lille ø ud for Negrils kyst, ofte besøgt af naturister fra nærliggende resorts.",
+        "lat": 18.3551,
+        "lng": -78.3421,
+        "address": "Booby Cay, Negril, Jamaica",
+        "warning": "Ingen officielle faciliteter; øen er afsides og ubevogtet."
+      },
+      {
+        "id": "treasure-beach-fkk",
+        "name": "Jamaica Naturist Beach (Private), Treasure Beach",
+        "type": "beach",
+        "description": "Afskærmet strandstykke anvendt af naturister i det sydlige Jamaica.",
+        "lat": 17.8812,
+        "lng": -77.7289,
+        "address": "Treasure Beach, St. Elizabeth, Jamaica",
+        "warning": "Offentlig adgang er begrænset; udvis respekt for lokalbefolkningen."
+      },
+      {
+        "id": "sandals-negril",
+        "name": "Sandals Negril (Privat område)",
+        "type": "resort",
+        "description": "High-end resort med adgang til naturist-venlige zoner.",
+        "lat": 18.3354,
+        "lng": -78.3445,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://www.sandals.com"
+      },
+      {
+        "id": "ocho-rios-fkk",
+        "name": "Ocho Rios Naturist Beach Area",
+        "type": "beach",
+        "description": "Uofficielle, men kendte naturist-lommer langs kysten øst for Negril.",
+        "lat": 18.4065,
+        "lng": -77.1032,
+        "address": "Ocho Rios, Jamaica"
+      },
+      {
+        "id": "bluefields-beach",
+        "name": "Bluefields Beach (Afskærmet)",
+        "type": "beach",
+        "description": "En mere afsidesliggende strand hvor naturister af og til finder privatliv.",
+        "lat": 18.1722,
+        "lng": -78.0264,
+        "address": "Bluefields, Jamaica"
+      },
+      {
+        "id": "doctors-cave-fkk",
+        "name": "Doctor's Cave Beach (Privat del)",
+        "type": "beach",
+        "description": "Montego Bay strand med specifikke sektioner, der tillader solbadning uden tøj.",
+        "lat": 18.4728,
+        "lng": -77.9254,
+        "address": "Montego Bay, Jamaica"
+      },
+      {
+        "id": "grand-lido-negril",
+        "name": "Grand Lido Negril (Tidligere Aura)",
+        "type": "resort",
+        "description": "Luksusresort med stærke rødder i den naturistiske kultur i Negril.",
+        "lat": 18.3378,
+        "lng": -78.3452,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://www.grandlido.com"
+      }
+    ],
+    "summary": "Fandt 16 naturist-destinationer for \"Negril\".",
+    "sources": [],
+    "timestamp": 1791177117013,
+    "query": "Negril"
+  },
+  "ocho rios": {
+    "locations": [
+      {
+        "id": "loc-jm-couplestowerisle",
+        "name": "Couples Tower Isle – Private Au Naturel Island (Ocho Rios)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Ocho Rios / St. Mary",
+        "keywords": [
+          "jamaica",
+          "ocho rios",
+          "couples",
+          "tower isle",
+          "privat ø",
+          "island",
+          "resort",
+          "au naturel",
+          "caribien"
+        ],
+        "description": "Ikonisk voksenresort med sin helt egen private ø ud for kysten ('Tower Isle'), der er 100% au naturel (tøj forbudt på øen). Båd transfer sejler gæster til øens pool, swim-up bar og liggestole.",
+        "lat": 18.4182,
+        "lng": -77.0425,
+        "address": "A3, Tower Isle, Ocho Rios, St. Mary, Jamaica",
+        "url": "https://couples.com/resorts/couples-tower-isle",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-couplessanssouci",
+        "name": "Couples Sans Souci – Au Naturel Beach & Mineral Pool (Ocho Rios)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Ocho Rios / St. Ann",
+        "keywords": [
+          "jamaica",
+          "ocho rios",
+          "couples",
+          "sans souci",
+          "mineral pool",
+          "strand",
+          "resort",
+          "au naturel"
+        ],
+        "description": "Romantisk luksusresort bygget ind i de frodige klipper ved Ocho Rios. Råder over en afsondret privat naturiststrandbugt, en naturlig ferskvands mineralgrottepool og dedikeret strandbar for nøgenbadere.",
+        "lat": 18.4115,
+        "lng": -77.0678,
+        "address": "White River, Ocho Rios, St. Ann, Jamaica",
+        "url": "https://couples.com/resorts/couples-sans-souci"
+      },
+      {
+        "id": "hedonism-ii",
+        "name": "Hedonism II",
+        "type": "resort",
+        "description": "Et verdenskendt all-inclusive naturistresort beliggende i Negril. Det tilbyder en dedikeret privat strand og en uformel atmosfære for naturister.",
+        "lat": 18.3289,
+        "lng": -78.3371,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://www.hedonism.com"
+      },
+      {
+        "id": "couples-swept-away",
+        "name": "Couples Swept Away (Nudist Beach Area)",
+        "type": "resort",
+        "description": "Selvom det er et resort for par, har det en dedikeret naturiststrandsektion. Beliggende ved Seven Mile Beach.",
+        "lat": 18.2736,
+        "lng": -78.3582,
+        "address": "Norman Manley Blvd, Negril, Jamaica",
+        "url": "https://couples.com/resorts/swept-away"
+      },
+      {
+        "id": "royalton-blue-waters",
+        "name": "Royalton Blue Waters (Nudist Section)",
+        "type": "resort",
+        "description": "Et luksuriøst resort tæt på Falmouth/Ocho Rios området med begrænsede naturist-venlige områder for solbadning.",
+        "lat": 18.4981,
+        "lng": -77.6325,
+        "address": "Highway A1, Trelawny, Jamaica",
+        "url": "https://www.royaltonresorts.com"
+      },
+      {
+        "id": "couples-tower-isle",
+        "name": "Couples Tower Isle",
+        "type": "resort",
+        "description": "Ligger tæt på Ocho Rios og har en privat ø, hvor solbadning med tøjet af er tilladt for gæster.",
+        "lat": 18.4354,
+        "lng": -77.0705,
+        "address": "Tower Isle, St. Mary, Jamaica",
+        "url": "https://couples.com/resorts/tower-isle"
+      },
+      {
+        "id": "negril-beach-public",
+        "name": "Negril Beach (Public Nudist Areas)",
+        "type": "beach",
+        "description": "Offentlige strandområder nær visse resorts i Negril, hvor tøjfri solbadning er kulturelt accepteret.",
+        "lat": 18.2568,
+        "lng": -78.3444,
+        "address": "Negril, Jamaica",
+        "warning": "Vær opmærksom på, at Jamaica generelt er konservativt uden for resorts; naturisme er kun accepteret på private eller dedikerede strande."
+      }
+    ],
+    "summary": "Fandt 7 naturist-destinationer for \"Ocho Rios\".",
+    "sources": [],
+    "timestamp": 1791177120991,
+    "query": "Ocho Rios"
+  },
+  "zipolite": {
+    "locations": [
+      {
+        "id": "loc-mx-zipolite",
+        "name": "Playa Zipolite (Oaxaca) – Mexicos Officielle Nudiststrand",
+        "type": "beach",
+        "country": "Mexico",
+        "region": "Oaxaca / Costa Chica",
+        "keywords": [
+          "mexico",
+          "zipolite",
+          "oaxaca",
+          "playa del amor",
+          "strand",
+          "officiel"
+        ],
+        "description": "Mexicos første og mest berømte officielle tøjvalgs-strand (ca. 2 km lang) ved Stillehavet. Særligt den østlige bugt 'Playa del Amor' er et legendarisk naturist-paradis med klipper, palmer og bohemestemning.",
+        "lat": 15.6631,
+        "lng": -96.5133,
+        "address": "Playa Zipolite, 70904 San Pedro Pochutla, Oaxaca, Mexico"
+      },
+      {
+        "id": "loc-mx-playadelamor-zipolite",
+        "name": "Playa del Amor (Zipolite, Oaxaca)",
+        "type": "beach",
+        "country": "Mexico",
+        "region": "Oaxaca / Zipolite",
+        "keywords": [
+          "mexico",
+          "zipolite",
+          "playa del amor",
+          "oaxaca",
+          "strand",
+          "klipper"
+        ],
+        "description": "En idyllisk lille beskyttet bugt i den østlige ende af Zipolite omkranset af dramatiske klipper. 100% tøjvalg og roligt badevand med en fantastisk solnedgang.",
+        "lat": 15.6608,
+        "lng": -96.5085,
+        "address": "Playa del Amor, Zipolite, Oaxaca, Mexico"
+      },
+      {
+        "id": "zip-01",
+        "name": "Playa Zipolite",
+        "type": "beach",
+        "description": "Den eneste officielt anerkendte nudiststrand i Mexico. En legendarisk destination kendt for sin frisindede atmosfære.",
+        "lat": 15.6517,
+        "lng": -96.5056,
+        "address": "Playa Zipolite, Oaxaca, Mexico",
+        "image": "zipolite_beach.jpg"
+      },
+      {
+        "id": "zip-02",
+        "name": "Naked at the Beach (Zipolite)",
+        "type": "resort",
+        "description": "Et naturistvenligt resort beliggende direkte ved Playa Zipolite med fokus på privatliv.",
+        "lat": 15.6515,
+        "lng": -96.5072,
+        "address": "Calle Principal, Zipolite, Oaxaca, Mexico",
+        "url": "https://www.nakedatthebeach.com"
+      },
+      {
+        "id": "zip-03",
+        "name": "Playa del Amor",
+        "type": "beach",
+        "description": "En lille, afsides strand vest for Zipolite, som er meget populær blandt naturister.",
+        "lat": 15.6498,
+        "lng": -96.5121,
+        "address": "Playa del Amor, Oaxaca, Mexico"
+      },
+      {
+        "id": "zip-04",
+        "name": "Hotel Nude Zipolite",
+        "type": "resort",
+        "description": "Et voksenorienteret hotel, der fremmer en naturist-livsstil i tropiske omgivelser.",
+        "lat": 15.6512,
+        "lng": -96.5041,
+        "address": "Playa Zipolite, Oaxaca, Mexico",
+        "url": "https://www.hotelnudezipolite.com"
+      },
+      {
+        "id": "oax-05",
+        "name": "Playa Mazunte",
+        "type": "beach",
+        "description": "Nabo-byen til Zipolite; visse områder mod vest er kendt for at være tolerante over for nudisme.",
+        "lat": 15.6542,
+        "lng": -96.5544,
+        "address": "Mazunte, Oaxaca, Mexico"
+      },
+      {
+        "id": "oax-06",
+        "name": "Playa San Agustinillo",
+        "type": "beach",
+        "description": "En mere rolig strand mellem Zipolite og Mazunte, hvor naturister ofte findes på de mindre befærdede dele.",
+        "lat": 15.6558,
+        "lng": -96.5386,
+        "address": "San Agustinillo, Oaxaca, Mexico"
+      },
+      {
+        "id": "pvr-07",
+        "name": "Hidden Beach (Puerto Vallarta)",
+        "type": "beach",
+        "description": "Berømt 'skjult' strand i Marieta-øerne, hvor naturisme tolereres på visse ture.",
+        "lat": 20.6483,
+        "lng": -105.2346,
+        "address": "Islas Marietas, Nayarit, Mexico"
+      },
+      {
+        "id": "riv-08",
+        "name": "Xcalacoco Beach (Riviera Maya)",
+        "type": "beach",
+        "description": "En strand ved Playa del Carmen med sektioner, hvor naturisme praktiseres ved resorts.",
+        "lat": 20.6555,
+        "lng": -87.0543,
+        "address": "Carretera Cancun-Tulum, Playa del Carmen, Mexico"
+      },
+      {
+        "id": "riv-09",
+        "name": "Hidden Beach Resort (Riviera Maya)",
+        "type": "resort",
+        "description": "Et luksuriøst, voksen-kun naturistresort (Au Naturel).",
+        "lat": 20.7388,
+        "lng": -86.8877,
+        "address": "Carretera Cancun-Tulum, Riviera Maya, Mexico",
+        "url": "https://www.hiddenbeachresort.com"
+      },
+      {
+        "id": "nay-10",
+        "name": "Playa Chacala",
+        "type": "beach",
+        "description": "En afsondret strand nord for Puerto Vallarta med naturist-venlige bugter.",
+        "lat": 21.1444,
+        "lng": -105.2289,
+        "address": "Chacala, Nayarit, Mexico"
+      },
+      {
+        "id": "tul-11",
+        "name": "Tulum Beach (Naturist zones)",
+        "type": "beach",
+        "description": "Strækninger af stranden syd for Tulums ruiner har områder, hvor beklædningsfrihed er normen.",
+        "lat": 20.2114,
+        "lng": -87.4339,
+        "address": "Tulum, Quintana Roo, Mexico"
+      },
+      {
+        "id": "hol-12",
+        "name": "Isla Holbox (Fjerntliggende strande)",
+        "type": "beach",
+        "description": "De øde østlige strande på øen er populære blandt naturister pga. privatliv.",
+        "lat": 21.5284,
+        "lng": -87.3732,
+        "address": "Isla Holbox, Quintana Roo, Mexico"
+      },
+      {
+        "id": "pmi-13",
+        "name": "Punta Mita (Afskærmede områder)",
+        "type": "beach",
+        "description": "Flere private bugter i området omkring Punta Mita tillader naturisme.",
+        "lat": 20.7686,
+        "lng": -105.5234,
+        "address": "Punta Mita, Nayarit, Mexico"
+      },
+      {
+        "id": "hua-14",
+        "name": "Playa La Entrega (Huatulco)",
+        "type": "beach",
+        "description": "Selvom den er populær, findes der nærliggende bugter, der ofte besøges af naturister.",
+        "lat": 15.7423,
+        "lng": -96.1265,
+        "address": "Bahías de Huatulco, Oaxaca, Mexico"
+      },
+      {
+        "id": "bcs-15",
+        "name": "Camping La Posa",
+        "type": "campsite",
+        "description": "En mere primitiv campingplads nær La Paz, hvor nudisme ofte tolereres i visse zoner.",
+        "lat": 24.1234,
+        "lng": -110.3211,
+        "address": "La Paz, Baja California Sur, Mexico"
+      },
+      {
+        "id": "bcs-16",
+        "name": "Playa Balandra (Omegn)",
+        "type": "beach",
+        "description": "Lavvandet bugt hvor afsidesliggende områder bruges af naturister.",
+        "lat": 24.3167,
+        "lng": -110.325,
+        "address": "Balandra, Baja California Sur, Mexico"
+      },
+      {
+        "id": "zih-17",
+        "name": "Playa de las Gatas",
+        "type": "beach",
+        "description": "Beliggende nær Zihuatanejo, kendt for roligt vand og naturist-venlige hjørner.",
+        "lat": 17.6321,
+        "lng": -101.5542,
+        "address": "Zihuatanejo, Guerrero, Mexico"
+      },
+      {
+        "id": "gue-18",
+        "name": "Playa Ventura",
+        "type": "beach",
+        "description": "En meget rolig strand i staten Guerrero, populær blandt lokale naturister.",
+        "lat": 16.5412,
+        "lng": -98.9812,
+        "address": "Playa Ventura, Guerrero, Mexico"
+      },
+      {
+        "id": "bcs-19",
+        "name": "Baja Nudist Retreat",
+        "type": "resort",
+        "description": "Privat resort i Baja California med fokus på naturisme.",
+        "lat": 23.2345,
+        "lng": -109.4321,
+        "address": "Cabo del Este, Baja California Sur, Mexico",
+        "url": "https://www.bajanudist.com"
+      },
+      {
+        "id": "riv-20",
+        "name": "Playa del Secreto",
+        "type": "beach",
+        "description": "Privat og afsides strand nær Cancun med naturist-venlige sektioner.",
+        "lat": 20.7854,
+        "lng": -86.9123,
+        "address": "Riviera Maya, Quintana Roo, Mexico"
+      }
+    ],
+    "summary": "Fandt 22 naturist-destinationer for \"Zipolite\".",
+    "sources": [],
+    "timestamp": 1791177129805,
+    "query": "Zipolite"
+  },
+  "madagascar": {
+    "locations": [
+      {
+        "id": "anakao-001",
+        "name": "Anakao Ocean Lodge & Spa",
+        "type": "resort",
+        "description": "Et eksklusivt resort med private strandområder. Selvom Madagaskar er konservativt, tilbyder dette isolerede resort privatliv til naturister i afsidesliggende bugter.",
+        "lat": -23.7011,
+        "lng": 43.6845,
+        "address": "Anakao, Toliara, Madagascar",
+        "warning": "Naturisme er ikke udbredt eller officielt anerkendt i Madagaskar. Offentlig nøgenhed kan medføre retsforfølgelse. Praktiser kun nøgenhed på private, indhegnede områder."
+      },
+      {
+        "id": "nosy-iranja-002",
+        "name": "Nosy Iranja Lodge",
+        "type": "resort",
+        "description": "Beliggende på to øer forbundet af en sandbanke. Gæster benytter ofte de mest isolerede dele af øen til solbadning.",
+        "lat": -13.6111,
+        "lng": 48.0583,
+        "address": "Nosy Iranja, Madagascar",
+        "warning": "Ingen officielle naturiststrande eksisterer. Vær yderst diskret."
+      },
+      {
+        "id": "tsarabanjina-003",
+        "name": "Constance Tsarabanjina",
+        "type": "resort",
+        "description": "Luksuriøs privat ø-resort med meget isolerede strande, hvor gæster ofte solbader topløse eller nøgne uden forstyrrelser.",
+        "lat": -12.9815,
+        "lng": 48.5621,
+        "address": "Tsarabanjina Island, Madagascar",
+        "url": "https://www.constancehotels.com"
+      },
+      {
+        "id": "eden-lodge-004",
+        "name": "Eden Lodge",
+        "type": "resort",
+        "description": "Øko-lodge beliggende i et naturreservat. Stor grad af privatliv gør det muligt for naturister at opholde sig i deres egne villa-områder.",
+        "lat": -13.3501,
+        "lng": 48.2588,
+        "address": "Baie des Sakalava, Nosy Be, Madagascar",
+        "url": "https://www.edenlodge.net"
+      },
+      {
+        "id": "anjajavy-005",
+        "name": "Anjajavy le Lodge",
+        "type": "resort",
+        "description": "Afskåret fra resten af landet, tilbyder dette resort private bugter med fuldt privatliv.",
+        "lat": -15.3521,
+        "lng": 47.1652,
+        "address": "Anjajavy, Madagascar",
+        "url": "https://www.anjajavy.com"
+      }
+    ],
+    "summary": "Fandt 5 naturist-destinationer for \"Madagascar\".",
+    "sources": [],
+    "timestamp": 1791177315338,
+    "query": "Madagascar"
+  },
+  "fiji": {
+    "locations": [
+      {
+        "id": "fiji-001",
+        "name": "Nukubati Private Island",
+        "type": "resort",
+        "description": "Et luksuriøst boutique-resort, der tilbyder en isoleret strandoplevelse. Selvom det ikke er et dedikeret naturistresort, er de meget tolerante og private, hvilket gør det populært for naturister, der søger diskretion i Fiji.",
+        "lat": -16.3245,
+        "lng": 179.3512,
+        "address": "Nukubati Island, Fiji",
+        "url": "https://www.nukubati.com"
+      },
+      {
+        "id": "fiji-002",
+        "name": "Yasawa Island Resort & Spa",
+        "type": "resort",
+        "description": "Dette resort har 11 private strande, hvilket giver fremragende muligheder for uforstyrret naturisme. De er kendt for deres respekt for privatlivet.",
+        "lat": -16.8202,
+        "lng": 177.3401,
+        "address": "Yasawa Island, Fiji",
+        "url": "https://www.yasawa.com"
+      },
+      {
+        "id": "fiji-003",
+        "name": "Laucala Island Resort",
+        "type": "resort",
+        "description": "Et ultra-eksklusivt resort. Deres meget private villaer med egne pool-områder og afsondrede strande gør det til en favorit for naturister, der ønsker komplet anonymitet.",
+        "lat": -16.7583,
+        "lng": -179.8055,
+        "address": "Laucala Island, Fiji",
+        "url": "https://www.laucala.com"
+      },
+      {
+        "id": "fiji-004",
+        "name": "Qamea Resort & Spa",
+        "type": "resort",
+        "description": "Et voksen-orienteret resort på en af de mest uberørte øer. De tilbyder høj grad af privatliv på deres strandstrækninger.",
+        "lat": -16.7333,
+        "lng": -179.8333,
+        "address": "Qamea Island, Fiji",
+        "url": "https://www.qamea.com"
+      },
+      {
+        "id": "fiji-005",
+        "name": "Beqa Lagoon Resort",
+        "type": "resort",
+        "description": "Beliggende på en ø kendt for dykning og ro. Mange af de afsidesliggende bugter er velegnede til uforstyrret badning i naturen.",
+        "lat": -18.3972,
+        "lng": 178.1306,
+        "address": "Beqa Island, Fiji",
+        "url": "https://www.beqalagoonresort.com"
+      },
+      {
+        "id": "fiji-006",
+        "name": "Tokoriki Island Resort",
+        "type": "resort",
+        "description": "Et voksen-resort i Mamanuca-øgruppen. De har en meget afslappet atmosfære, hvor privatliv på de mindre strande respekteres.",
+        "lat": -17.2344,
+        "lng": 177.1234,
+        "address": "Tokoriki Island, Fiji",
+        "url": "https://www.tokoriki.com"
+      },
+      {
+        "id": "fiji-007",
+        "name": "Royal Davui Island Resort",
+        "type": "resort",
+        "description": "Et eksklusivt voksen-resort bygget med fokus på total privatliv. Perfekt for par, der ønsker at nyde de naturlige omgivelser uden tøj.",
+        "lat": -18.2122,
+        "lng": 177.9255,
+        "address": "Beqa Lagoon, Fiji",
+        "url": "https://www.royaldavuifiji.com"
+      },
+      {
+        "id": "fiji-008",
+        "name": "Likuliku Lagoon Resort",
+        "type": "resort",
+        "description": "Fijis første over-water bure-resort. Meget privat og diskret for par.",
+        "lat": -17.5802,
+        "lng": 177.0865,
+        "address": "Malolo Island, Fiji",
+        "url": "https://www.likulikulagoon.com"
+      },
+      {
+        "id": "fiji-warning",
+        "name": "Generel advarsel Fiji",
+        "type": "other",
+        "description": "Offentlig nøgenhed er kulturelt uacceptabelt i Fiji og kan være strafbart ifølge lokal lovgivning om uanstændig adfærd. Naturisme bør kun praktiseres på private resorts eller afsondrede øer med ledelsens tilladelse.",
+        "lat": -17.7134,
+        "lng": 178.065,
+        "address": "Fiji",
+        "warning": "Vær opmærksom på at Fiji er et konservativt samfund. Offentlig nøgenhed kan medføre retsforfølgelse. Hold dig altid til private områder."
+      }
+    ],
+    "summary": "Fandt 9 naturist-destinationer for \"Fiji\".",
+    "sources": [],
+    "timestamp": 1791177340021,
+    "query": "Fiji"
+  },
+  "færøerne": {
+    "locations": [
+      {
+        "id": "loc-nl-texel",
+        "name": "Naaktstrand Texel (Paal 9 & Paal 27)",
+        "type": "beach",
+        "country": "Holland",
+        "region": "Vadehavsøerne / Texel",
+        "keywords": [
+          "holland",
+          "nederlandene",
+          "texel",
+          "vadehavet",
+          "øerne",
+          "den hoorn",
+          "strand"
+        ],
+        "description": "På ferieøen Texel findes to store officielle naturistområder ved Paal 9 i syd og Paal 27 i nord. Vilde kystklitter, frisk vesterhavsluft og total ro.",
+        "lat": 53.0234,
+        "lng": 4.718,
+        "address": "Hoornderslag Paal 9, 1797 RT Den Hoorn, Texel, Holland"
+      },
+      {
+        "id": "fo-001",
+        "name": "Færøerne Naturist Status",
+        "type": "other",
+        "description": "Færøerne har ingen officielle naturiststrande, FKK-områder eller naturistresorts. På grund af det barske klima med lave temperaturer året rundt, stærke strømforhold og en kulturel tradition for beklædning, praktiseres naturisme ikke offentligt.",
+        "lat": 62,
+        "lng": -6.775,
+        "address": "Færøerne",
+        "warning": "Naturisme er ikke en etableret praksis på Færøerne. Offentlig nøgenhed kan betragtes som anstødelig i henhold til lokale sociale normer. Der findes ingen officielle faciliteter."
+      }
+    ],
+    "summary": "Fandt 2 naturist-destinationer for \"Færøerne\".",
+    "sources": [],
+    "timestamp": 1791177345982,
+    "query": "Færøerne"
+  },
+  "galapagos": {
+    "locations": [
+      {
+        "id": "galapagos-001",
+        "name": "Galapagos Islands Official Statement",
+        "type": "other",
+        "description": "Naturisme er ikke tilladt på Galapagos-øerne. Det er en strengt beskyttet nationalpark, hvor besøgende skal blive på markerede stier og følge parkens regler for adfærd.",
+        "lat": -0.9538,
+        "lng": -90.9656,
+        "address": "Galapagos National Park, Ecuador",
+        "warning": "Naturisme er forbudt på alle øerne i Galapagos Nationalpark. Offentlig nøgenhed kan medføre store bøder og udvisning fra øerne."
+      },
+      {
+        "id": "ecuador-002",
+        "name": "Ecuador Coastal Naturism Status",
+        "type": "other",
+        "description": "Der findes ingen officielle naturiststrande i Ecuador. Offentlig nøgenhed betragtes som en overtrædelse af de lokale moral- og ordensregler.",
+        "lat": -1.8312,
+        "lng": -80.7535,
+        "address": "Ecuador Mainland Coast",
+        "warning": "Naturisme er ikke en accepteret praksis i Ecuador. Der findes ingen officielle FKK-strande i landet."
+      }
+    ],
+    "summary": "Fandt 2 naturist-destinationer for \"Galapagos\".",
+    "sources": [],
+    "timestamp": 1791177415750,
+    "query": "Galapagos"
+  },
+  "chile": {
+    "locations": [
+      {
+        "id": "cl-beach-001",
+        "name": "Playa Luna",
+        "type": "beach",
+        "description": "Den eneste officielt anerkendte naturiststrand i Chile, godkendt af det chilenske naturistforbund (AChN). Den er beliggende nord for Valparaíso.",
+        "lat": -32.8105,
+        "lng": -71.4682,
+        "address": "Puchuncaví, Valparaíso, Chile",
+        "url": "http://www.naturismochile.cl/"
+      },
+      {
+        "id": "cl-resort-001",
+        "name": "Naturist resort Chile (privat område)",
+        "type": "resort",
+        "description": "Selvom der er få permanente faciliteter, opererer forskellige private grupper omkring Santiago og kystbyerne med lejlighedsvise FKK-events.",
+        "lat": -33.4489,
+        "lng": -70.6693,
+        "address": "Santiago, Metropolitan Region, Chile",
+        "warning": "Naturisme er ikke bredt udbredt i det chilenske samfund. Offentlig nøgenhed uden for specifikke zoner kan være strafbart under gældende lovgivning."
+      },
+      {
+        "id": "cl-campsite-001",
+        "name": "Camping og FKK-grupper i Cajón del Maipo",
+        "type": "campsite",
+        "description": "Område brugt af naturistforeninger til private camping-træf i de chilenske bjerge.",
+        "lat": -33.6833,
+        "lng": -70.4333,
+        "address": "Cajón del Maipo, Santiago Metropolitan Region, Chile",
+        "warning": "Stedet er ikke en kommerciel campingplads, men bruges til private naturist-samlinger."
+      }
+    ],
+    "summary": "Fandt 3 naturist-destinationer for \"Chile\".",
+    "sources": [],
+    "timestamp": 1791177424203,
+    "query": "Chile"
   }
 }

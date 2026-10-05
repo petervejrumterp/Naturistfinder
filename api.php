@@ -179,23 +179,29 @@ if ($endpoint === 'search') {
     $matched = [];
     $seenIds = [];
 
-    // First pass: Country, Region, or Keyword match (returns all matching places in that region/country)
+    // First pass: Country, Region, or exact Keyword match
+    $isIceland = ($cleanNormalized === 'island' || $cleanNormalized === 'iceland');
+
     foreach ($curatedLocations as $loc) {
         $country = mb_strtolower($loc['country'] ?? '', 'UTF-8');
         $region = mb_strtolower($loc['region'] ?? '', 'UTF-8');
         $keywords = array_map(function($k) { return mb_strtolower($k, 'UTF-8'); }, $loc['keywords'] ?? []);
 
-        $match = ($country === $normalized || $region === $normalized ||
-                  (mb_strlen($country, 'UTF-8') >= 4 && mb_strpos($normalized, $country) !== false) ||
-                  (mb_strlen($region, 'UTF-8') >= 4 && mb_strpos($normalized, $region) !== false) ||
-                  (mb_strlen($normalized, 'UTF-8') >= 4 && mb_strpos($country, $normalized) !== false) ||
-                  (mb_strlen($normalized, 'UTF-8') >= 4 && mb_strpos($region, $normalized) !== false));
+        if ($isIceland) {
+            if ($country === 'island' || $country === 'iceland') {
+                $matched[] = $loc;
+                $seenIds[$loc['id']] = true;
+            }
+            continue;
+        }
+
+        $match = ($country === $cleanNormalized || $region === $cleanNormalized ||
+                  (mb_strlen($country, 'UTF-8') >= 4 && mb_strpos($cleanNormalized, $country) !== false) ||
+                  (mb_strlen($region, 'UTF-8') >= 4 && mb_strpos($cleanNormalized, $region) !== false));
 
         if (!$match) {
             foreach ($keywords as $kw) {
-                if ($kw === $normalized ||
-                    (mb_strlen($kw, 'UTF-8') >= 4 && mb_strlen($normalized, 'UTF-8') >= 4 &&
-                     (mb_strpos($normalized, $kw) !== false || mb_strpos($kw, $normalized) !== false))) {
+                if ($kw === $cleanNormalized) {
                     $match = true;
                     break;
                 }
@@ -208,14 +214,11 @@ if ($endpoint === 'search') {
         }
     }
 
-    // Second pass: Name, Address, Description
+    // Second pass: Exact Name search (e.g. searching "Hedonism", "Valalta")
     if (empty($matched)) {
         foreach ($curatedLocations as $loc) {
             $name = mb_strtolower($loc['name'] ?? '', 'UTF-8');
-            $addr = mb_strtolower($loc['address'] ?? '', 'UTF-8');
-            $desc = mb_strtolower($loc['description'] ?? '', 'UTF-8');
-
-            if (mb_strpos($name, $normalized) !== false || mb_strpos($addr, $normalized) !== false || mb_strpos($desc, $normalized) !== false) {
+            if (mb_strpos($name, $cleanNormalized) !== false) {
                 if (!isset($seenIds[$loc['id']])) {
                     $matched[] = $loc;
                     $seenIds[$loc['id']] = true;

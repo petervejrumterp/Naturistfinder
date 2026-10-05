@@ -5875,29 +5875,42 @@ export function searchCuratedDatabase(query: string): SearchResult | null {
 
   // 1. Direct match on country or region (returns all items in that country/region)
   const matches: ExtendedNaturistLocation[] = [];
+  const qWords = q.split(/\s+/).filter(w => w.length >= 2);
+
+  // Special case: "island" in Danish refers to the country Iceland
+  const isIcelandSearch = (q === "island" || q === "iceland");
 
   for (const loc of ALL_LOCATIONS_DATABASE) {
     const country = loc.country.toLowerCase();
     const region = loc.region.toLowerCase();
     const name = loc.name.toLowerCase();
-    const addr = (loc.address || "").toLowerCase();
-    const desc = loc.description.toLowerCase();
     const keywords = (loc.keywords || []).map(k => k.toLowerCase());
 
-    const isKeywordMatch = keywords.some(k => {
-      if (k === q) return true;
-      if (k.length >= 4 && q.length >= 4 && (q.includes(k) || k.includes(q))) return true;
-      return false;
-    });
+    if (isIcelandSearch) {
+      if (country === "island" || country === "iceland") {
+        matches.push(loc);
+      }
+      continue;
+    }
 
-    const isDirectMatch = 
-      country === q ||
-      region === q ||
-      (country.length >= 4 && q.includes(country)) ||
-      (region.length >= 4 && q.includes(region)) ||
-      (q.length >= 4 && country.includes(q)) ||
-      (q.length >= 4 && region.includes(q)) ||
-      isKeywordMatch;
+    // Exact match on country or region
+    let isDirectMatch = (country === q || region === q);
+
+    // Phrase match: if query has multiple words (e.g. "ferie i spanien")
+    if (!isDirectMatch && qWords.length > 1) {
+      if (q.includes(country) && country.length >= 4) isDirectMatch = true;
+      if (q.includes(region) && region.length >= 4) isDirectMatch = true;
+    }
+
+    // Exact keyword match
+    if (!isDirectMatch) {
+      const isKeywordMatch = keywords.some(k => {
+        if (k === q) return true;
+        if (qWords.includes(k) && k.length >= 4) return true;
+        return false;
+      });
+      if (isKeywordMatch) isDirectMatch = true;
+    }
 
     if (isDirectMatch) {
       matches.push(loc);
@@ -5915,20 +5928,17 @@ export function searchCuratedDatabase(query: string): SearchResult | null {
     };
   }
 
-  // 2. Free text search across name, address, description
-  const secondaryMatches: ExtendedNaturistLocation[] = [];
+  // 2. Specific search on location name (e.g. searching "Hedonism", "Valalta", "Cap d'Agde")
+  const nameMatches: ExtendedNaturistLocation[] = [];
   for (const loc of ALL_LOCATIONS_DATABASE) {
     const name = loc.name.toLowerCase();
-    const addr = (loc.address || "").toLowerCase();
-    const desc = loc.description.toLowerCase();
-
-    if (name.includes(q) || addr.includes(q) || desc.includes(q)) {
-      secondaryMatches.push(loc);
+    if (name.includes(q)) {
+      nameMatches.push(loc);
     }
   }
 
-  if (secondaryMatches.length > 0) {
-    const unique = Array.from(new Map(secondaryMatches.map(m => [m.id, m])).values());
+  if (nameMatches.length > 0) {
+    const unique = Array.from(new Map(nameMatches.map(m => [m.id, m])).values());
     return {
       locations: unique,
       summary: `Fandt ${unique.length} naturist-destinationer for "${query}".`,
