@@ -2314,5 +2314,223 @@
     "sources": [],
     "timestamp": 1791176463815,
     "query": "Island"
+  },
+  "jamaica": {
+    "locations": [
+      {
+        "id": "loc-jm-hedonism",
+        "name": "Hedonism II Resort (Negril)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "hedonism",
+          "hedonism ii",
+          "resort",
+          "bloody bay",
+          "caribien",
+          "caribbean",
+          "all-inclusive"
+        ],
+        "description": "Verdens måske mest berømte 'clothing-optional' all-inclusive resort beliggende på spidsen af Bloody Bay i Negril. Har en dedikeret nøgenstrand med swim-up bar, boblebade og fri tøjvalgs-atmosfære døgnet rundt.",
+        "lat": 18.3361,
+        "lng": -78.3378,
+        "address": "Norman Manley Blvd, Negril, Westmoreland, Jamaica",
+        "url": "https://www.hedonism.com",
+        "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-grandlido",
+        "name": "Grand Lido Negril Au-Naturel Resort",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Hanover",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "grand lido",
+          "au naturel",
+          "luksus",
+          "resort",
+          "butler",
+          "caribien"
+        ],
+        "description": "Eksklusivt 5-stjernet boutique-resort kun for voksne naturister. Byder på 26 oceanfront suiter med butler, privat tøjvalgspool med havudsigt og en rolig, afskærmet naturiststrandbugt.",
+        "lat": 18.3325,
+        "lng": -78.3342,
+        "address": "Norman Manley Blvd, Negril, Hanover, Jamaica",
+        "url": "https://www.grandlido.com",
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-couplestowerisle",
+        "name": "Couples Tower Isle – Private Au Naturel Island (Ocho Rios)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Ocho Rios / St. Mary",
+        "keywords": [
+          "jamaica",
+          "ocho rios",
+          "couples",
+          "tower isle",
+          "privat ø",
+          "island",
+          "resort",
+          "au naturel",
+          "caribien"
+        ],
+        "description": "Ikonisk voksenresort med sin helt egen private ø ud for kysten ('Tower Isle'), der er 100% au naturel (tøj forbudt på øen). Båd transfer sejler gæster til øens pool, swim-up bar og liggestole.",
+        "lat": 18.4182,
+        "lng": -77.0425,
+        "address": "A3, Tower Isle, Ocho Rios, St. Mary, Jamaica",
+        "url": "https://couples.com/resorts/couples-tower-isle",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "loc-jm-couplessanssouci",
+        "name": "Couples Sans Souci – Au Naturel Beach & Mineral Pool (Ocho Rios)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Ocho Rios / St. Ann",
+        "keywords": [
+          "jamaica",
+          "ocho rios",
+          "couples",
+          "sans souci",
+          "mineral pool",
+          "strand",
+          "resort",
+          "au naturel"
+        ],
+        "description": "Romantisk luksusresort bygget ind i de frodige klipper ved Ocho Rios. Råder over en afsondret privat naturiststrandbugt, en naturlig ferskvands mineralgrottepool og dedikeret strandbar for nøgenbadere.",
+        "lat": 18.4115,
+        "lng": -77.0678,
+        "address": "White River, Ocho Rios, St. Ann, Jamaica",
+        "url": "https://couples.com/resorts/couples-sans-souci"
+      },
+      {
+        "id": "loc-jm-couplessweptaway",
+        "name": "Couples Swept Away – Au Naturel Beach (Negril)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "seven mile beach",
+          "couples swept away",
+          "resort",
+          "strand",
+          "au naturel"
+        ],
+        "description": "Beliggende direkte på den berømte Seven Mile Beach i Negril. Resortet tilbyder en diskret afskærmet naturistsektion med blødt hvidt sand, liggestole og krystalklart caribisk badevand.",
+        "lat": 18.2985,
+        "lng": -78.3421,
+        "address": "Norman Manley Blvd, Long Bay, Negril, Jamaica",
+        "url": "https://couples.com/resorts/couples-swept-away"
+      },
+      {
+        "id": "loc-jm-couplesnegril",
+        "name": "Couples Negril – Au Naturel Beach Section",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Negril / Hanover",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "bloody bay",
+          "couples negril",
+          "resort",
+          "au naturel"
+        ],
+        "description": "Placeret i den rolige Bloody Bay med en afskærmet 'Au Naturel' strandzone for resortets gæster udstyret med parasoller, solsenge og udsigt over bugten.",
+        "lat": 18.3312,
+        "lng": -78.333,
+        "address": "Norman Manley Blvd, Bloody Bay, Negril, Jamaica",
+        "url": "https://couples.com/resorts/couples-negril"
+      },
+      {
+        "id": "loc-jm-bloodybay",
+        "name": "Bloody Bay Naturist Strandsektion (Negril)",
+        "type": "beach",
+        "country": "Jamaica",
+        "region": "Negril / Westmoreland",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "bloody bay",
+          "strand",
+          "bade",
+          "caribien"
+        ],
+        "description": "Bloody Bay er kendt for sit lave, rolige turkise vand og bløde sand. Strækningen ved og omkring Hedonism II og Grand Lido er anerkendt for en uformel og venlig tøjvalgs-badekultur.",
+        "lat": 18.3345,
+        "lng": -78.3355,
+        "address": "Bloody Bay, Norman Manley Blvd, Negril, Jamaica"
+      },
+      {
+        "id": "loc-jm-watsonsbeach",
+        "name": "Watsons Beach & Secret Coves (Negril West End)",
+        "type": "beach",
+        "country": "Jamaica",
+        "region": "Westmoreland / Negril",
+        "keywords": [
+          "jamaica",
+          "negril",
+          "west end",
+          "watsons beach",
+          "klippebugt"
+        ],
+        "description": "Fredelige klipper og afsides bugter syd for Negril fyr, hvor naturister og eventyrere finder uforstyrret nøgenbadning i det klare hav.",
+        "lat": 18.258,
+        "lng": -78.359,
+        "address": "West End Road, Negril, Jamaica",
+        "warning": "Ingen faste badefaciliteter; udvis almindelig diskretion i forhold til lokale beboere."
+      },
+      {
+        "id": "loc-jm-doctorscave",
+        "name": "Doctor's Cave Private Resort Terrasser (Montego Bay)",
+        "type": "beach",
+        "country": "Jamaica",
+        "region": "Montego Bay / St. James",
+        "keywords": [
+          "jamaica",
+          "montego bay",
+          "doctor's cave",
+          "solbadning"
+        ],
+        "description": "Selve den offentlige strand kræver badetøj, men tilknyttede private resorthavere og afskærmede tagterrasser i bugten tilbyder tøjvalgs-solbadning med udsigt over Montego Bay Marine Park.",
+        "lat": 18.4815,
+        "lng": -77.9265,
+        "address": "Gloucester Ave, Montego Bay, Jamaica"
+      },
+      {
+        "id": "loc-jm-royaltonbluewaters",
+        "name": "Royalton Blue Waters Au Naturel Wing (Falmouth / Trelawny)",
+        "type": "resort",
+        "country": "Jamaica",
+        "region": "Falmouth / Trelawny",
+        "keywords": [
+          "jamaica",
+          "falmouth",
+          "trelawny",
+          "royalton",
+          "resort"
+        ],
+        "description": "Eksklusiv sektion af det store resortkompleks nær Falmouth med afsondrede zoner og solbadning uden tøj for voksne gæster.",
+        "lat": 18.495,
+        "lng": -77.585,
+        "address": "Mountain Spring, Falmouth, Trelawny, Jamaica",
+        "url": "https://www.royaltonresorts.com"
+      }
+    ],
+    "summary": "Fandt 10 verificerede naturist-destinationer for \"Jamaica\".",
+    "sources": [],
+    "timestamp": 1791177063685,
+    "query": "Jamaica",
+    "isRecent": true,
+    "ageDays": 0
   }
 }

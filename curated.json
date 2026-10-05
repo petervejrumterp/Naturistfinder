@@ -5475,6 +5475,328 @@
       "lng": -87.8252,
       "address": "Carretera Mahahual-Xcalak Km 48, 77940 Xcalak, Q.R., Mexico",
       "url": "https://www.playasonrisa.com/"
+    },
+    {
+      "id": "loc-jm-hedonism",
+      "name": "Hedonism II Resort (Negril)",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Negril / Westmoreland",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "hedonism",
+        "hedonism ii",
+        "resort",
+        "bloody bay",
+        "caribien",
+        "caribbean",
+        "all-inclusive"
+      ],
+      "description": "Verdens måske mest berømte 'clothing-optional' all-inclusive resort beliggende på spidsen af Bloody Bay i Negril. Har en dedikeret nøgenstrand med swim-up bar, boblebade og fri tøjvalgs-atmosfære døgnet rundt.",
+      "lat": 18.3361,
+      "lng": -78.3378,
+      "address": "Norman Manley Blvd, Negril, Westmoreland, Jamaica",
+      "url": "https://www.hedonism.com",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "loc-jm-grandlido",
+      "name": "Grand Lido Negril Au-Naturel Resort",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Negril / Hanover",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "grand lido",
+        "au naturel",
+        "luksus",
+        "resort",
+        "butler",
+        "caribien"
+      ],
+      "description": "Eksklusivt 5-stjernet boutique-resort kun for voksne naturister. Byder på 26 oceanfront suiter med butler, privat tøjvalgspool med havudsigt og en rolig, afskærmet naturiststrandbugt.",
+      "lat": 18.3325,
+      "lng": -78.3342,
+      "address": "Norman Manley Blvd, Negril, Hanover, Jamaica",
+      "url": "https://www.grandlido.com",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "loc-jm-couplestowerisle",
+      "name": "Couples Tower Isle – Private Au Naturel Island (Ocho Rios)",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Ocho Rios / St. Mary",
+      "keywords": [
+        "jamaica",
+        "ocho rios",
+        "couples",
+        "tower isle",
+        "privat ø",
+        "island",
+        "resort",
+        "au naturel",
+        "caribien"
+      ],
+      "description": "Ikonisk voksenresort med sin helt egen private ø ud for kysten ('Tower Isle'), der er 100% au naturel (tøj forbudt på øen). Båd transfer sejler gæster til øens pool, swim-up bar og liggestole.",
+      "lat": 18.4182,
+      "lng": -77.0425,
+      "address": "A3, Tower Isle, Ocho Rios, St. Mary, Jamaica",
+      "url": "https://couples.com/resorts/couples-tower-isle",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "loc-jm-couplessanssouci",
+      "name": "Couples Sans Souci – Au Naturel Beach & Mineral Pool (Ocho Rios)",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Ocho Rios / St. Ann",
+      "keywords": [
+        "jamaica",
+        "ocho rios",
+        "couples",
+        "sans souci",
+        "mineral pool",
+        "strand",
+        "resort",
+        "au naturel"
+      ],
+      "description": "Romantisk luksusresort bygget ind i de frodige klipper ved Ocho Rios. Råder over en afsondret privat naturiststrandbugt, en naturlig ferskvands mineralgrottepool og dedikeret strandbar for nøgenbadere.",
+      "lat": 18.4115,
+      "lng": -77.0678,
+      "address": "White River, Ocho Rios, St. Ann, Jamaica",
+      "url": "https://couples.com/resorts/couples-sans-souci"
+    },
+    {
+      "id": "loc-jm-couplessweptaway",
+      "name": "Couples Swept Away – Au Naturel Beach (Negril)",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Negril / Westmoreland",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "seven mile beach",
+        "couples swept away",
+        "resort",
+        "strand",
+        "au naturel"
+      ],
+      "description": "Beliggende direkte på den berømte Seven Mile Beach i Negril. Resortet tilbyder en diskret afskærmet naturistsektion med blødt hvidt sand, liggestole og krystalklart caribisk badevand.",
+      "lat": 18.2985,
+      "lng": -78.3421,
+      "address": "Norman Manley Blvd, Long Bay, Negril, Jamaica",
+      "url": "https://couples.com/resorts/couples-swept-away"
+    },
+    {
+      "id": "loc-jm-couplesnegril",
+      "name": "Couples Negril – Au Naturel Beach Section",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Negril / Hanover",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "bloody bay",
+        "couples negril",
+        "resort",
+        "au naturel"
+      ],
+      "description": "Placeret i den rolige Bloody Bay med en afskærmet 'Au Naturel' strandzone for resortets gæster udstyret med parasoller, solsenge og udsigt over bugten.",
+      "lat": 18.3312,
+      "lng": -78.333,
+      "address": "Norman Manley Blvd, Bloody Bay, Negril, Jamaica",
+      "url": "https://couples.com/resorts/couples-negril"
+    },
+    {
+      "id": "loc-jm-bloodybay",
+      "name": "Bloody Bay Naturist Strandsektion (Negril)",
+      "type": "beach",
+      "country": "Jamaica",
+      "region": "Negril / Westmoreland",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "bloody bay",
+        "strand",
+        "bade",
+        "caribien"
+      ],
+      "description": "Bloody Bay er kendt for sit lave, rolige turkise vand og bløde sand. Strækningen ved og omkring Hedonism II og Grand Lido er anerkendt for en uformel og venlig tøjvalgs-badekultur.",
+      "lat": 18.3345,
+      "lng": -78.3355,
+      "address": "Bloody Bay, Norman Manley Blvd, Negril, Jamaica"
+    },
+    {
+      "id": "loc-jm-watsonsbeach",
+      "name": "Watsons Beach & Secret Coves (Negril West End)",
+      "type": "beach",
+      "country": "Jamaica",
+      "region": "Westmoreland / Negril",
+      "keywords": [
+        "jamaica",
+        "negril",
+        "west end",
+        "watsons beach",
+        "klippebugt"
+      ],
+      "description": "Fredelige klipper og afsides bugter syd for Negril fyr, hvor naturister og eventyrere finder uforstyrret nøgenbadning i det klare hav.",
+      "lat": 18.258,
+      "lng": -78.359,
+      "address": "West End Road, Negril, Jamaica",
+      "warning": "Ingen faste badefaciliteter; udvis almindelig diskretion i forhold til lokale beboere."
+    },
+    {
+      "id": "loc-jm-doctorscave",
+      "name": "Doctor's Cave Private Resort Terrasser (Montego Bay)",
+      "type": "beach",
+      "country": "Jamaica",
+      "region": "Montego Bay / St. James",
+      "keywords": [
+        "jamaica",
+        "montego bay",
+        "doctor's cave",
+        "solbadning"
+      ],
+      "description": "Selve den offentlige strand kræver badetøj, men tilknyttede private resorthavere og afskærmede tagterrasser i bugten tilbyder tøjvalgs-solbadning med udsigt over Montego Bay Marine Park.",
+      "lat": 18.4815,
+      "lng": -77.9265,
+      "address": "Gloucester Ave, Montego Bay, Jamaica"
+    },
+    {
+      "id": "loc-jm-royaltonbluewaters",
+      "name": "Royalton Blue Waters Au Naturel Wing (Falmouth / Trelawny)",
+      "type": "resort",
+      "country": "Jamaica",
+      "region": "Falmouth / Trelawny",
+      "keywords": [
+        "jamaica",
+        "falmouth",
+        "trelawny",
+        "royalton",
+        "resort"
+      ],
+      "description": "Eksklusiv sektion af det store resortkompleks nær Falmouth med afsondrede zoner og solbadning uden tøj for voksne gæster.",
+      "lat": 18.495,
+      "lng": -77.585,
+      "address": "Mountain Spring, Falmouth, Trelawny, Jamaica",
+      "url": "https://www.royaltonresorts.com"
+    },
+    {
+      "id": "loc-mx-playadelamor-zipolite",
+      "name": "Playa del Amor (Zipolite, Oaxaca)",
+      "type": "beach",
+      "country": "Mexico",
+      "region": "Oaxaca / Zipolite",
+      "keywords": [
+        "mexico",
+        "zipolite",
+        "playa del amor",
+        "oaxaca",
+        "strand",
+        "klipper"
+      ],
+      "description": "En idyllisk lille beskyttet bugt i den østlige ende af Zipolite omkranset af dramatiske klipper. 100% tøjvalg og roligt badevand med en fantastisk solnedgang.",
+      "lat": 15.6608,
+      "lng": -96.5085,
+      "address": "Playa del Amor, Zipolite, Oaxaca, Mexico"
+    },
+    {
+      "id": "loc-mx-balandra",
+      "name": "Playa Balandra Secluded Coves (La Paz, Baja California Sur)",
+      "type": "beach",
+      "country": "Mexico",
+      "region": "Baja California Sur / La Paz",
+      "keywords": [
+        "mexico",
+        "baja california",
+        "la paz",
+        "balandra",
+        "cortez",
+        "strand"
+      ],
+      "description": "Balandra er berømt for sit lave, krystalklare turkise vand i Cortezhavet. De afsides bugter bag de røde ørkenbjerge benyttes flittigt af naturister for uforstyrret badning.",
+      "lat": 24.3218,
+      "lng": -110.3245,
+      "address": "Carretera Pichilingue a Balandra, 23000 La Paz, B.C.S., Mexico"
+    },
+    {
+      "id": "loc-mx-isla-pasion",
+      "name": "Isla Pasión Remote North Beach (Cozumel / Quintana Roo)",
+      "type": "beach",
+      "country": "Mexico",
+      "region": "Quintana Roo / Cozumel",
+      "keywords": [
+        "mexico",
+        "cozumel",
+        "isla pasion",
+        "quintana roo",
+        "caribien",
+        "strand"
+      ],
+      "description": "En afsides ø nord for Cozumel med uberørte kridhvide caribiske sandbanker og mangroveskove, hvor den nordlige spids giver fuld privatliv for naturister.",
+      "lat": 20.5489,
+      "lng": -86.8621,
+      "address": "Isla de la Pasión, Cozumel, Q.R., Mexico"
+    },
+    {
+      "id": "loc-nz-mapua",
+      "name": "Mapua Leisure Park & Clothing Optional Resort (Nelson / Tasman)",
+      "type": "resort",
+      "country": "New Zealand",
+      "region": "Nelson / Tasman Bay",
+      "keywords": [
+        "new zealand",
+        "nelson",
+        "mapua",
+        "tasman",
+        "resort",
+        "camping"
+      ],
+      "description": "New Zealands førende tøjvalgs-feriepark beliggende på en privat halvø i Tasman Bay. Byder på sauna, pool, private strande og hytter i naturskønne omgivelser.",
+      "lat": -41.2505,
+      "lng": 173.1085,
+      "address": "85 Toru St, Mapua 7005, Tasman, New Zealand",
+      "url": "https://www.mapualeisurepark.co.nz"
+    },
+    {
+      "id": "loc-ca-beaconia",
+      "name": "Beaconia Beach (Lake Winnipeg, Manitoba)",
+      "type": "beach",
+      "country": "Canada",
+      "region": "Manitoba / Lake Winnipeg",
+      "keywords": [
+        "canada",
+        "manitoba",
+        "beaconia",
+        "lake winnipeg",
+        "strand"
+      ],
+      "description": "Canadas næststørste tøjvalgs-strand (3 km uberørt hvidt sand) ved Lake Winnipeg, omgivet af klitter og laguner.",
+      "lat": 50.4182,
+      "lng": -96.5689,
+      "address": "Beaconia Beach Rd, St. Clements, MB R0E 0B0, Canada"
+    },
+    {
+      "id": "loc-ca-pointetaillon",
+      "name": "Parc national de la Pointe-Taillon Naturist Beach (Quebec)",
+      "type": "beach",
+      "country": "Canada",
+      "region": "Quebec / Lac Saint-Jean",
+      "keywords": [
+        "canada",
+        "quebec",
+        "pointe taillon",
+        "lac saint jean",
+        "nationalpark",
+        "strand"
+      ],
+      "description": "Kilometervis af fint ferskvandssand ved Lac Saint-Jean med en uofficiel men bredt accepteret tøjvalgs-sektion blandt klitter og fyrreskove.",
+      "lat": 48.6852,
+      "lng": -71.8541,
+      "address": "835 Chemin de la Pointe Taillon, Saint-Henri-de-Taillon, QC G0W 2X0, Canada"
     }
   ],
   "suggestions": [
@@ -5556,6 +5878,15 @@
     "Wellington",
     "Mexico",
     "Riviera Maya",
-    "Tulum"
+    "Tulum",
+    "Jamaica",
+    "Negril",
+    "Ocho Rios",
+    "Bloody Bay",
+    "Hedonism",
+    "Zipolite",
+    "Montego Bay",
+    "Oaxaca",
+    "Waiheke Island"
   ]
 }
