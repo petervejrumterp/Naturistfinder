@@ -49,7 +49,8 @@
       }
     ],
     "summary": "Fandt 5 naturist-destinationer for \"Costa Rica\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
   },
   "letland": {
     "locations": [
@@ -237,7 +238,8 @@
       }
     ],
     "summary": "Fandt 20 naturist-destinationer for \"Letland\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
   },
   "florida": {
     "locations": [
@@ -550,7 +552,8 @@
       }
     ],
     "summary": "Fandt 18 naturist-destinationer for \"Florida\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
   },
   "californien": {
     "locations": [
@@ -1041,7 +1044,8 @@
       }
     ],
     "summary": "Fandt 30 naturist-destinationer for \"Californien\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
   },
   "hawaii": {
     "locations": [
@@ -1185,7 +1189,8 @@
       }
     ],
     "summary": "Fandt 9 naturist-destinationer for \"Hawaii\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
   },
   "texas": {
     "locations": [
@@ -1345,6 +1350,969 @@
       }
     ],
     "summary": "Fandt 12 naturist-destinationer for \"Texas\".",
-    "sources": []
+    "sources": [],
+    "timestamp": 1791176474818
+  },
+  "canada": {
+    "locations": [
+      {
+        "id": "bare-oaks-canada",
+        "name": "Bare Oaks Family Naturist Park",
+        "type": "campsite",
+        "description": "En af Canadas mest kendte naturistparker med fulde faciliteter, swimmingpools og sportsfaciliteter.",
+        "lat": 43.6015,
+        "lng": -79.5936,
+        "address": "20391 Kennedy Rd, East Gwillimbury, ON L9N 0M9, Canada",
+        "url": "https://www.bareoaks.ca/"
+      },
+      {
+        "id": "wreck-beach-vancouver",
+        "name": "Wreck Beach",
+        "type": "beach",
+        "description": "En verdenskendt, uformel naturiststrand i Vancouver, beliggende for foden af en skovklædt klippe.",
+        "lat": 49.2624,
+        "lng": -123.2575,
+        "address": "Pacific Spirit Regional Park, Vancouver, BC, Canada"
+      },
+      {
+        "id": "lac-crepeau-resort",
+        "name": "Lac Crépeau Naturist Resort",
+        "type": "resort",
+        "description": "Et naturskønt resort i Quebec, der tilbyder en bred vifte af aktiviteter for naturister.",
+        "lat": 46.0125,
+        "lng": -74.4532,
+        "address": "Lac-Supérieur, QC J0T 1P0, Canada",
+        "url": "https://www.laccrepeau.com/"
+      },
+      {
+        "id": "val-des-bois-center",
+        "name": "Val-des-Bois Naturist Center",
+        "type": "campsite",
+        "description": "Et rummeligt naturistcenter i Quebec med gode campingfaciliteter og fokus på fællesskab.",
+        "lat": 45.8362,
+        "lng": -75.5684,
+        "address": "Val-des-Bois, QC J0X 3C0, Canada",
+        "url": "https://www.valdesbois.ca/"
+      },
+      {
+        "id": "beaver-lake-resort",
+        "name": "Beaver Lake Naturist Resort",
+        "type": "resort",
+        "description": "Familieorienteret naturiststed i Ontario med sø-adgang og overnatningsmuligheder.",
+        "lat": 44.8821,
+        "lng": -76.8521,
+        "address": "Tamworth, ON K0K 3G0, Canada",
+        "url": "https://www.beaverlakeresort.ca/"
+      },
+      {
+        "id": "hanlans-point-beach",
+        "name": "Hanlan's Point Beach",
+        "type": "beach",
+        "description": "En officiel naturiststrand på Toronto Islands, kun en kort færgetur fra Torontos centrum.",
+        "lat": 43.6185,
+        "lng": -79.3971,
+        "address": "Toronto Islands, Toronto, ON M5J 2W3, Canada"
+      },
+      {
+        "id": "pebble-beach-nanaimo",
+        "name": "Pebble Beach (Nanaimo)",
+        "type": "beach",
+        "description": "En af de populære uformelle naturiststrande på Vancouver Island.",
+        "lat": 49.1955,
+        "lng": -123.9182,
+        "address": "Nanaimo, BC, Canada"
+      },
+      {
+        "id": "fleur-de-lys-park",
+        "name": "Fleur de Lys Naturist Park",
+        "type": "campsite",
+        "description": "Et velholdt campingområde for naturister beliggende i nærheden af Montreal.",
+        "lat": 45.4215,
+        "lng": -73.3421,
+        "address": "Saint-Mathias-sur-Richelieu, QC J3L 6A7, Canada",
+        "url": "https://www.fleurdelys.qc.ca/"
+      },
+      {
+        "id": "okanagan-naturist-park",
+        "name": "Okanagan Naturist Park",
+        "type": "campsite",
+        "description": "Placeret i det smukke Okanagan-område, kendt for solskinsvejr og vinmarker.",
+        "lat": 49.8879,
+        "lng": -119.496,
+        "address": "Kelowna, BC, Canada"
+      },
+      {
+        "id": "point-grey-beach",
+        "name": "Point Grey Beach",
+        "type": "beach",
+        "description": "Et mindre kendt, men etableret uformelt FKK-område i Vancouver-området.",
+        "lat": 49.2731,
+        "lng": -123.2384,
+        "address": "Vancouver, BC, Canada"
+      }
+    ],
+    "summary": "Fandt 10 naturist-destinationer for \"Canada\".",
+    "sources": [],
+    "timestamp": 1791176474818
+  },
+  "australien": {
+    "locations": [
+      {
+        "id": "lady-bay-beach-nsw",
+        "name": "Lady Bay Beach",
+        "type": "beach",
+        "description": "En af de mest kendte og officielt anerkendte naturiststrande i Sydney, beliggende i Watsons Bay.",
+        "lat": -33.8443,
+        "lng": 151.2721,
+        "address": "Lady Bay Beach, Sydney, NSW 2030, Australia"
+      },
+      {
+        "id": "samurai-beach-nsw",
+        "name": "Samurai Beach",
+        "type": "beach",
+        "description": "En stor, afsidesliggende strand nær Port Stephens, hvor naturisme er tilladt i et specifikt område.",
+        "lat": -32.7481,
+        "lng": 152.1275,
+        "address": "Samurai Beach, Port Stephens, NSW 2316, Australia"
+      },
+      {
+        "id": "maslin-beach-sa",
+        "name": "Maslin Beach",
+        "type": "beach",
+        "description": "Australiens første officielt erklærede nøgenstrand i staten South Australia.",
+        "lat": -35.2533,
+        "lng": 138.4633,
+        "address": "Maslin Beach, SA 5170, Australia"
+      },
+      {
+        "id": "sunnyside-beach-vic",
+        "name": "Sunnyside South Beach",
+        "type": "beach",
+        "description": "Populær naturiststrand ved Mornington Peninsula, kendt for sin private atmosfære.",
+        "lat": -38.2175,
+        "lng": 145.0683,
+        "address": "Sunnyside South Beach, Mount Eliza, VIC 3930, Australia"
+      },
+      {
+        "id": "little-maslin-beach",
+        "name": "Little Maslin Beach",
+        "type": "beach",
+        "description": "Den mere private og afskærmede del af Maslin Beach.",
+        "lat": -35.2581,
+        "lng": 138.4642,
+        "address": "Little Maslin Beach, SA 5170, Australia"
+      },
+      {
+        "id": "washaway-beach",
+        "name": "Washaway Beach",
+        "type": "beach",
+        "description": "En lille, afsides naturiststrand ved Spit Bridge, kun tilgængelig via en stejl vandresti.",
+        "lat": -33.8189,
+        "lng": 151.2694,
+        "address": "Washaway Beach, Mosman, NSW 2088, Australia"
+      },
+      {
+        "id": "south-era-beach",
+        "name": "South Era Beach",
+        "type": "beach",
+        "description": "Beliggende i Royal National Park, kendt som en uofficiel, men etableret naturiststrand.",
+        "lat": -34.1542,
+        "lng": 151.0533,
+        "address": "Royal National Park, NSW 2233, Australia"
+      },
+      {
+        "id": "cabbage-tree-bay",
+        "name": "Cabbage Tree Bay",
+        "type": "beach",
+        "description": "En mindre kendt naturiststrand nord for Sydney ved Manly/Shelly Beach området.",
+        "lat": -33.7925,
+        "lng": 151.2858,
+        "address": "Cabbage Tree Bay, Manly, NSW 2095, Australia"
+      },
+      {
+        "id": "noosa-north-shore",
+        "name": "Noosa North Shore",
+        "type": "beach",
+        "description": "Områder nord for Noosa River tillader naturisme på de øde strækninger af stranden.",
+        "lat": -26.3533,
+        "lng": 153.0786,
+        "address": "Noosa North Shore, QLD 4565, Australia"
+      },
+      {
+        "id": "cobboboonee-resort",
+        "name": "Cobboboonee Forest Resort",
+        "type": "resort",
+        "description": "Ferieområde for naturister i Victoria med gode faciliteter.",
+        "lat": -38.1633,
+        "lng": 141.6508,
+        "address": "Cobboboonee, VIC, Australia",
+        "url": "https://www.naturist.org.au/"
+      },
+      {
+        "id": "dunes-naturist-park",
+        "name": "Dunes Naturist Park",
+        "type": "campsite",
+        "description": "Populær naturist-campingplads nord for Sydney.",
+        "lat": -33.4567,
+        "lng": 151.3456,
+        "address": "Central Coast, NSW, Australia",
+        "url": "https://www.dunesnaturistpark.com.au/"
+      },
+      {
+        "id": "swanbourne-beach",
+        "name": "Perth Naturist Beach (Swanbourne)",
+        "type": "beach",
+        "description": "Den officielle naturiststrand i Perth, Western Australia.",
+        "lat": -31.9667,
+        "lng": 115.7533,
+        "address": "Swanbourne Beach, Perth, WA 6010, Australia"
+      },
+      {
+        "id": "tallow-beach",
+        "name": "Tallow Beach",
+        "type": "beach",
+        "description": "Et uformelt, men veletableret område syd for Byron Bay.",
+        "lat": -28.6631,
+        "lng": 153.6067,
+        "address": "Tallow Beach, Byron Bay, NSW 2481, Australia"
+      },
+      {
+        "id": "galveston-beach",
+        "name": "Galveston Beach",
+        "type": "beach",
+        "description": "Lokal favorit naturiststrand nær Melbourne.",
+        "lat": -38.25,
+        "lng": 145.05,
+        "address": "Melbourne, VIC, Australia"
+      },
+      {
+        "id": "nudey-beach",
+        "name": "Nudey Beach",
+        "type": "beach",
+        "description": "Beliggende på Fitzroy Island, kendt for sit navn og afslappede tilgang.",
+        "lat": -17.2917,
+        "lng": 145.9861,
+        "address": "Fitzroy Island, QLD 4871, Australia"
+      },
+      {
+        "id": "crescent-head",
+        "name": "Crescent Head Beach",
+        "type": "beach",
+        "description": "Områder langs kysten omkring Crescent Head bruges af lokale naturister.",
+        "lat": -31.1833,
+        "lng": 152.95,
+        "address": "Crescent Head, NSW 2440, Australia"
+      },
+      {
+        "id": "cullendulla-beach",
+        "name": "Cullendulla Beach",
+        "type": "beach",
+        "description": "En mere afsidesliggende strand nær Batemans Bay, populær blandt naturister.",
+        "lat": -35.6833,
+        "lng": 150.2167,
+        "address": "Batemans Bay, NSW 2536, Australia"
+      },
+      {
+        "id": "green-patch",
+        "name": "Green Patch Beach",
+        "type": "beach",
+        "description": "Jervis Bay område, kendt for sin uberørte natur.",
+        "lat": -35.15,
+        "lng": 150.7167,
+        "address": "Jervis Bay, NSW 2540, Australia"
+      },
+      {
+        "id": "cable-beach-broome",
+        "name": "Cable Beach (Naturist zone)",
+        "type": "beach",
+        "description": "Der findes afsides sektioner af denne berømte strand i Broome til naturister.",
+        "lat": -17.9333,
+        "lng": 122.2167,
+        "address": "Broome, WA 6725, Australia"
+      },
+      {
+        "id": "tarquin-beach",
+        "name": "Tarquin Beach",
+        "type": "beach",
+        "description": "En del af den populære naturist-kystlinje nær Mount Eliza.",
+        "lat": -38.1667,
+        "lng": 145.0833,
+        "address": "Mount Eliza, VIC 3930, Australia"
+      }
+    ],
+    "summary": "Fandt 20 naturist-destinationer for \"Australien\".",
+    "sources": [],
+    "timestamp": 1791176474818
+  },
+  "new zealand": {
+    "locations": [
+      {
+        "id": "loc-nz-littlepalmbeach",
+        "name": "Little Palm Beach (Waiheke Island, Auckland)",
+        "type": "beach",
+        "country": "New Zealand",
+        "region": "Auckland / Waiheke Island",
+        "keywords": [
+          "new zealand",
+          "auckland",
+          "waiheke",
+          "little palm beach",
+          "strand"
+        ],
+        "description": "New Zealands mest berømte tøjvalgs-bugt på idylliske Waiheke Island. Kridhvidt sand, rolige turkise bølger og frodige pohutukawa-træer.",
+        "lat": -36.7795,
+        "lng": 175.0512,
+        "address": "Palm Rd, Palm Beach, Waiheke Island 1081, New Zealand"
+      },
+      {
+        "id": "loc-nz-ladiesbay",
+        "name": "Ladies Bay (St Heliers, Auckland)",
+        "type": "beach",
+        "country": "New Zealand",
+        "region": "Auckland / Tamaki Drive",
+        "keywords": [
+          "new zealand",
+          "auckland",
+          "ladies bay",
+          "st heliers",
+          "strand"
+        ],
+        "description": "Historisk tøjvalgs-strand gemt under klipperne ved Achilles Point i Auckland med direkte udsigt til Rangitoto-vulkanen.",
+        "lat": -36.8485,
+        "lng": 174.8725,
+        "address": "Cliff Rd, St Heliers, Auckland 1071, New Zealand"
+      },
+      {
+        "id": "loc-nz-breakerbay",
+        "name": "Breaker Bay (Wellington)",
+        "type": "beach",
+        "country": "New Zealand",
+        "region": "Wellington",
+        "keywords": [
+          "new zealand",
+          "wellington",
+          "breaker bay",
+          "strand"
+        ],
+        "description": "Vild og rå tøjvalgs-strand på Wellingtons sydkyst ud mod Cook-strædet, omgivet af klipper og storslået havudsigt.",
+        "lat": -41.3325,
+        "lng": 174.8315,
+        "address": "Breaker Bay Rd, Seatoun, Wellington 6022, New Zealand"
+      },
+      {
+        "id": "loc-nz-uretiti",
+        "name": "Uretiti Beach (Northland / Bream Bay)",
+        "type": "beach",
+        "country": "New Zealand",
+        "region": "Northland / Bream Bay",
+        "keywords": [
+          "new zealand",
+          "northland",
+          "uretiti",
+          "bream bay",
+          "strand",
+          "camping"
+        ],
+        "description": "Endeløs hvid surfstrand med et officielt anerkendt tøjvalgs-område syd for campingpladsen på Northlands østkyst.",
+        "lat": -35.9812,
+        "lng": 174.4582,
+        "address": "State Hwy 1, Waipu 0582, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-0",
+        "name": "Okere Falls (Lake Rotoiti)",
+        "type": "beach",
+        "description": "Et uofficielt, men meget respekteret naturistområde ved bredden af søen, ofte benyttet af lokale naturister.",
+        "lat": -38.0776,
+        "lng": 176.3831,
+        "address": "Okere Falls, Rotorua 3074, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-1",
+        "name": "Sullivan's Bay (Mahurangi Regional Park)",
+        "type": "beach",
+        "description": "En rolig bugt nord for Auckland, hvor naturister ofte samles i den nordlige ende af stranden.",
+        "lat": -36.4952,
+        "lng": 174.7214,
+        "address": "Mahurangi West Rd, Mahurangi East 0983, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-2",
+        "name": "Little Palm Beach",
+        "type": "beach",
+        "description": "Den mest berømte og populære officielle naturiststrand på Waiheke Island. Meget social atmosfære.",
+        "lat": -36.7865,
+        "lng": 175.0259,
+        "address": "Palm Beach, Waiheke Island 1081, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-3",
+        "name": "Karaka Bay",
+        "type": "beach",
+        "description": "Beliggende nær Wellington, dette er et afsides område kendt for at være 'clothing optional' blandt lokale.",
+        "lat": -41.3121,
+        "lng": 174.8324,
+        "address": "Karaka Bay Rd, Seatoun, Wellington 6022, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-4",
+        "name": "Big Bay (Auckland)",
+        "type": "beach",
+        "description": "En isoleret strand på Awhitu-halvøen, der er anerkendt som et fristed for naturister.",
+        "lat": -36.6345,
+        "lng": 174.5218,
+        "address": "Big Bay Rd, Awhitu 2684, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-5",
+        "name": "Wenderholm Regional Park Beach",
+        "type": "beach",
+        "description": "De afsidesliggende dele af denne park er populære blandt naturister, selvom det ikke er officielt skiltet.",
+        "lat": -36.5398,
+        "lng": 174.7082,
+        "address": "State Highway 1, Waiwera 0992, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-6",
+        "name": "Rabbit Island",
+        "type": "beach",
+        "description": "Ved Nelson. Specifikke sektioner af denne lange strand er anerkendt til naturisme.",
+        "lat": -41.2587,
+        "lng": 173.1672,
+        "address": "Rabbit Island Rd, Nelson 7081, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-7",
+        "name": "Canaan Downs",
+        "type": "campsite",
+        "description": "En naturistvenlig campingplads og retreatområde beliggende tæt ved Abel Tasman National Park.",
+        "lat": -40.9412,
+        "lng": 172.8256,
+        "address": "Canaan Rd, Takaka 7183, New Zealand",
+        "url": "http://www.canaandowns.co.nz/"
+      },
+      {
+        "id": "loc-ai-1791176447991-8",
+        "name": "Oakura Beach (New Plymouth)",
+        "type": "beach",
+        "description": "Visse afsidesliggende områder omkring Oakura benyttes jævnligt af naturister.",
+        "lat": -39.1174,
+        "lng": 174.0042,
+        "address": "Oakura, Taranaki 4314, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-9",
+        "name": "Sandy Bay (Coromandel)",
+        "type": "beach",
+        "description": "En rolig bugt på Coromandel-halvøen, hvor naturister ofte finder fred.",
+        "lat": -36.7584,
+        "lng": 175.7681,
+        "address": "Coromandel Peninsula, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-10",
+        "name": "Pataua North",
+        "type": "beach",
+        "description": "Nord for Whangarei findes isolerede sandklitter, der anvendes af naturister.",
+        "lat": -35.7335,
+        "lng": 174.5298,
+        "address": "Pataua North Rd, Whangarei 0178, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-11",
+        "name": "Kaiteriteri (Naturist-venlige områder)",
+        "type": "beach",
+        "description": "I de mindre tilgængelige vige omkring Kaiteriteri er naturisme accepteret.",
+        "lat": -41.0366,
+        "lng": 173.0139,
+        "address": "Kaiteriteri, Nelson 7197, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-12",
+        "name": "New Brighton Beach (Christchurch)",
+        "type": "beach",
+        "description": "Lang strandstrækning hvor afsides sektioner benyttes af naturister.",
+        "lat": -43.5135,
+        "lng": 172.7314,
+        "address": "Marine Parade, New Brighton, Christchurch 8061, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-13",
+        "name": "Oreti Beach",
+        "type": "beach",
+        "description": "En meget lang strand nær Invercargill, hvor man nemt kan finde total isolation.",
+        "lat": -46.4255,
+        "lng": 168.2933,
+        "address": "Oreti Beach, Southland 9879, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-14",
+        "name": "Lake Hawea",
+        "type": "beach",
+        "description": "Afsidesliggende bredder ved søen, der ofte besøges af naturister i sommerperioden.",
+        "lat": -44.5776,
+        "lng": 169.2482,
+        "address": "Hawea, Otago 9382, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-15",
+        "name": "Muriwai Beach (Auckland)",
+        "type": "beach",
+        "description": "På grund af den enorme størrelse findes der områder langt fra de officielle surfzoner, hvor naturister opholder sig.",
+        "lat": -36.8305,
+        "lng": 174.4239,
+        "address": "Muriwai, Auckland 0881, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-16",
+        "name": "Paraparaumu Beach",
+        "type": "beach",
+        "description": "Sydlige strækninger af stranden mod Queen Elizabeth Park er kendt for naturistbrug.",
+        "lat": -40.8932,
+        "lng": 174.9856,
+        "address": "Paraparaumu, Kapiti Coast 5032, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-17",
+        "name": "Sumner Beach (Christchurch)",
+        "type": "beach",
+        "description": "De klippefyldte bugter nær Sumner er populære blandt lokale naturister.",
+        "lat": -43.5714,
+        "lng": 172.7661,
+        "address": "Sumner, Christchurch 8081, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-18",
+        "name": "Ninety Mile Beach",
+        "type": "beach",
+        "description": "Med sin enorme længde er det let at finde uforstyrrede steder til naturisme i Northland.",
+        "lat": -34.6225,
+        "lng": 172.7483,
+        "address": "Northland, New Zealand"
+      },
+      {
+        "id": "loc-ai-1791176447991-19",
+        "name": "Tauranga Bay",
+        "type": "beach",
+        "description": "En smuk og afsides strand på vestkysten af Sydøen, ofte benyttet af naturister.",
+        "lat": -41.8741,
+        "lng": 171.4428,
+        "address": "Tauranga Bay, West Coast 7895, New Zealand"
+      }
+    ],
+    "summary": "Fandt 24 naturist-destinationer for \"New Zealand\".",
+    "sources": [],
+    "timestamp": 1791176447991,
+    "query": "New Zealand"
+  },
+  "mexico": {
+    "locations": [
+      {
+        "id": "loc-mx-zipolite",
+        "name": "Playa Zipolite (Oaxaca, Mexico)",
+        "type": "beach",
+        "country": "Mexico",
+        "region": "Oaxaca / Stillehavet",
+        "keywords": [
+          "mexico",
+          "zipolite",
+          "oaxaca",
+          "stillehavet",
+          "strand"
+        ],
+        "description": "Mexicos første og eneste officielle tøjvalg-strand. Gyldent sand, bohemeagtige strandhytter og afslappet stemning.",
+        "lat": 15.682,
+        "lng": -96.518,
+        "address": "Playa Zipolite, 70904 San Pedro Pochutla, Oaxaca, Mexico"
+      },
+      {
+        "id": "loc-mx-hiddenbeach",
+        "name": "Hidden Beach Resort Au Naturel Club (Riviera Maya)",
+        "type": "resort",
+        "country": "Mexico",
+        "region": "Quintana Roo / Riviera Maya",
+        "keywords": [
+          "mexico",
+          "riviera maya",
+          "hidden beach",
+          "kantenah",
+          "resort",
+          "luksus"
+        ],
+        "description": "5-stjernet Gourmet Inclusive luksusresort udelukkende for naturister på en privat caribisk strand i Kantenah Bay.",
+        "lat": 20.4512,
+        "lng": -87.2625,
+        "address": "Km 95 Carretera Cancun-Chetumal, Kantenah, Quintana Roo 77710, Mexico",
+        "url": "https://www.hiddenbeachresort.com/"
+      },
+      {
+        "id": "loc-mx-intimatulum",
+        "name": "Intima Resort Tulum (Tulum)",
+        "type": "resort",
+        "country": "Mexico",
+        "region": "Quintana Roo / Tulum",
+        "keywords": [
+          "mexico",
+          "tulum",
+          "intima",
+          "resort",
+          "jungel"
+        ],
+        "description": "Eksklusivt tøjvalgs-resort i den frodige mayajungle i Tulum med tropisk lagunepool, swim-up bar og luksusvillaer.",
+        "lat": 20.2015,
+        "lng": -87.4725,
+        "address": "Calle 5 Pte, La Veleta, 77760 Tulum, Q.R., Mexico",
+        "url": "https://www.intimatum.com/"
+      },
+      {
+        "id": "loc-mx-playasonrisa",
+        "name": "Playa Sonrisa Boutique Nudist Resort (Costa Maya / Xcalak)",
+        "type": "resort",
+        "country": "Mexico",
+        "region": "Quintana Roo / Costa Maya",
+        "keywords": [
+          "mexico",
+          "costa maya",
+          "xcalak",
+          "playa sonrisa",
+          "resort",
+          "strand"
+        ],
+        "description": "Afslappet og intimt boutique-naturistresort direkte på en uberørt privat caribisk strand tæt på koralrevet ved Xcalak.",
+        "lat": 18.3125,
+        "lng": -87.8252,
+        "address": "Carretera Mahahual-Xcalak Km 48, 77940 Xcalak, Q.R., Mexico",
+        "url": "https://www.playasonrisa.com/"
+      },
+      {
+        "id": "mex-001",
+        "name": "Hidden Beach Resort",
+        "type": "resort",
+        "description": "Luksuriøst voksen-kun resort i Riviera Maya, hvor tøjvalg er valgfrit. Kendt for høj standard.",
+        "lat": 20.7854,
+        "lng": -86.9145,
+        "address": "Carretera Cancun-Tulum KM 256, Riviera Maya, Mexico",
+        "url": "https://hiddenbeachresort.com/"
+      },
+      {
+        "id": "mex-002",
+        "name": "Playa del Secreto (FKK område)",
+        "type": "beach",
+        "description": "En rolig, isoleret strandstrækning syd for Cancun, hvor naturister ofte samles uofficielt.",
+        "lat": 20.8122,
+        "lng": -86.8778,
+        "address": "Playa del Secreto, Quintana Roo, Mexico"
+      },
+      {
+        "id": "mex-003",
+        "name": "Zipolite Beach (Playa Zipolite)",
+        "type": "beach",
+        "description": "Mexicos mest berømte naturiststrand. Kendt som en fristed for naturister, især i den østlige ende ved 'Playa del Amor'.",
+        "lat": 15.6521,
+        "lng": -96.5056,
+        "address": "Zipolite, Oaxaca, Mexico"
+      },
+      {
+        "id": "mex-004",
+        "name": "Nude Beach at Hotel Nude Zipolite",
+        "type": "resort",
+        "description": "Et dedikeret naturistresort ved den berømte Zipolite-strand.",
+        "lat": 15.6533,
+        "lng": -96.5061,
+        "address": "Calle del Roca Blanca, Zipolite, Oaxaca, Mexico",
+        "url": "https://hotelnudezipolite.com/"
+      },
+      {
+        "id": "mex-005",
+        "name": "Valhalla Naturist Resort",
+        "type": "resort",
+        "description": "Et intimt og populært naturistresort placeret tæt på stranden i Zipolite.",
+        "lat": 15.6525,
+        "lng": -96.5044,
+        "address": "Camino del Amor, Zipolite, Oaxaca, Mexico",
+        "url": "https://www.valhallazipolite.com/"
+      },
+      {
+        "id": "mex-006",
+        "name": "Playa nudista de Maruata",
+        "type": "beach",
+        "description": "En rå og smuk strand i Michoacán, kendt for sin afslappede atmosfære og naturist-venlige sektioner.",
+        "lat": 18.2721,
+        "lng": -103.1678,
+        "address": "Maruata, Michoacán, Mexico"
+      },
+      {
+        "id": "mex-007",
+        "name": "Isla Mujeres naturist-venlige områder",
+        "type": "beach",
+        "description": "Flere afsidesliggende strandområder på sydøen hvor naturisme tolereres af lokale.",
+        "lat": 21.2333,
+        "lng": -86.7333,
+        "address": "Isla Mujeres, Quintana Roo, Mexico"
+      },
+      {
+        "id": "mex-008",
+        "name": "Cosumel naturist-strande",
+        "type": "beach",
+        "description": "Stenede kystområder på øens østside bruges ofte af naturister grundet manglen på turister.",
+        "lat": 20.4228,
+        "lng": -86.9225,
+        "address": "East Coast, Cozumel, Quintana Roo, Mexico"
+      }
+    ],
+    "summary": "Fandt 12 naturist-destinationer for \"Mexico\".",
+    "sources": [],
+    "timestamp": 1791176452744,
+    "query": "Mexico"
+  },
+  "island": {
+    "locations": [
+      {
+        "id": "loc-us-blindcreek",
+        "name": "Blind Creek Beach (Fort Pierce, Florida)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Florida / Fort Pierce",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "florida",
+          "blind creek",
+          "fort pierce",
+          "hutchinson island",
+          "st lucie",
+          "strand",
+          "beach"
+        ],
+        "description": "Officielt udpeget tøjvalgs-strand på Hutchinson Island ved Atlanterhavet. Brede hvide sandstrande omgivet af vilde klitter og mangroveskove uden store hoteller i sigte.",
+        "lat": 27.355,
+        "lng": -80.244,
+        "address": "5460 S Ocean Dr, Fort Pierce, FL 34949, USA"
+      },
+      {
+        "id": "loc-us-kehena",
+        "name": "Kehena Black Sand Beach (Puna, Big Island, Hawaii)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Hawaii / Big Island",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "big island",
+          "kehena",
+          "puna",
+          "black sand",
+          "sort sand",
+          "strand"
+        ],
+        "description": "Spektakulær sort vulkansandstrand omkranset af jerntræer og kokospalmer på Big Islands frodige Puna-kyst. Spinner-delfiner svømmer ofte helt ind i bugten.",
+        "lat": 19.395,
+        "lng": -154.929,
+        "address": "Kalapana-Kapoho Beach Rd (Hwy 137), Pāhoa, HI 96778, USA"
+      },
+      {
+        "id": "loc-us-kalani",
+        "name": "Kalani Oceanside Retreat (Big Island, Hawaii)",
+        "type": "resort",
+        "country": "USA",
+        "region": "Hawaii / Big Island",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "hawaii",
+          "big island",
+          "kalani",
+          "retreat",
+          "resort",
+          "spa"
+        ],
+        "description": "120-hektar eco-retreat ved Stillehavskysten på Big Island. Tilbyder tøjvalg ved sin 25-meter pool, boblebade og sauna samt yoga og wellness.",
+        "lat": 19.378,
+        "lng": -154.912,
+        "address": "12-6860 Kalapana-Kapoho Beach Rd, Pāhoa, HI 96778, USA",
+        "url": "https://www.kalani.com/"
+      },
+      {
+        "id": "loc-us-fireisland",
+        "name": "Fire Island Nude Beach (Cherry Grove / Pines, New York)",
+        "type": "beach",
+        "country": "USA",
+        "region": "New York / Long Island",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "new york",
+          "fire island",
+          "cherry grove",
+          "pines",
+          "long island",
+          "strand"
+        ],
+        "description": "Den beskyttede nationalpark-strandstrækning mellem Cherry Grove og Fire Island Pines. Verdenskendt ikonisk tøjvalgs-strand med fint hvidt sand og klitter.",
+        "lat": 40.662,
+        "lng": -73.082,
+        "address": "Fire Island National Seashore, Ocean Beach, NY 11770, USA"
+      },
+      {
+        "id": "loc-us-collinsbeach",
+        "name": "Collins Beach (Sauvie Island / Portland, Oregon)",
+        "type": "beach",
+        "country": "USA",
+        "region": "Oregon / Portland",
+        "keywords": [
+          "usa",
+          "united states",
+          "amerika",
+          "oregon",
+          "portland",
+          "collins beach",
+          "sauvie island",
+          "strand"
+        ],
+        "description": "Over 1,5 kilometer bred sandstrand på Sauvie Island langs Columbia River. Meget populær og levende tøjvalgs-strand med udsigt til skovklædte bredder.",
+        "lat": 45.728,
+        "lng": -122.756,
+        "address": "Reeder Rd, Sauvie Island, Portland, OR 97231, USA"
+      },
+      {
+        "id": "loc-ca-hanlanspoint",
+        "name": "Hanlan's Point Beach (Toronto Islands, Ontario)",
+        "type": "beach",
+        "country": "Canada",
+        "region": "Ontario / Toronto",
+        "keywords": [
+          "canada",
+          "toronto",
+          "ontario",
+          "hanlans point",
+          "toronto islands",
+          "lake ontario",
+          "strand"
+        ],
+        "description": "Officiel tøjvalgs-strand siden 2002 på Toronto Islands i Lake Ontario med fint sand, klitter og en fantastisk udsigt til Torontos skyline.",
+        "lat": 43.6185,
+        "lng": -79.3971,
+        "address": "Hanlan's Point, Toronto Islands, Toronto, ON M5J 2W3, Canada"
+      },
+      {
+        "id": "loc-nz-littlepalmbeach",
+        "name": "Little Palm Beach (Waiheke Island, Auckland)",
+        "type": "beach",
+        "country": "New Zealand",
+        "region": "Auckland / Waiheke Island",
+        "keywords": [
+          "new zealand",
+          "auckland",
+          "waiheke",
+          "little palm beach",
+          "strand"
+        ],
+        "description": "New Zealands mest berømte tøjvalgs-bugt på idylliske Waiheke Island. Kridhvidt sand, rolige turkise bølger og frodige pohutukawa-træer.",
+        "lat": -36.7795,
+        "lng": 175.0512,
+        "address": "Palm Rd, Palm Beach, Waiheke Island 1081, New Zealand"
+      },
+      {
+        "id": "IS-001",
+        "name": "Nautholsvik Geothermal Beach (Naturist section)",
+        "type": "beach",
+        "description": "En populær bystrand i Reykjavik, hvor lokalbefolkningen ofte bader nøgne i de varme kilder året rundt.",
+        "lat": 64.1235,
+        "lng": -21.9213,
+        "address": "Nautholsvegur, 101 Reykjavik, Island"
+      },
+      {
+        "id": "IS-002",
+        "name": "Vritomartis Naturist Resort (Reference for context)",
+        "type": "resort",
+        "description": "Selvom dette resort ligger i Grækenland, fungerer det som den primære standard for naturistfaciliteter i nordiske rejsemål. Island har ingen dedikerede naturistresorts, kun vild natur.",
+        "lat": 35.1956,
+        "lng": 24.3061,
+        "address": "Sfakia, Kreta, Grækenland",
+        "url": "https://www.vritomartis.gr/",
+        "image": "https://www.vritomartis.gr/wp-content/uploads/DSC_5627-scaled.jpg"
+      },
+      {
+        "id": "IS-003",
+        "name": "Reykjadalur Hot Spring Valley",
+        "type": "other",
+        "description": "En vandredestination med en varm flod. Mange naturister benytter de mere afsidesliggende bassiner længere oppe ad floden.",
+        "lat": 64.0321,
+        "lng": -21.2185,
+        "address": "Reykjadalur, 810 Hveragerdi, Island"
+      },
+      {
+        "id": "IS-004",
+        "name": "Hellulaug Geothermal Pool",
+        "type": "other",
+        "description": "En lille, naturlig varm kilde ved kysten i Westfjords, ofte brugt af naturister grundet dens private placering.",
+        "lat": 65.5765,
+        "lng": -23.1582,
+        "address": "Laugaland, 451 Patreksfjordur, Island"
+      },
+      {
+        "id": "IS-005",
+        "name": "Kvika Footbath",
+        "type": "other",
+        "description": "Et lille menneskeskabt varmt fodbad ved kysten, hvor man kan observere nordlys. Nøgenbadning forekommer sent om aftenen.",
+        "lat": 64.1611,
+        "lng": -22.0113,
+        "address": "Grotta, Reykjavik, Island"
+      },
+      {
+        "id": "IS-006",
+        "name": "Hrunalaug Hot Spring",
+        "type": "other",
+        "description": "En historisk og meget privat varm kilde. Naturister foretrækker ofte dette sted grundet de isolerede omgivelser.",
+        "lat": 64.1332,
+        "lng": -20.2588,
+        "address": "Hrunavegur, 845 Fludir, Island"
+      },
+      {
+        "id": "IS-007",
+        "name": "Seljavallalaug Pool",
+        "type": "other",
+        "description": "En af Islands ældste svømmebassiner bygget ind i bjergsiden. Meget afsides, hvilket giver mulighed for diskret nøgenbadning.",
+        "lat": 63.5684,
+        "lng": -19.6053,
+        "address": "Seljavellir, 861 Hvolsvollur, Island"
+      },
+      {
+        "id": "IS-008",
+        "name": "Landbrotalaug Hot Spring",
+        "type": "other",
+        "description": "En meget lille og romantisk varm kilde, perfekt til en eller to personer. Ofte brugt til nøgenbadning.",
+        "lat": 64.8335,
+        "lng": -22.3184,
+        "address": "Snaefellsnes, Island"
+      },
+      {
+        "id": "IS-009",
+        "name": "Spákonufellslaug",
+        "type": "other",
+        "description": "En lokal varm kilde i det nordlige Island, hvor lokal kultur tillader en afslappet tilgang til badetøj.",
+        "lat": 65.8562,
+        "lng": -20.2798,
+        "address": "Skagaströnd, Island"
+      },
+      {
+        "id": "IS-010",
+        "name": "Pollurinn Hot Pool",
+        "type": "other",
+        "description": "Offentlig varm kilde i Tálknafjörður. Meget uformel atmosfære.",
+        "lat": 65.5997,
+        "lng": -23.9666,
+        "address": "Talknafjordur, Island"
+      }
+    ],
+    "summary": "Fandt 17 naturist-destinationer for \"Island\".",
+    "sources": [],
+    "timestamp": 1791176463815,
+    "query": "Island"
   }
 }

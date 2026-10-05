@@ -5,8 +5,14 @@ import { searchCuratedDatabase, ALL_SUGGESTIONS } from "./curatedDestinations";
 export function getApiUrl(endpoint: string): string {
   const cleanEndpoint = endpoint.startsWith('/') ? endpoint.slice(1) : endpoint;
   if (typeof window !== 'undefined') {
-    const currentHref = window.location.href.split('?')[0].split('#')[0];
-    const baseHref = currentHref.endsWith('/') ? currentHref : currentHref + '/';
+    let pathname = window.location.pathname;
+    if (pathname.includes('.')) {
+      pathname = pathname.substring(0, pathname.lastIndexOf('/') + 1);
+    } else if (!pathname.endsWith('/')) {
+      pathname = pathname + '/';
+    }
+    const origin = window.location.origin;
+    const baseHref = origin + pathname;
     return new URL(cleanEndpoint, baseHref).href;
   }
   return `/${cleanEndpoint}`;
@@ -14,6 +20,14 @@ export function getApiUrl(endpoint: string): string {
 
 // Local storage key for user-provided Gemini API key
 const API_KEY_STORAGE_KEY = 'naturist_gemini_api_key';
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000; // 1 month
+
+export interface CachedSearchResult extends SearchResult {
+  timestamp?: number;
+  query?: string;
+  isStale?: boolean;
+  isRecent?: boolean;
+}
 
 export function getSavedApiKey(): string {
   if (typeof window !== 'undefined') {
@@ -147,9 +161,9 @@ Svar som et rent JSON array med objekter indeholdende felterne: id, name, type (
 
 // Cache for search suggestions and results on client
 const suggestionCache = new Map<string, string[]>();
-const searchCache = new Map<string, SearchResult>();
+const searchCache = new Map<string, CachedSearchResult>();
 
-function getLocalStoredSearch(key: string): SearchResult | null {
+function getLocalStoredSearch(key: string): CachedSearchResult | null {
   try {
     const raw = localStorage.getItem(`naturist_search_${key}`);
     if (raw) {
@@ -164,7 +178,12 @@ function getLocalStoredSearch(key: string): SearchResult | null {
 
 function setLocalStoredSearch(key: string, data: SearchResult) {
   try {
-    localStorage.setItem(`naturist_search_${key}`, JSON.stringify(data));
+    const toStore: CachedSearchResult = {
+      ...data,
+      timestamp: (data as any).timestamp || Date.now(),
+      query: key
+    };
+    localStorage.setItem(`naturist_search_${key}`, JSON.stringify(toStore));
   } catch {}
 }
 
@@ -200,31 +219,16 @@ export async function getSuggestions(query: string): Promise<string[]> {
   return result;
 }
 
-export async function searchNaturistPlaces(
+// Helper to execute thorough remote or client AI search
+async function executeRemoteOrAiSearch(
   query: string,
   userLocation?: { lat: number; lng: number },
-  forceAI: boolean = false
-): Promise<SearchResult> {
+  isRefresh: boolean = false
+): Promise<SearchResult | null> {
   const trimmed = query.trim();
   const clientKey = getSavedApiKey();
-  const cacheKey = `${trimmed.toLowerCase()}_${userLocation ? `${userLocation.lat},${userLocation.lng}` : 'none'}_${forceAI ? 'ai' : 'std'}`;
-
-  if (!forceAI) {
-    if (searchCache.has(cacheKey)) {
-      return searchCache.get(cacheKey)!;
-    }
-    const stored = getLocalStoredSearch(cacheKey);
-    if (stored && stored.locations.length > 0) {
-      searchCache.set(cacheKey, stored);
-      return stored;
-    }
-  }
-
-  // 1. Check client-side curated database immediately
-  const curatedResult = searchCuratedDatabase(trimmed);
-
-  // 2. Attempt API request to backend (PHP or Node)
   let backendData: SearchResult | null = null;
+
   try {
     const headers: Record<string, string> = {
       "Content-Type": "application/json"
@@ -240,6 +244,7 @@ export async function searchNaturistPlaces(
         query: trimmed,
         userPos: userLocation,
         includeAI: true,
+        refresh: isRefresh,
         apiKey: clientKey || undefined
       })
     });
@@ -248,66 +253,180 @@ export async function searchNaturistPlaces(
       const data: SearchResult = await res.json();
       if (data && Array.isArray(data.locations) && data.locations.length > 0) {
         backendData = data;
-        // If backend returned a comprehensive AI result (> 10 locations), use it directly!
-        if (data.locations.length > 10) {
-          searchCache.set(cacheKey, data);
-          setLocalStoredSearch(cacheKey, data);
-          return data;
-        }
+        return backendData;
       }
     }
   } catch (err) {
     console.warn("Backend API not reachable or error, checking client AI fallback:", err);
   }
 
-  // 3. If backend returned <= 10 results (e.g. backend lacks API key on cPanel),
-  // but the client has an API key configured, run Gemini directly in browser!
+  // If backend returned no results or is unreachable, but client has Gemini API key:
   if (clientKey) {
     try {
       const directAiPlaces = await queryGeminiDirectly(trimmed, clientKey);
       if (directAiPlaces.length > 0) {
-        // Merge with curated or backend places without duplicates
-        const base = backendData?.locations || curatedResult?.locations || [];
-        const seenNames = new Set(base.map(l => l.name.toLowerCase()));
-        const combined = [...base];
-
-        for (const loc of directAiPlaces) {
-          const normName = loc.name.toLowerCase();
-          if (!seenNames.has(normName)) {
-            combined.push(loc);
-            seenNames.add(normName);
-          }
-        }
-
-        const result: SearchResult = {
-          locations: combined,
-          summary: `Fandt ${combined.length} naturist-destinationer for "${trimmed}".`,
+        return {
+          locations: directAiPlaces,
+          summary: `Fandt ${directAiPlaces.length} naturist-destinationer for "${trimmed}".`,
           sources: []
         };
-        searchCache.set(cacheKey, result);
-        setLocalStoredSearch(cacheKey, result);
-        return result;
       }
     } catch (clientErr) {
       console.warn("Client Gemini direct search failed:", clientErr);
     }
   }
 
-  // 4. Return backend data if available
-  if (backendData && backendData.locations.length > 0) {
-    searchCache.set(cacheKey, backendData);
-    setLocalStoredSearch(cacheKey, backendData);
-    return backendData;
+  return backendData;
+}
+
+export interface SearchOptions {
+  userLocation?: { lat: number; lng: number };
+  forceRefresh?: boolean;
+  onBackgroundUpdate?: (refreshed: SearchResult) => void;
+}
+
+export async function searchNaturistPlaces(
+  query: string,
+  userLocationOrOptions?: { lat: number; lng: number } | SearchOptions,
+  forceAI: boolean = false,
+  onBackgroundUpdate?: (refreshed: SearchResult) => void
+): Promise<SearchResult> {
+  const trimmed = query.trim();
+  if (!trimmed) {
+    return { locations: [], summary: "Indtast venligst en destination", sources: [] };
   }
 
-  // 5. Fall back to curated database matches
-  if (curatedResult && curatedResult.locations.length > 0) {
-    searchCache.set(cacheKey, curatedResult);
-    setLocalStoredSearch(cacheKey, curatedResult);
+  // Handle flexible options
+  let userLocation: { lat: number; lng: number } | undefined;
+  let forceRefresh = forceAI;
+  let bgUpdateCb = onBackgroundUpdate;
+
+  if (userLocationOrOptions && 'onBackgroundUpdate' in userLocationOrOptions) {
+    userLocation = userLocationOrOptions.userLocation;
+    forceRefresh = Boolean(userLocationOrOptions.forceRefresh);
+    bgUpdateCb = userLocationOrOptions.onBackgroundUpdate;
+  } else if (userLocationOrOptions && 'lat' in userLocationOrOptions) {
+    userLocation = userLocationOrOptions as { lat: number; lng: number };
+  }
+
+  const cleanKey = trimmed.toLowerCase().replace(/\./g, "").trim();
+
+  // 1. Check in-memory cache and localStorage
+  const inMemory = searchCache.get(cleanKey);
+  const stored = getLocalStoredSearch(cleanKey);
+  const existingCached = inMemory || stored;
+
+  if (existingCached && Array.isArray(existingCached.locations) && existingCached.locations.length > 0) {
+    const ts = (existingCached as any).timestamp || 0;
+    const age = Date.now() - ts;
+    const isRecent = age < THIRTY_DAYS_MS && ts > 0;
+
+    // A. If data exists AND was searched recently (< 30 days) and no force refresh:
+    // Return immediately!
+    if (isRecent && !forceRefresh) {
+      searchCache.set(cleanKey, existingCached);
+      return existingCached;
+    }
+
+    // B. If data exists BUT is older than 30 days (not searched recently):
+    // Show the existing data immediately to user, and do a check in the background!
+    if (!forceRefresh) {
+      searchCache.set(cleanKey, existingCached);
+
+      // Trigger background check
+      setTimeout(async () => {
+        try {
+          const fresh = await executeRemoteOrAiSearch(trimmed, userLocation, true);
+          if (fresh && Array.isArray(fresh.locations) && fresh.locations.length > 0) {
+            // Merge unique
+            const baseNames = new Set(existingCached.locations.map(l => l.name.toLowerCase()));
+            const merged = [...existingCached.locations];
+            for (const loc of fresh.locations) {
+              if (!baseNames.has(loc.name.toLowerCase())) {
+                merged.push(loc);
+                baseNames.add(loc.name.toLowerCase());
+              }
+            }
+            const updatedResult: SearchResult = {
+              locations: merged,
+              summary: `Fandt ${merged.length} naturist-destinationer for "${trimmed}".`,
+              sources: []
+            };
+            setLocalStoredSearch(cleanKey, updatedResult);
+            searchCache.set(cleanKey, updatedResult);
+            if (bgUpdateCb) {
+              bgUpdateCb(updatedResult);
+            }
+          }
+        } catch (e) {
+          console.warn("Background refresh error:", e);
+        }
+      }, 50);
+
+      return existingCached;
+    }
+  }
+
+  // 2. Check curated database
+  const curatedResult = searchCuratedDatabase(trimmed);
+
+  // If curated database has comprehensive verified destinations (>= 20 locations) and not force refreshing:
+  if (curatedResult && curatedResult.locations.length >= 20 && !forceRefresh) {
+    setLocalStoredSearch(cleanKey, curatedResult);
+    searchCache.set(cleanKey, curatedResult);
     return curatedResult;
   }
 
-  // 6. Return polite empty result
+  // If curated has some locations (e.g. 4-15 locations) and not forceRefresh:
+  if (curatedResult && curatedResult.locations.length > 0 && !forceRefresh) {
+    setLocalStoredSearch(cleanKey, curatedResult);
+    searchCache.set(cleanKey, curatedResult);
+
+    // Also trigger background enrichment to find even more
+    setTimeout(async () => {
+      try {
+        const fresh = await executeRemoteOrAiSearch(trimmed, userLocation, false);
+        if (fresh && Array.isArray(fresh.locations) && fresh.locations.length > 0) {
+          const baseNames = new Set(curatedResult.locations.map(l => l.name.toLowerCase()));
+          const merged = [...curatedResult.locations];
+          for (const loc of fresh.locations) {
+            if (!baseNames.has(loc.name.toLowerCase())) {
+              merged.push(loc);
+              baseNames.add(loc.name.toLowerCase());
+            }
+          }
+          const updatedResult: SearchResult = {
+            locations: merged,
+            summary: `Fandt ${merged.length} naturist-destinationer for "${trimmed}".`,
+            sources: []
+          };
+          setLocalStoredSearch(cleanKey, updatedResult);
+          searchCache.set(cleanKey, updatedResult);
+          if (bgUpdateCb) {
+            bgUpdateCb(updatedResult);
+          }
+        }
+      } catch {}
+    }, 50);
+
+    return curatedResult;
+  }
+
+  // 3. No data exists yet (Er der ikke søgt):
+  // Perform a thorough search around data, save, and return!
+  const remoteResult = await executeRemoteOrAiSearch(trimmed, userLocation, forceRefresh);
+  if (remoteResult && Array.isArray(remoteResult.locations) && remoteResult.locations.length > 0) {
+    setLocalStoredSearch(cleanKey, remoteResult);
+    searchCache.set(cleanKey, remoteResult);
+    return remoteResult;
+  }
+
+  if (curatedResult && curatedResult.locations.length > 0) {
+    setLocalStoredSearch(cleanKey, curatedResult);
+    searchCache.set(cleanKey, curatedResult);
+    return curatedResult;
+  }
+
   return {
     locations: [],
     summary: `Vi kunne ikke finde specifikke naturiststeder i "${trimmed}". Prøv et andet land eller område.`,

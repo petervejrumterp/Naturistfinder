@@ -142,7 +142,18 @@ const App: React.FC = () => {
     }
     setError(null);
     try {
-      const result = await searchNaturistPlaces(query, userPos, expandWithAI);
+      const result = await searchNaturistPlaces(
+        query,
+        userPos,
+        expandWithAI,
+        (refreshed) => {
+          // Background refresh finished: seamlessly update if still viewing results
+          if (refreshed.locations.length > 0) {
+            setLocations(refreshed.locations);
+            setSearchResult(refreshed);
+          }
+        }
+      );
       if (result.locations.length > 0) {
         setLocations(result.locations);
         setSearchResult(result);
@@ -264,7 +275,7 @@ const App: React.FC = () => {
                     <Waves className="absolute inset-0 m-auto h-6 w-6 text-[#ed6a56]/30" />
                   </div>
                   <div className="text-center px-8">
-                    <p className="text-base font-semibold text-stone-800">Søger efter oaser...</p>
+                    <p className="text-base font-semibold text-stone-800">Finder naturist steder...</p>
                     <p className="text-xs text-stone-400 mt-1 italic leading-relaxed">Vi analyserer kort og rejsevejledninger for at finde de bedste steder.</p>
                   </div>
                 </div>

@@ -480,6 +480,8 @@ app.get("/api/suggestions", async (req, res) => {
 
 // Persistent search cache to store newly discovered destinations permanently
 const SEARCH_CACHE_FILE = path.join(__dirname, 'search_cache.json');
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
 let searchCacheStore: Record<string, any> = {};
 try {
   if (fs.existsSync(SEARCH_CACHE_FILE)) {
@@ -492,7 +494,16 @@ try {
 function persistSearchResult(query: string, result: any) {
   try {
     const key = query.trim().toLowerCase();
-    searchCacheStore[key] = result;
+    const cleanKey = key.replace(/\./g, "").trim();
+    const entry = {
+      ...result,
+      timestamp: Date.now(),
+      query: query.trim()
+    };
+    searchCacheStore[key] = entry;
+    if (cleanKey !== key) {
+      searchCacheStore[cleanKey] = entry;
+    }
     fs.writeFileSync(SEARCH_CACHE_FILE, JSON.stringify(searchCacheStore, null, 2), 'utf-8');
   } catch (err) {
     console.warn("Could not save to persistent cache:", err);
@@ -512,24 +523,52 @@ app.post("/api/search", async (req, res) => {
     normQuery = "usa";
   }
 
+  const isForceRefresh = Boolean(req.body.refresh || req.body.forceRefresh);
+
   // 1. Check comprehensive curated database first
   const curated = searchCuratedDatabase(query);
 
-  // If curated database already has a comprehensive verified dataset (>= 20 locations), return instantly
-  if (curated && curated.locations.length >= 20) {
-    return res.json(curated);
+  // If curated database already has a comprehensive verified dataset (>= 20 locations) and not force refresh, return instantly
+  if (curated && curated.locations.length >= 20 && !isForceRefresh) {
+    return res.json({
+      ...curated,
+      timestamp: Date.now(),
+      isRecent: true
+    });
   }
 
   // 2. Check persistent search cache for previously discovered countries/cities
-  if (searchCacheStore[normQuery] && Array.isArray(searchCacheStore[normQuery].locations) && searchCacheStore[normQuery].locations.length > 0) {
-    if (!curated || searchCacheStore[normQuery].locations.length >= curated.locations.length) {
-      return res.json(searchCacheStore[normQuery]);
+  const cached = searchCacheStore[normQuery] || searchCacheStore[rawNorm];
+  if (cached && Array.isArray(cached.locations) && cached.locations.length > 0) {
+    const age = Date.now() - (cached.timestamp || 0);
+    const isRecent = age < THIRTY_DAYS_MS;
+
+    // If searched recently (< 30 days) and client does not force refresh, return cached immediately
+    if (isRecent && !isForceRefresh) {
+      return res.json({
+        ...cached,
+        isRecent: true,
+        ageDays: Math.round(age / (24 * 60 * 60 * 1000))
+      });
+    }
+
+    // If data exists but is older than 30 days, AND client did not ask for a refresh (standard search):
+    // return cached immediately for fast UI, flagged as eligible for background refresh
+    if (!isForceRefresh) {
+      return res.json({
+        ...cached,
+        isStale: true,
+        ageDays: Math.round(age / (24 * 60 * 60 * 1000))
+      });
     }
   }
 
   if (!ai) {
     if (curated && curated.locations.length > 0) {
       return res.json(curated);
+    }
+    if (cached && Array.isArray(cached.locations) && cached.locations.length > 0) {
+      return res.json(cached);
     }
     return res.json({
       locations: [],

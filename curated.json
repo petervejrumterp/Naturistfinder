@@ -5011,6 +5011,470 @@
       "lng": -81.868,
       "address": "190 Foothills Resort Dr, Chesnee, SC 29323, USA",
       "url": "https://www.carolinafoothills.com/"
+    },
+    {
+      "id": "loc-ca-wreckbeach",
+      "name": "Wreck Beach (Vancouver, British Columbia)",
+      "type": "beach",
+      "country": "Canada",
+      "region": "British Columbia / Vancouver",
+      "keywords": [
+        "canada",
+        "vancouver",
+        "british columbia",
+        "wreck beach",
+        "pacific spirit",
+        "strand"
+      ],
+      "description": "Nordamerikas største og mest berømte tøjvalgs-strand (7,8 km lang) for foden af de frodige klipper i Pacific Spirit Regional Park ved UBC.",
+      "lat": 49.2624,
+      "lng": -123.2575,
+      "address": "NW Marine Dr (Trail 6), Vancouver, BC V6T 1Z2, Canada"
+    },
+    {
+      "id": "loc-ca-hanlanspoint",
+      "name": "Hanlan's Point Beach (Toronto Islands, Ontario)",
+      "type": "beach",
+      "country": "Canada",
+      "region": "Ontario / Toronto",
+      "keywords": [
+        "canada",
+        "toronto",
+        "ontario",
+        "hanlans point",
+        "toronto islands",
+        "lake ontario",
+        "strand"
+      ],
+      "description": "Officiel tøjvalgs-strand siden 2002 på Toronto Islands i Lake Ontario med fint sand, klitter og en fantastisk udsigt til Torontos skyline.",
+      "lat": 43.6185,
+      "lng": -79.3971,
+      "address": "Hanlan's Point, Toronto Islands, Toronto, ON M5J 2W3, Canada"
+    },
+    {
+      "id": "loc-ca-bareoaks",
+      "name": "Bare Oaks Family Naturist Park (East Gwillimbury, Ontario)",
+      "type": "resort",
+      "country": "Canada",
+      "region": "Ontario / Greater Toronto",
+      "keywords": [
+        "canada",
+        "ontario",
+        "bare oaks",
+        "toronto",
+        "resort",
+        "camping"
+      ],
+      "description": "Canadas førende helårs-åbne AANR-akkrediterede familie-naturistpark på 50 hektar med swimmingpool, spabad, badesø, sauna og hytter.",
+      "lat": 44.1485,
+      "lng": -79.3852,
+      "address": "20237 Kennedy Rd, Sharon, ON L0G 1V0, Canada",
+      "url": "https://www.bareoaks.ca/"
+    },
+    {
+      "id": "loc-ca-laccrepeau",
+      "name": "Club Naturiste Lac Crépeau (Laurentides, Quebec)",
+      "type": "resort",
+      "country": "Canada",
+      "region": "Quebec / Laurentides",
+      "keywords": [
+        "canada",
+        "quebec",
+        "lac crepeau",
+        "laurentides",
+        "resort",
+        "camping"
+      ],
+      "description": "Smukt beliggende naturistresort i de fransk-canadiske Laurentides-bjerge med privat badesø, sandstrand, opvarmet pool og hytteudlejning.",
+      "lat": 46.1258,
+      "lng": -74.1524,
+      "address": "1550 Chemin du Lac Crépeau, Chertsey, QC J0K 3K0, Canada",
+      "url": "https://www.laccrepeau.com/"
+    },
+    {
+      "id": "loc-ca-fleurdelys",
+      "name": "Camping Naturiste Fleur de Lys (Montreal, Quebec)",
+      "type": "campsite",
+      "country": "Canada",
+      "region": "Quebec / Monteregie",
+      "keywords": [
+        "canada",
+        "quebec",
+        "fleur de lys",
+        "montreal",
+        "camping",
+        "resort"
+      ],
+      "description": "Traditionsrigt og gæstfrit naturistcenter sydøst for Montreal med opvarmet pool, tennis, volleyball og masser af sociale aktiviteter.",
+      "lat": 45.3852,
+      "lng": -73.2145,
+      "address": "1000 Chemin du Petit Bois, Varennes, QC J3X 1P7, Canada",
+      "url": "https://www.fleurdelys.qc.ca/"
+    },
+    {
+      "id": "loc-ca-beaverlake",
+      "name": "Beaver Lake Naturist Resort (Tamworth, Ontario)",
+      "type": "resort",
+      "country": "Canada",
+      "region": "Ontario / Kingston",
+      "keywords": [
+        "canada",
+        "ontario",
+        "beaver lake",
+        "tamworth",
+        "kingston",
+        "resort",
+        "camping"
+      ],
+      "description": "130 naturskønne hektar med privat kildevands-sø, opvarmet pool, sauna og naturstier i det østlige Ontario.",
+      "lat": 44.4821,
+      "lng": -76.9521,
+      "address": "150 Beaver Lake Rd, Tamworth, ON K0K 3G0, Canada",
+      "url": "https://www.beaverlakeresort.ca/"
+    },
+    {
+      "id": "loc-ca-okanagan",
+      "name": "Okanagan Naturist Park (Kelowna, British Columbia)",
+      "type": "campsite",
+      "country": "Canada",
+      "region": "British Columbia / Okanagan",
+      "keywords": [
+        "canada",
+        "okanagan",
+        "kelowna",
+        "british columbia",
+        "resort",
+        "camping"
+      ],
+      "description": "Placeret i Canadas solrige vinregion Okanagan Valley med swimmingpool, spabad og udsigt over bjergene.",
+      "lat": 49.8879,
+      "lng": -119.496,
+      "address": "Okanagan Valley, Kelowna, BC, Canada"
+    },
+    {
+      "id": "loc-au-ladybay",
+      "name": "Lady Bay Beach / Lady Jane (Sydney, New South Wales)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "New South Wales / Sydney",
+      "keywords": [
+        "australien",
+        "australia",
+        "sydney",
+        "lady bay",
+        "watsons bay",
+        "south head",
+        "strand"
+      ],
+      "description": "Australiens mest berømte officielle naturiststrand, beliggende på South Head ved indsejlingen til Sydney Harbour med panoramaudsigt over havnen.",
+      "lat": -33.8395,
+      "lng": 151.2785,
+      "address": "South Head, Watsons Bay, Sydney, NSW 2030, Australien"
+    },
+    {
+      "id": "loc-au-obelisk",
+      "name": "Obelisk Beach (Mosman, Sydney Harbour, New South Wales)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "New South Wales / Sydney",
+      "keywords": [
+        "australien",
+        "australia",
+        "sydney",
+        "obelisk beach",
+        "mosman",
+        "middle head",
+        "strand"
+      ],
+      "description": "Fredet og afskærmet naturperle på Middle Head i Sydney Harbour National Park. Fint gyldent sand og krystalklart vand omgivet af eukalyptusskov.",
+      "lat": -33.8298,
+      "lng": 151.2612,
+      "address": "Middle Head Rd, Mosman, Sydney, NSW 2088, Australien"
+    },
+    {
+      "id": "loc-au-cobblers",
+      "name": "Cobblers Beach (Mosman, Sydney, New South Wales)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "New South Wales / Sydney",
+      "keywords": [
+        "australien",
+        "australia",
+        "sydney",
+        "cobblers beach",
+        "mosman",
+        "strand"
+      ],
+      "description": "Officiel tøjvalgs-strand beliggende tæt på Obelisk Beach i Middle Head National Park. Roligt badevand og intim atmosfære.",
+      "lat": -33.8245,
+      "lng": 151.2585,
+      "address": "Cobblers Bay, Mosman, Sydney, NSW 2088, Australien"
+    },
+    {
+      "id": "loc-au-samurai",
+      "name": "Samurai Beach (Port Stephens, New South Wales)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "New South Wales / Port Stephens",
+      "keywords": [
+        "australien",
+        "australia",
+        "samurai beach",
+        "port stephens",
+        "tomaree",
+        "strand"
+      ],
+      "description": "Storslået tøjvalgs-strand omgivet af de enorme klitter i Tomaree National Park. Kendt for surfbølger, vilde delfiner og årlige naturist-strandlege.",
+      "lat": -32.7481,
+      "lng": 152.1275,
+      "address": "Samurai Beach Trail, One Mile, NSW 2316, Australien"
+    },
+    {
+      "id": "loc-au-maslin",
+      "name": "Maslin Beach (Fleurieu Peninsula, South Australia)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "South Australia / Adelaide",
+      "keywords": [
+        "australien",
+        "australia",
+        "adelaide",
+        "maslin beach",
+        "south australia",
+        "strand"
+      ],
+      "description": "Historisk milepæl: Australiens allerførste officielt legaliserede naturiststrand (udpeget i 1975). Kridhvide kalkklinter og kilometerlang sandstrand.",
+      "lat": -35.2533,
+      "lng": 138.4633,
+      "address": "Gulfview Rd, Maslin Beach, SA 5170, Australien"
+    },
+    {
+      "id": "loc-au-sunnyside",
+      "name": "Sunnyside North Beach (Mount Eliza, Victoria)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "Victoria / Melbourne",
+      "keywords": [
+        "australien",
+        "australia",
+        "melbourne",
+        "victoria",
+        "sunnyside",
+        "mount eliza",
+        "strand"
+      ],
+      "description": "Melbournes mest kendte officielle tøjvalgs-strand på Mornington Peninsula ved Port Phillip Bay, omgivet af te-træer og klipper.",
+      "lat": -38.1895,
+      "lng": 145.0742,
+      "address": "Sunnyside Rd, Mount Eliza, VIC 3930, Australien"
+    },
+    {
+      "id": "loc-au-pointimpossible",
+      "name": "Point Impossible Beach (Torquay / Great Ocean Road, Victoria)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "Victoria / Geelong",
+      "keywords": [
+        "australien",
+        "australia",
+        "torquay",
+        "point impossible",
+        "great ocean road",
+        "strand"
+      ],
+      "description": "Officiel naturiststrand ved begyndelsen af den berømte Great Ocean Road nær Torquay med brede sandbanker og Stillehavsbrænding.",
+      "lat": -38.2985,
+      "lng": 144.3752,
+      "address": "The Esplanade, Torquay, VIC 3228, Australien"
+    },
+    {
+      "id": "loc-au-swanbourne",
+      "name": "Swanbourne Beach (Perth, Western Australia)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "Western Australia / Perth",
+      "keywords": [
+        "australien",
+        "australia",
+        "perth",
+        "swanbourne",
+        "western australia",
+        "indiske ocean",
+        "strand"
+      ],
+      "description": "Den officielle naturiststrand i Perth ved Det Indiske Ocean. Brede hvide sandstrande og fantastiske solnedgange over havet.",
+      "lat": -31.9667,
+      "lng": 115.7533,
+      "address": "Marine Parade, Swanbourne, Perth, WA 6010, Australien"
+    },
+    {
+      "id": "loc-au-alexandriabay",
+      "name": "Alexandria Bay (Noosa National Park, Queensland)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "Queensland / Sunshine Coast",
+      "keywords": [
+        "australien",
+        "australia",
+        "noosa",
+        "alexandria bay",
+        "queensland",
+        "sunshine coast",
+        "strand"
+      ],
+      "description": "Verdensberømt afsondret sandbugt i Noosa National Park ('A-Bay') med subtropisk regnskov, koalaer og spektakulær naturisme.",
+      "lat": -26.3912,
+      "lng": 153.1185,
+      "address": "Coastal Track, Noosa National Park, Noosa Heads, QLD 4567, Australien"
+    },
+    {
+      "id": "loc-au-tyagarah",
+      "name": "Tyagarah Beach (Byron Bay, New South Wales)",
+      "type": "beach",
+      "country": "Australien",
+      "region": "New South Wales / Byron Bay",
+      "keywords": [
+        "australien",
+        "australia",
+        "byron bay",
+        "tyagarah",
+        "strand"
+      ],
+      "description": "En kilometerlang officiel tøjvalgs-strandstrækning i Tyagarah Nature Reserve nord for Byron Bay med uspoleret vild kystlinje.",
+      "lat": -28.6015,
+      "lng": 153.5682,
+      "address": "Grays Ln, Tyagarah Nature Reserve, Byron Bay, NSW 2481, Australien"
+    },
+    {
+      "id": "loc-nz-littlepalmbeach",
+      "name": "Little Palm Beach (Waiheke Island, Auckland)",
+      "type": "beach",
+      "country": "New Zealand",
+      "region": "Auckland / Waiheke Island",
+      "keywords": [
+        "new zealand",
+        "auckland",
+        "waiheke",
+        "little palm beach",
+        "strand"
+      ],
+      "description": "New Zealands mest berømte tøjvalgs-bugt på idylliske Waiheke Island. Kridhvidt sand, rolige turkise bølger og frodige pohutukawa-træer.",
+      "lat": -36.7795,
+      "lng": 175.0512,
+      "address": "Palm Rd, Palm Beach, Waiheke Island 1081, New Zealand"
+    },
+    {
+      "id": "loc-nz-ladiesbay",
+      "name": "Ladies Bay (St Heliers, Auckland)",
+      "type": "beach",
+      "country": "New Zealand",
+      "region": "Auckland / Tamaki Drive",
+      "keywords": [
+        "new zealand",
+        "auckland",
+        "ladies bay",
+        "st heliers",
+        "strand"
+      ],
+      "description": "Historisk tøjvalgs-strand gemt under klipperne ved Achilles Point i Auckland med direkte udsigt til Rangitoto-vulkanen.",
+      "lat": -36.8485,
+      "lng": 174.8725,
+      "address": "Cliff Rd, St Heliers, Auckland 1071, New Zealand"
+    },
+    {
+      "id": "loc-nz-breakerbay",
+      "name": "Breaker Bay (Wellington)",
+      "type": "beach",
+      "country": "New Zealand",
+      "region": "Wellington",
+      "keywords": [
+        "new zealand",
+        "wellington",
+        "breaker bay",
+        "strand"
+      ],
+      "description": "Vild og rå tøjvalgs-strand på Wellingtons sydkyst ud mod Cook-strædet, omgivet af klipper og storslået havudsigt.",
+      "lat": -41.3325,
+      "lng": 174.8315,
+      "address": "Breaker Bay Rd, Seatoun, Wellington 6022, New Zealand"
+    },
+    {
+      "id": "loc-nz-uretiti",
+      "name": "Uretiti Beach (Northland / Bream Bay)",
+      "type": "beach",
+      "country": "New Zealand",
+      "region": "Northland / Bream Bay",
+      "keywords": [
+        "new zealand",
+        "northland",
+        "uretiti",
+        "bream bay",
+        "strand",
+        "camping"
+      ],
+      "description": "Endeløs hvid surfstrand med et officielt anerkendt tøjvalgs-område syd for campingpladsen på Northlands østkyst.",
+      "lat": -35.9812,
+      "lng": 174.4582,
+      "address": "State Hwy 1, Waipu 0582, New Zealand"
+    },
+    {
+      "id": "loc-mx-hiddenbeach",
+      "name": "Hidden Beach Resort Au Naturel Club (Riviera Maya)",
+      "type": "resort",
+      "country": "Mexico",
+      "region": "Quintana Roo / Riviera Maya",
+      "keywords": [
+        "mexico",
+        "riviera maya",
+        "hidden beach",
+        "kantenah",
+        "resort",
+        "luksus"
+      ],
+      "description": "5-stjernet Gourmet Inclusive luksusresort udelukkende for naturister på en privat caribisk strand i Kantenah Bay.",
+      "lat": 20.4512,
+      "lng": -87.2625,
+      "address": "Km 95 Carretera Cancun-Chetumal, Kantenah, Quintana Roo 77710, Mexico",
+      "url": "https://www.hiddenbeachresort.com/"
+    },
+    {
+      "id": "loc-mx-intimatulum",
+      "name": "Intima Resort Tulum (Tulum)",
+      "type": "resort",
+      "country": "Mexico",
+      "region": "Quintana Roo / Tulum",
+      "keywords": [
+        "mexico",
+        "tulum",
+        "intima",
+        "resort",
+        "jungel"
+      ],
+      "description": "Eksklusivt tøjvalgs-resort i den frodige mayajungle i Tulum med tropisk lagunepool, swim-up bar og luksusvillaer.",
+      "lat": 20.2015,
+      "lng": -87.4725,
+      "address": "Calle 5 Pte, La Veleta, 77760 Tulum, Q.R., Mexico",
+      "url": "https://www.intimatum.com/"
+    },
+    {
+      "id": "loc-mx-playasonrisa",
+      "name": "Playa Sonrisa Boutique Nudist Resort (Costa Maya / Xcalak)",
+      "type": "resort",
+      "country": "Mexico",
+      "region": "Quintana Roo / Costa Maya",
+      "keywords": [
+        "mexico",
+        "costa maya",
+        "xcalak",
+        "playa sonrisa",
+        "resort",
+        "strand"
+      ],
+      "description": "Afslappet og intimt boutique-naturistresort direkte på en uberørt privat caribisk strand tæt på koralrevet ved Xcalak.",
+      "lat": 18.3125,
+      "lng": -87.8252,
+      "address": "Carretera Mahahual-Xcalak Km 48, 77940 Xcalak, Q.R., Mexico",
+      "url": "https://www.playasonrisa.com/"
     }
   ],
   "suggestions": [
@@ -5078,6 +5542,20 @@
     "Austin",
     "New York",
     "Oregon",
-    "Colorado"
+    "Colorado",
+    "Canada",
+    "Vancouver",
+    "Toronto",
+    "Australien",
+    "Sydney",
+    "Melbourne",
+    "Perth",
+    "Byron Bay",
+    "New Zealand",
+    "Auckland",
+    "Wellington",
+    "Mexico",
+    "Riviera Maya",
+    "Tulum"
   ]
 }

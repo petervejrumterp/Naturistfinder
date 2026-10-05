@@ -236,13 +236,28 @@ if ($endpoint === 'search') {
 
     // Check persistent search cache for newly discovered queries
     $cacheFile = __DIR__ . '/search_cache.json';
+    $isForceRefresh = !empty($input['refresh']) || !empty($input['forceRefresh']);
     if (file_exists($cacheFile)) {
         $cacheContent = @file_get_contents($cacheFile);
         if ($cacheContent) {
             $cachedMap = json_decode($cacheContent, true);
             if (!empty($cachedMap[$normalized]['locations']) && count($cachedMap[$normalized]['locations']) >= count($matched)) {
-                echo json_encode($cachedMap[$normalized]);
-                exit;
+                $cachedEntry = $cachedMap[$normalized];
+                $ts = $cachedEntry['timestamp'] ?? 0;
+                $ageSeconds = (round(microtime(true) * 1000) - $ts) / 1000;
+                $thirtyDaysSeconds = 30 * 86400;
+
+                // If searched recently (< 30 days) and not force refreshing, return immediately
+                if ($ageSeconds < $thirtyDaysSeconds && !$isForceRefresh) {
+                    echo json_encode($cachedEntry);
+                    exit;
+                }
+                // If searched > 30 days ago and not force refresh, return cached immediately for snappy UI
+                if (!$isForceRefresh) {
+                    $cachedEntry['isStale'] = true;
+                    echo json_encode($cachedEntry);
+                    exit;
+                }
             }
         }
     }
@@ -325,6 +340,8 @@ Svar som et rent JSON array med objekter indeholdende: id, name, type (beach, re
                 }
 
                 $finalResult = [
+                    "timestamp" => round(microtime(true) * 1000),
+                    "query" => $query,
                     "locations" => $allResults,
                     "summary" => "Fandt " . count($allResults) . " naturist-destinationer for \"{$query}\".",
                     "sources" => []
